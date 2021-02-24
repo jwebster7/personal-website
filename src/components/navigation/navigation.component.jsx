@@ -11,13 +11,26 @@ import {
  * Auto-show when scrolling up.
  */
 
-const Navigation = () => {
+const Navigation = ({
+  scrollTo,
+  aboutEntry,
+  journeyEntry,
+  aboutInView,
+  journeyInView
+}) => {
+
   return (
     <NavigationContainer>
-      <NavigationLinkContainer exact to="/profile">
+      <NavigationLinkContainer
+        onClick={() => scrollTo(aboutEntry)}
+        inView={aboutInView}
+      >
         Profile
       </NavigationLinkContainer>
-      <NavigationLinkContainer exact to="/journey">
+      <NavigationLinkContainer
+        onClick={() => scrollTo(journeyEntry)}
+        inView={journeyInView}
+      >
         Journey
       </NavigationLinkContainer>
       <NavigationLinkContainer exact to="/skills">

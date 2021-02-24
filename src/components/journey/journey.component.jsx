@@ -1,5 +1,5 @@
-import React from "react";
-import StyledHeading from "../styled-heading/styled-heading.component";
+import React, { forwardRef } from "react";
+
 // import {
 //   faChalkboardTeacher,
 //   faCodeBranch,
@@ -12,12 +12,13 @@ import StyledHeading from "../styled-heading/styled-heading.component";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Education from "../education/education.component";
+import StyledHeading from "../styled-heading/styled-heading.component";
 
 import staticData from "../../shared/mockData.json";
 
 import { JourneyContainer, JourneyGrid } from "./journey.styles";
 
-const Journey = () => {
+const Journey = forwardRef((props, ref) => {
   const education = staticData?.education;
   const educationHistory = education.map((education, index) => {
     return (
@@ -33,11 +34,11 @@ const Journey = () => {
   });
 
   return (
-    <JourneyContainer>
+    <JourneyContainer ref={ref}>
       <StyledHeading heading={"Journey"} />
       <JourneyGrid>{educationHistory}</JourneyGrid>
     </JourneyContainer>
   );
-};
+});
 
 export default Journey;

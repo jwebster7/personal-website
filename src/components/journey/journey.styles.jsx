@@ -28,7 +28,7 @@ export const JourneyGrid = styled.div`
   /* justify-items: center; */
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 50px;
+  /* grid-gap: 50px; */
 `;
 
 export const JourneyColumnHeading = styled.h3`

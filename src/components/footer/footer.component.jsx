@@ -74,7 +74,6 @@ const Footer = () => {
 
 export default Footer;
 
-{
   /* <FooterContainer>
 <SocialIconContainer>
   <SocialIcon
@@ -128,4 +127,4 @@ export default Footer;
 </SocialIconContainer>
 <CreatedByContainer>Created by Joseph Webster</CreatedByContainer>
 </FooterContainer> */
-}
+

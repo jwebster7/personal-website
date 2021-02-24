@@ -1,8 +1,7 @@
 // #121113 - background
-// #59545E
-// #291E33
-// #4B385E - active
-// #A198AB -
+// #5c4054
+// #966889
+// #A198AB
 // #fff5ee - font
 import styled, { css, keyframes } from "styled-components";
 

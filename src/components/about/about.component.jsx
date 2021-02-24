@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-// import apiService from '../apiService';
+import React, { useEffect, useState, forwardRef } from "react";
 
 import StyledHeading from "../styled-heading/styled-heading.component";
 
@@ -15,7 +14,7 @@ import {
   ProfilePictureContainer
 } from "./about.styles";
 
-const About = () => {
+const About = forwardRef((props, ref) => {
   const [state, setState] = useState({
     title: "",
     body: "",
@@ -36,7 +35,7 @@ const About = () => {
   }, []);
 
   return !state.loading ? (
-    <AboutContainer>
+    <AboutContainer ref={ref}>
       <StyledHeading heading={"Profile"} />
       <AboutContentContainer>
         <ProfilePictureContainer>
@@ -56,6 +55,6 @@ const About = () => {
       </AboutContentContainer>
     </AboutContainer>
   ) : null;
-};
+});
 
 export default About;
