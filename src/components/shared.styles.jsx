@@ -25,7 +25,7 @@ export const sharedHeadingStyles = css`
 export const sharedHorizontalLineStyles = css`
   border-color: #fff5ee;
   border: 0;
-  opacity: 0.6;
+  opacity: 0.7;
   border-top: 5px solid #fff5ee;
 `;
 

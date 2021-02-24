@@ -15,6 +15,7 @@ export const JourneyContainer = styled.div`
   padding: 75px;
   min-height: 100vh;
   width: 100%;
+  /* width: 90%; */
 `;
 
 export const JourneyTextContainer = styled.p`

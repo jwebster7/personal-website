@@ -69,7 +69,7 @@ export const LandingNameHeading = styled.h1`
 
 export const LandingHorizontalLine = styled.div`
   ${sharedHorizontalLineStyles}
-  width: 700px;
+  width: 675px;
   animation: ${horizontalLineTransition} 1.5s ease-out;
 `;
 
