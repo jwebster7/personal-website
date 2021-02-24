@@ -1,29 +1,33 @@
-// #121113 - background
-//       #59545E
-//       #291E33
-//       #4B385E - active
-//       #A198AB -
-//       #fff5ee - font
 import styled from "styled-components";
 
-export const FooterContainer = styled.footer`
+import { fadeInAnimation } from "../shared.styles";
+
+export const FooterContainer = styled.div`
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  min-width: 50vw;
+  padding: 0 75px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 75px;
-  width: 100%;
-  background-color: #121113;
-`;
+  border-radius: 0 75px 0 0;
+  background: rgba(18, 17, 19, 0.5);
+  backdrop-filter: blur(5px);
 
-export const SocialIconContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* width: 37.5%; */
-  width: 50%;
-  max-width: 525px;
-  min-width: 425px;
+  ${fadeInAnimation}
+
+  a {
+    margin: 0 50px 0 0;
+  }
+
+  a:first-child {
+    margin-left: 0;
+  }
 
   * {
     font-size: 1.75rem;
@@ -44,11 +48,4 @@ export const SocialIcon = styled.a`
       text-decoration: none;
     }
   }
-`;
-
-export const CreatedByContainer = styled.div`
-  color: #fff5ee;
-  font-family: "Roboto Mono", serif;
-  font-weight: bold;
-  font-size: 1rem;
 `;

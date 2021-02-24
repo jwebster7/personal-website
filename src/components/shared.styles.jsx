@@ -4,7 +4,39 @@
 // #4B385E - active
 // #A198AB -
 // #fff5ee - font
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+`;
+
+const fadeOut = keyframes`
+  0% {
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+`;
+
+export const fadeInAnimation = css`
+  animation: ${fadeIn} 1.5s ease-in-out 1.5s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+`;
+
+export const fadeOutAnimation = css`
+  animation: ${fadeOut} 1.5s ease-in-out 1.5s;
+  animation-fill-mode: backwards;
+  visibility: visible;
+`;
 
 export const sharedBodyTextStyles = css`
   font-size: 1.75rem;

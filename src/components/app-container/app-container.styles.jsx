@@ -8,15 +8,13 @@ const layoutStyles = css`
 `;
 
 export const Layout = styled.div`
-  ${layoutStyles} 
+  ${layoutStyles}
   background-color: #121113;
   color: #fff5ee;
-
 `;
 
 export const Content = styled.div`
-  ${layoutStyles}
-  /* position: absolute;
+  ${layoutStyles}/* position: absolute;
   top: 0;
   z-index: 99; */
 `;

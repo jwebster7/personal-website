@@ -7,7 +7,6 @@ import { sharedBodyTextStyles, sharedHeadingStyles } from "../shared.styles";
 export const JourneyContainer = styled.div`
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   justify-content: flex-start;
   align-items: center;
   background-color: #121113;
@@ -25,7 +24,7 @@ export const JourneyTextContainer = styled.p`
 export const JourneyGrid = styled.div`
   display: grid;
   /* width: 50%; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* justify-items: center; */
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
