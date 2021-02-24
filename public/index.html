@@ -24,20 +24,47 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <!-- Preconnect to the font Google APIs  -->
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+
+    <!-- Preload all needed fonts for the app -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@300&display=block"
+      as="style"
+    />
+
+    <!-- Load the stylesheets for use in local CSS files -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@300&display=block"
+    />
+
+    <!-- Import font awesome styling for icons -->
+    <!-- <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"> -->
+
+    <!-- <script src="https://kit.fontawesome.com/4dbbbba730.js" crossorigin="anonymous"></script> -->
+
+    <title>Joseph Webster</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    
+    <!-- Fix for FOIT and FOUT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          // families: ['Roboto:wght@300', 'Roboto+Mono:wght@300', 'Roboto+Slab:wght@300', 'Open+Sans']
+          // families: ['Roboto+Mono:wght@300', 'Open+Sans']
+          families: ["Roboto Mono", "Open Sans"]
+        }
+      });
+    </script>
   </body>
 </html>
