@@ -51,12 +51,12 @@ export const NavigationLinkContainer = styled.div`
       : `color: #fff5ee`;
     return style;
   }};
-  /* 
-  :active {
+  
+  /* :active {
     color: #5b9999;
   } */
 
-  /* :hover {
+  :hover {
     color: #5b9999;
-  } */
+  }
 `;

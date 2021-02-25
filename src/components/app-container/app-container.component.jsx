@@ -10,17 +10,15 @@ import Navigation from "../navigation/navigation.component";
 import Journey from "../journey/journey.component";
 import Landing from "../landing/landing.component";
 
-// import { Content, Layout } from "./app-container.styles";
 import { Layout } from "./app-container.styles";
 
-const AppContainer = () => {
-  const [aboutRef, aboutInView, aboutEntry] = useInView({
-    threshold: 0.5
-  });
+const inViewConfig = {
+  threshold: 0.5
+};
 
-  const [journeyRef, journeyInView, journeyEntry] = useInView({
-    threshold: 0.5
-  });
+const AppContainer = () => {
+  const [aboutRef, aboutInView, aboutEntry] = useInView(inViewConfig);
+  const [journeyRef, journeyInView, journeyEntry] = useInView(inViewConfig);
 
   const entries = {
     aboutEntry,
