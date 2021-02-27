@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import { sharedBodyTextStyles, sharedHeadingStyles } from "../shared.styles";
+import { sharedBodyFontStyles, sharedHeadingStyles } from "../shared.styles";
 
 const educationHeadingStyles = css`
   ${sharedHeadingStyles}
@@ -20,13 +20,13 @@ export const EducationContainer = styled.div`
 
 export const EducationHeading = styled.h1`
   ${educationHeadingStyles}
-  font-size: 2.25rem;
+  /* font-size: 2.25rem; */
   /* margin-top: 0; */
 `;
 
 export const EducationDate = styled.p`
   ${educationHeadingStyles}
-  font-size: 1.75rem;
+  /* font-size: 1.75rem; */
   /* font-weight: 600; */
   margin-bottom: 0;
 `;
@@ -43,6 +43,6 @@ export const EducationTextContainer = styled.div`
 `;
 
 export const EducationText = styled.p`
-  ${sharedBodyTextStyles}
+  ${sharedBodyFontStyles}
   text-align: left;
 `;

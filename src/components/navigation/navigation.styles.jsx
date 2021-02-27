@@ -1,12 +1,12 @@
 import styled, { css } from "styled-components";
 
 import {
-  sharedBodyTextStyles,
+  sharedBodyFontStyles,
   rightSlideInAnimation,
 } from "../shared.styles";
 
 const sharedTextStyles = css`
-  ${sharedBodyTextStyles}
+  ${sharedBodyFontStyles}
 `;
 
 export const NavigationContainer = styled.nav`

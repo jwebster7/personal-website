@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import StyledHeading from "../styled-heading/styled-heading.component";
 
-import { sharedBodyTextStyles, sharedHeadingStyles } from "../shared.styles";
+import { sharedBodyFontStyles, sharedHeadingStyles, sharedSectionHeadingStyles } from "../shared.styles";
 
 export const JourneyContainer = styled.div`
   display: flex;
@@ -18,21 +18,17 @@ export const JourneyContainer = styled.div`
 `;
 
 export const JourneyTextContainer = styled.p`
-  ${sharedBodyTextStyles}
+  ${sharedBodyFontStyles}
 `;
 
 export const JourneyGrid = styled.div`
-  display: grid;
-  /* width: 50%; */
-  /* margin: 0 auto; */
-  /* justify-items: center; */
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  /* grid-gap: 50px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* width: 90%; */
 `;
 
 export const JourneyColumnHeading = styled.h3`
-  ${sharedHeadingStyles}
-  font-size: 2.75rem;
-  margin: 50px 0;
+  ${sharedSectionHeadingStyles}
 `;

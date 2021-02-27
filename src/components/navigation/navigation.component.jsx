@@ -14,7 +14,6 @@ const Navigation = ({
   aboutInView,
   journeyInView
 }) => {
-
   return (
     <NavigationContainer>
       <NavigationLinkContainer
@@ -23,14 +22,14 @@ const Navigation = ({
       >
         Profile
       </NavigationLinkContainer>
+      <NavigationLinkContainer exact to="/education">
+        Education
+      </NavigationLinkContainer>
       <NavigationLinkContainer
         onClick={() => scrollTo(journeyEntry)}
         inView={journeyInView}
       >
-        Journey
-      </NavigationLinkContainer>
-      <NavigationLinkContainer exact to="/skills">
-        Skills
+        Experience
       </NavigationLinkContainer>
       <NavigationLinkContainer exact to="/contact">
         Contact

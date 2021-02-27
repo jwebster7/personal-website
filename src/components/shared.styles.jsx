@@ -94,26 +94,33 @@ export const bottomSlideUpAnimation = css`
   animation: ${bottomSlideIn} 1.25s ease-out;
 `;
 
-export const sharedBodyTextStyles = css`
-  font-size: 1.75rem;
-  font-family: "Roboto Mono", serif;
-
-  color: #fff5ee;
-  text-align: left;
+export const sharedSectionHeadingStyles = css`
+  font-size: 3rem;
+  margin: 0 50px;
 `;
 
 export const sharedHeadingStyles = css`
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: 1.75rem;
   font-family: "Open Sans", sans-serif;
   color: #fff5ee;
   letter-spacing: 0.25rem;
-  white-space: nowrap;
+  margin: 0;
 `;
 
-export const sharedHeadingTextStyles = css`
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-  font-weight: 600;
+export const sharedSubheadingStyles = css`
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  color: #fff5ee;
+  letter-spacing: 0.25rem;
+  margin: 0;
+`;
+
+export const sharedBodyFontStyles = css`
+  font-size: 1.5rem;
+  font-family: "Roboto Mono", serif;
+  color: #fff5ee;
+  text-align: left;
 `;
 
 export const sharedHorizontalLineStyles = css`

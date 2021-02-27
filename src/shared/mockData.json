@@ -23,104 +23,74 @@
       "description": "I attended Butler Community College directly after high school. I tried my hand at a few different majors, but found myself in Mathematics."
     }
   ],
-  "expertise": {
-    "title": "My Experience",
-    "body": "Below are a few personal projects depicting my skillset and a list of the things I’ve worked with lately.",
-    "projects": [
+  "experience": {
+    "jobs": [
       {
-        "title": "Personal Website",
-        "summary": "This is a portfolio I made for myself using React, JS, and CSS.",
-        "repo": "https://github.com/jwebster7/personal-website-client",
-        "link": ""
+        "organization": "NetApp - SolidFire",
+        "title": "Software Engineer",
+        "summary": "Software development, software testing, and product scoping on an HCI Deployment Engine.",
+        "startDate": "June 2019",
+        "endDate": "October 2020",
+        "location": {
+          "city": "Wichita",
+          "state": "KS"
+        },
+        "exitStatement": "My team was eliminated due to restructuring. While searching for my next position, I’ve learned React and the common libraries within it's ecosystem. I am eager to leverage my experience toward a challenging new role."
       },
       {
-        "title": "Chase& Co. Website",
-        "summary": "This is an in-progress front-end client I am making for my band using Vue, JS, and CSS.",
-        "repo": "https://github.com/jwebster7/chaseandco-client",
-        "link": ""
+        "organization": "Kansas State University - iTAC",
+        "title": "Lead of Development",
+        "summary": "Software research and development, IT technical support, and new-hire training.",
+        "startDate": "February 2017",
+        "endDate": "May 2019",
+        "location": {
+          "city": "Manhattan",
+          "state": "KS"
+        },
+        "exitStatement": "I graduated from KSU and landed my first post-grad job as a Software Engineer at NetApp."
       },
       {
-        "title": "Adventext",
-        "summary": "This is a text-based adventure game I am building with my friends using Angular, AWS, and a NoSQL Database. The main idea is that players would their own adventure while other players could add options to the decision tree.",
-        "repo": "",
-        "link": ""
+        "organization": "Kansas State University - Computer Science",
+        "title": "Undergraduate Teaching Assistant",
+        "summary": "Assisted instructors with in-class activities, graded class assignments, and tutored underclassmen on programming in Python.",
+        "startDate": "August 2017",
+        "endDate": "December 2018",
+        "location": {
+          "city": "Manhattan",
+          "state": "KS"
+        },
+        "exitStatement": " I left my position as a TA to accomodate the extra hours needed for my new position as Lead of Development at iTAC."
       }
-    ],
-    "skillset": {
-      "languages": [
-        "JavaScript",
-        "Python",
-        "Golang",
-        "C#"
-      ],
-      "frameworks": [
-        "React",
-        "Angular",
-        "Vue",
-        "Express",
-        "Flask"
-      ],
-      "tools": [
-        "Docker",
-        "Git",
-        "Jenkins",
-        "AWS"
-      ],
-      "paradigms": [
-        "REST",
-        "Agile",
-        "Scrum",
-        "Data Structures",
-        "Algorithms",
-        "Database Design"
-      ]
-    }
+    ]
   },
-  "music": {
-    "title": "My Journey",
-    "body": {
-      "intro": "Music has always been a big part of my life and has impacted me in a variety of positive ways. It has allowed me to connect with others and I’ve found it to be the perfect medium for conveying an emotion, thought, or belief.",
-      "story": "I’ve been an active musician now for over a decade, gigging and recording whenever the opportunity arises. My goal is to positively impact others by writing, producing, and contributing to music that is universally relatable."
-    },
-    "projects": [
-      {
-        "title": "Chase & Co.",
-        "summary": "The chase and co. band summary.",
-        "link": "https://open.spotify.com/artist/0rVyb13bvRt9NlNZXdMwEF?si=mP9xehC9Rp2LYt5A0jhUAw"
-      }
+  "skills": {
+    "languages": [
+      "JavaScript",
+      "Python",
+      "Golang",
+      "C#"
     ],
-    "gear": {
-      "guitars": [
-        "Fender Stratocasters",
-        "Fender Telecasters",
-        "Gretsch Semi-Hollowbodies"
-      ],
-      "amplifiers": [
-        "Vox AC15",
-        "Vox AC30",
-        "Fender '65 Deluxe Reverb"
-      ],
-      "pedals": [
-        "TC Electronic Polytune 3",
-        "Xotic Effects SP Compressor",
-        "Xotic Effects EP Booster",
-        "EHX Micro POG",
-        "Maxon OD-9",
-        "Barber Gainchanger SR",
-        "Fulltone OCD v1.4",
-        "Walrus Audio Julia",
-        "MXR Carbon Copy",
-        "Boss DD-3T",
-        "Boss RV-6"
-      ],
-      "pedalboards": [
-        "Pedaltrain Classic Jr",
-        "Pedaltrain Classic 3"
-      ],
-      "powersupplies": [
-        "Truetone CS12"
-      ]
-    }
+    "frameworks": [
+      "React",
+      "Angular",
+      "Vue",
+      "Express",
+      "Flask"
+    ],
+    "tools": [
+      "Docker",
+      "Git",
+      "Jenkins",
+      "AWS"
+    ],
+    "paradigms": [
+      "REST",
+      "Agile",
+      "Scrum",
+      "Data Structures",
+      "Algorithms",
+      "Database Design"
+    ]
   },
   "social": {
     "iconlinks": {

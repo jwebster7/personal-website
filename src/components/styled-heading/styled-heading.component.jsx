@@ -8,11 +8,6 @@ import {
 
 const StyledHeading = ({ heading }) => {
   return (
-    // <StyledHeadingContainer>
-    //   <StyledHeadingLine />
-    //   <StyledHeadingText>{heading}</StyledHeadingText>
-    //   <StyledHeadingLine />
-    // </StyledHeadingContainer>
     <StyledHeadingContainer>
       <StyledHeadingLine />
       <StyledHeadingText>{heading}</StyledHeadingText>

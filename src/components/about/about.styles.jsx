@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-import { sharedBodyTextStyles } from "../shared.styles";
+import { sharedBodyFontStyles } from "../shared.styles";
 
 const profilePicTransition = keyframes`
   from {
@@ -26,7 +26,7 @@ export const AboutContainer = styled.div`
 export const AboutContentContainer = styled.div`
   display: flex;
   flex-direction: row;
-  /* flex-grow: 1; */
+  flex-grow: .6;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
@@ -35,7 +35,7 @@ export const AboutContentContainer = styled.div`
 export const AboutTextContainer = styled.div``;
 
 export const AboutText = styled.p`
-  ${sharedBodyTextStyles}
+  ${sharedBodyFontStyles}
 `;
 
 export const ProfilePictureContainer = styled.div`
