@@ -1,6 +1,9 @@
 import styled, { css } from "styled-components";
 
-import { fadeInAnimation, sharedBodyTextStyles } from "../shared.styles";
+import {
+  sharedBodyTextStyles,
+  rightSlideInAnimation,
+} from "../shared.styles";
 
 const sharedTextStyles = css`
   ${sharedBodyTextStyles}
@@ -25,7 +28,7 @@ export const NavigationContainer = styled.nav`
   /* background: rgba(47, 79, 79, 0.6); */
   backdrop-filter: blur(5px);
 
-  ${fadeInAnimation}
+  ${rightSlideInAnimation}
 
   div {
     margin: 0 50px 0 0;
@@ -37,26 +40,40 @@ export const NavigationContainer = styled.nav`
 `;
 
 export const NavigationLinkContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   ${sharedTextStyles}
   text-decoration: none;
-  transition: color 0.5s ease-in-out;
+  transition: all 0.3s linear 0.2s;
   font-weight: 600;
 
-  ${({ inView }) => {
-    // console.log(inView);
-    const style = inView
-      ? `
-    color: #5b9999;
-    `
-      : `color: #fff5ee`;
-    return style;
-  }};
-  
-  /* :active {
-    color: #5b9999;
-  } */
+  :after {
+    content: "";
+    width: 0%;
+    border-top: 3px solid #5b9999;
+    -o-transition: width 0.2s ease-in-out .1s;
+    -ms-transition: width 0.2s ease-in-out .1s;
+    -moz-transition: width 0.2s ease-in-out .1s;
+    -webkit-transition: width 0.2s ease-in-out .1s;
+    transition: width 0.2s ease-in-out .1s;
+  }
 
   :hover {
     color: #5b9999;
   }
+
+  ${({ inView }) => {
+    const style = inView
+      ? `
+        color: #5b9999;
+        :after {
+          content: "";
+          border-top: 3px solid #5b9999;
+          width: 95%;
+        }
+    `
+      : `color: #fff5ee`;
+    return style;
+  }};
 `;

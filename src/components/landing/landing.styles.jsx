@@ -8,37 +8,13 @@
 // #3d808b
 import styled, { keyframes } from "styled-components";
 
-import { sharedHeadingStyles, sharedHorizontalLineStyles } from "../shared.styles";
-
-const nameTransition = keyframes`
-  from {
-    transform: translateY(-500%);
-  }
-
-  to {
-    transform: translateY(0%);
-  }
-`;
-
-const titleTransition = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
-`;
-
-const horizontalLineTransition = keyframes`
-  from {
-    transform: translateX(300%);
-  }
-
-  to {
-    transform: translateX(0%);
-  }
-`;
+import {
+  fadeInAnimation,
+  rightSlideInAnimation,
+  sharedHeadingStyles,
+  sharedHorizontalLineStyles,
+  topSlideDownAnimation
+} from "../shared.styles";
 
 export const LandingContainer = styled.div`
   display: flex;
@@ -52,7 +28,7 @@ export const LandingContainer = styled.div`
 `;
 
 export const LandingTextContainer = styled.span`
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   font-family: "Roboto Mono", serif;
   color: #fff5ee;
   text-align: justify;
@@ -64,21 +40,20 @@ export const LandingNameHeading = styled.h1`
   font-weight: bold;
   margin: 25px 0;
   font-size: 5rem;
-  animation: ${nameTransition} 1.5s ease-out;
+  ${topSlideDownAnimation}
 `;
 
 export const LandingHorizontalLine = styled.div`
   ${sharedHorizontalLineStyles}
   width: 675px;
-  animation: ${horizontalLineTransition} 1.5s ease-out;
+  ${rightSlideInAnimation}
 `;
 
 export const LandingTitleHeading = styled.h1`
   ${sharedHeadingStyles}
   font-weight: bold;
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; use this if using brackets */
+  font-size: 4rem;
   margin: 25px 0;
-  animation: ${titleTransition} 1.5s ease-in-out 1.5s;
-  animation-fill-mode: forwards;
-  visibility: hidden;
+  ${fadeInAnimation}
 `;

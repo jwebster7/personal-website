@@ -13,7 +13,7 @@ import Landing from "../landing/landing.component";
 import { Layout } from "./app-container.styles";
 
 const inViewConfig = {
-  threshold: 0.5
+  threshold: .76
 };
 
 const AppContainer = () => {

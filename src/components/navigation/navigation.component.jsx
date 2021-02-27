@@ -5,11 +5,7 @@ import {
   NavigationLinkContainer
 } from "./navigation.styles";
 
-/**
- * Be visible when users reach a new section on the page.
- * Auto-hide when scrolling down.
- * Auto-show when scrolling up.
- */
+// TODO: add in a brand icon to the left of the nav container
 
 const Navigation = ({
   scrollTo,

@@ -18,6 +18,7 @@ export const AboutContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   background-color: darkslategray;
+  /* background-color: #008b8b; */
   padding: 75px;
   min-height: 100vh;
 `;
@@ -40,7 +41,7 @@ export const AboutText = styled.p`
 export const ProfilePictureContainer = styled.div`
   max-width: 400px;
   max-height: 400px;
-  margin: 0 50px 0 0;
+  margin: 0 75px 0 0;
   border-radius: 100%;
   animation: ${profilePicTransition} 1.5s ease-out;
 `;

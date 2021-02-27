@@ -19,8 +19,8 @@ import staticData from "../../shared/mockData.json";
 import { JourneyContainer, JourneyGrid } from "./journey.styles";
 
 const Journey = forwardRef((props, ref) => {
-  const education = staticData?.education;
-  const educationHistory = education.map((education, index) => {
+  const educationData = staticData?.education;
+  const educationPath = educationData.map((education, index) => {
     return (
       <Education
         key={index}
@@ -36,7 +36,7 @@ const Journey = forwardRef((props, ref) => {
   return (
     <JourneyContainer ref={ref}>
       <StyledHeading heading={"Journey"} />
-      <JourneyGrid>{educationHistory}</JourneyGrid>
+      <JourneyGrid>{educationPath}</JourneyGrid>
     </JourneyContainer>
   );
 });

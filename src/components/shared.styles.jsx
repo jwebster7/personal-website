@@ -25,16 +25,73 @@ const fadeOut = keyframes`
   }
 `;
 
+const leftSlideIn = keyframes`
+  from {
+    transform: translateX(-300%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+`;
+
+const rightSlideIn = keyframes`
+  from {
+    transform: translateX(300%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+`;
+
+const topSlideIn = keyframes`
+  from {
+    transform: translateY(-500%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+`;
+
+const bottomSlideIn = keyframes`
+  from {
+    transform: translateY(150%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+`;
+
 export const fadeInAnimation = css`
-  animation: ${fadeIn} 1.5s ease-in-out 1.5s;
+  animation: ${fadeIn} 1.25s ease-in-out 1.25s;
   animation-fill-mode: forwards;
   visibility: hidden;
 `;
 
 export const fadeOutAnimation = css`
-  animation: ${fadeOut} 1.5s ease-in-out 1.5s;
+  animation: ${fadeOut} 1.25s ease-in-out;
   animation-fill-mode: backwards;
   visibility: visible;
+`;
+
+export const leftSlideInAnimation = css`
+  animation: ${leftSlideIn} 1.25s ease-out;
+`;
+
+export const rightSlideInAnimation = css`
+  /* visibility: hidden; */
+  animation: ${rightSlideIn} 1.25s ease-out;
+`;
+
+export const topSlideDownAnimation = css`
+  animation: ${topSlideIn} 1.25s ease-out;
+`;
+
+export const bottomSlideUpAnimation = css`
+  animation: ${bottomSlideIn} 1.25s ease-out;
 `;
 
 export const sharedBodyTextStyles = css`
@@ -51,6 +108,12 @@ export const sharedHeadingStyles = css`
   color: #fff5ee;
   letter-spacing: 0.25rem;
   white-space: nowrap;
+`;
+
+export const sharedHeadingTextStyles = css`
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  font-weight: 600;
 `;
 
 export const sharedHorizontalLineStyles = css`
