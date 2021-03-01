@@ -10,9 +10,11 @@ import {
 const Navigation = ({
   scrollTo,
   aboutEntry,
-  journeyEntry,
+  experienceEntry,
+  educationEntry,
   aboutInView,
-  journeyInView
+  experienceInView,
+  educationInView
 }) => {
   return (
     <NavigationContainer>
@@ -22,14 +24,20 @@ const Navigation = ({
       >
         Profile
       </NavigationLinkContainer>
-      <NavigationLinkContainer exact to="/education">
-        Education
-      </NavigationLinkContainer>
       <NavigationLinkContainer
-        onClick={() => scrollTo(journeyEntry)}
-        inView={journeyInView}
+        onClick={() => scrollTo(experienceEntry)}
+        inView={experienceInView}
       >
         Experience
+      </NavigationLinkContainer>
+      <NavigationLinkContainer
+        onClick={() => scrollTo(educationEntry)}
+        inView={educationInView}
+      >
+        Education
+      </NavigationLinkContainer>
+      <NavigationLinkContainer>
+        Skills
       </NavigationLinkContainer>
       <NavigationLinkContainer exact to="/contact">
         Contact

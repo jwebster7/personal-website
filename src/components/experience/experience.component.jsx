@@ -10,31 +10,14 @@ import React, { forwardRef } from "react";
 //   faUniversity
 // } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import Education from "../education/education.component";
+import Position from "../position/position.component";
 import StyledHeading from "../styled-heading/styled-heading.component";
+import { ExperienceContainer, ExperienceGrid } from "./experience.styles";
 
 import staticData from "../../shared/mockData.json";
 
-import { JourneyContainer, JourneyGrid } from "./journey.styles";
-import Position from "../position/position.component";
-
-const Journey = forwardRef((props, ref) => {
-  const educationData = staticData?.education;
+const Experience = forwardRef((props, ref) => {
   const jobData = staticData?.experience?.jobs;
-  const educationPath = educationData.map((education, index) => {
-    return (
-      <Education
-        key={index}
-        institution={education?.institution}
-        completionDate={education?.completionDate}
-        degree={education?.degree}
-        description={education?.description}
-        major={education?.major}
-      />
-    );
-  });
-
   const jobPath = jobData.map((position, index) => {
     return (
       <Position
@@ -51,12 +34,13 @@ const Journey = forwardRef((props, ref) => {
   });
 
   return (
-    <JourneyContainer ref={ref}>
-      <StyledHeading heading={"Journey"} />
-      <JourneyGrid>{jobPath}</JourneyGrid>
-      {/* <JourneyGrid>{educationPath}</JourneyGrid> */}
-    </JourneyContainer>
+    <ExperienceContainer ref={ref}>
+      <StyledHeading heading={"Experience"} />
+      {/* <ExperienceContent> */}
+        <ExperienceGrid>{jobPath}</ExperienceGrid>
+      {/* </ExperienceContent> */}
+    </ExperienceContainer>
   );
 });
 
-export default Journey;
+export default Experience;

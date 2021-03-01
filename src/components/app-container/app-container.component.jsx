@@ -5,29 +5,37 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "../../theme";
 
 import About from "../about/about.component";
+import Education from "../education/education.component";
+import Experience from "../experience/experience.component";
 import Footer from "../footer/footer.component";
 import Navigation from "../navigation/navigation.component";
-import Journey from "../journey/journey.component";
 import Landing from "../landing/landing.component";
 
-import { Layout } from "./app-container.styles";
+import { Content, Layout } from "./app-container.styles";
 
 const inViewConfig = {
-  threshold: .76
+  threshold: 0.76
 };
 
 const AppContainer = () => {
   const [aboutRef, aboutInView, aboutEntry] = useInView(inViewConfig);
-  const [journeyRef, journeyInView, journeyEntry] = useInView(inViewConfig);
+  const [experienceRef, experienceInView, experienceEntry] = useInView(
+    inViewConfig
+  );
+  const [educationRef, educationInView, educationEntry] = useInView(
+    inViewConfig
+  );
 
   const entries = {
     aboutEntry,
-    journeyEntry
+    experienceEntry,
+    educationEntry
   };
 
   const inViewTrackers = {
     aboutInView,
-    journeyInView
+    experienceInView,
+    educationInView
   };
 
   const scrollToRef = (entry) => {
@@ -38,10 +46,13 @@ const AppContainer = () => {
     <ThemeProvider theme={theme}>
       <Layout>
         <Navigation scrollTo={scrollToRef} {...entries} {...inViewTrackers} />
-        <Landing />
-        <About ref={aboutRef} />
-        <Journey ref={journeyRef} />
-        <Footer />
+        <Content>
+          <Landing />
+          <About ref={aboutRef} />
+          <Experience ref={experienceRef} />
+          <Education ref={educationRef} />
+          <Footer />
+        </Content>
       </Layout>
     </ThemeProvider>
   );

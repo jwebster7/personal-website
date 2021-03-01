@@ -26,10 +26,17 @@ export const AboutContainer = styled.div`
 export const AboutContentContainer = styled.div`
   display: flex;
   flex-direction: row;
-  flex-grow: .6;
+  flex-grow: 0.6;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  width: 90%;
+
+  @media only screen and (max-width: 1300px) {
+    flex-direction: column;
+    margin-top: 0;
+    width: 100%;
+  }
 `;
 
 export const AboutTextContainer = styled.div``;
@@ -43,7 +50,9 @@ export const ProfilePictureContainer = styled.div`
   max-height: 400px;
   margin: 0 75px 0 0;
   border-radius: 100%;
-  animation: ${profilePicTransition} 1.5s ease-out;
+  @media only screen and (max-width: 1300px) {
+    margin: 0 0 0 0;
+  }
 `;
 
 export const ProfilePicture = styled.img`

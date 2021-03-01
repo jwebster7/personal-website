@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
-import StyledHeading from "../styled-heading/styled-heading.component";
+import {
+  sharedBodyFontStyles,
+  sharedHeadingStyles,
+  sharedSectionHeadingStyles
+} from "../shared.styles";
 
-import { sharedBodyFontStyles, sharedHeadingStyles, sharedSectionHeadingStyles } from "../shared.styles";
-
-export const JourneyContainer = styled.div`
+export const ExperienceContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -17,18 +19,25 @@ export const JourneyContainer = styled.div`
   /* width: 90%; */
 `;
 
-export const JourneyTextContainer = styled.p`
+// export const ExperienceContent = styled.div`
+//   width: 90%;
+//   @media only screen and (max-width: 1300px) {
+//     width: 100%;
+//   }
+// `;
+
+export const ExperienceTextContainer = styled.p`
   ${sharedBodyFontStyles}
 `;
 
-export const JourneyGrid = styled.div`
+export const ExperienceGrid = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
-  /* width: 90%; */
+  /* width: 85%; */
 `;
 
-export const JourneyColumnHeading = styled.h3`
+export const ExperienceColumnHeading = styled.h3`
   ${sharedSectionHeadingStyles}
 `;

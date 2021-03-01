@@ -9,26 +9,48 @@
   },
   "education": [
     {
+      "institution": "Various Online Resources",
+      "major": "",
+      "degree": "",
+      "startDate": "May 2019",
+      "endDate": "current",
+      "summary": "Since graduation, I've continued my education through various online resources including Udemy, Pluralsight, and more. My most recent experience was finishing a full-stack ReactJS + NodeJS developer course.",
+      "location": {
+        "city": "",
+        "state": ""
+      }
+    },
+    {
       "institution": "Kansas State University",
-      "completionDate": "May 2019",
       "major": "Computer Science",
       "degree": "B.S.",
-      "description": "My education at KSU was very broad, challenging, and a lot of fun. The faculty and instructors were an integral in establishing a foundation I still rely on today."
+      "startDate": "January 2017",
+      "endDate": "May 2019",
+      "summary": "My education at KSU was very broad, challenging, and a lot of fun. The faculty and instructors were an integral in establishing a foundation I still rely on today.",
+      "location": {
+        "city": "Manhattan",
+        "state": "KS"
+      }
     },
     {
       "institution": "Butler Community College",
-      "completionDate": "May 2016",
       "major": "Mathematics",
       "degree": "A.S.",
-      "description": "I attended Butler Community College directly after high school. I tried my hand at a few different majors, but found myself in Mathematics."
+      "startDate": "August 2012",
+      "endDate": "May 2016",
+      "summary": "I attended Butler Community College on scholarship directly after high school. I tried my hand at a few different majors and eventually myself gravitating towards Mathematics.",
+      "location": {
+        "city": "El Dorado",
+        "state": "KS"
+      }
     }
   ],
   "experience": {
     "jobs": [
       {
-        "organization": "NetApp - SolidFire",
+        "organization": "NetApp SolidFire",
         "title": "Software Engineer",
-        "summary": "Software development, software testing, and product scoping on an HCI Deployment Engine.",
+        "summary": "Software development, software testing, and project scoping on an HCI Deployment Engine.",
         "startDate": "June 2019",
         "endDate": "October 2020",
         "location": {
@@ -38,7 +60,7 @@
         "exitStatement": "My team was eliminated due to restructuring. While searching for my next position, I’ve learned React and the common libraries within it's ecosystem. I am eager to leverage my experience toward a challenging new role."
       },
       {
-        "organization": "Kansas State University - iTAC",
+        "organization": "Kansas State University iTAC",
         "title": "Lead of Development",
         "summary": "Software research and development, IT technical support, and new-hire training.",
         "startDate": "February 2017",
@@ -50,7 +72,7 @@
         "exitStatement": "I graduated from KSU and landed my first post-grad job as a Software Engineer at NetApp."
       },
       {
-        "organization": "Kansas State University - Computer Science",
+        "organization": "Kansas State University Computer Science",
         "title": "Undergraduate Teaching Assistant",
         "summary": "Assisted instructors with in-class activities, graded class assignments, and tutored underclassmen on programming in Python.",
         "startDate": "August 2017",

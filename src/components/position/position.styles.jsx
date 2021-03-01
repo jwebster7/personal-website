@@ -51,6 +51,7 @@ export const PositionDates = styled.p`
     margin-right: auto;
   }
 `;
+
 export const PositionTextContainer = styled.div`
   display: flex;
   flex-direction: column;

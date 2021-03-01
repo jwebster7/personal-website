@@ -1,48 +1,32 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
-import { sharedBodyFontStyles, sharedHeadingStyles } from "../shared.styles";
-
-const educationHeadingStyles = css`
-  ${sharedHeadingStyles}
-`;
+import { sharedBodyFontStyles, sharedHeadingStyles, sharedSectionHeadingStyles } from "../shared.styles";
 
 export const EducationContainer = styled.div`
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
-  /* align-items: center; */
-  /* width: 80%; */
-  display: grid;
-  // there's probably a better way to get this functionality
-  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
-  width: 100%;
-`;
-
-export const EducationHeading = styled.h1`
-  ${educationHeadingStyles}
-  /* font-size: 2.25rem; */
-  /* margin-top: 0; */
-`;
-
-export const EducationDate = styled.p`
-  ${educationHeadingStyles}
-  /* font-size: 1.75rem; */
-  /* font-weight: 600; */
-  margin-bottom: 0;
-`;
-
-export const EducationBlock = styled.div`
-  /* width: 50%; */
-`;
-
-export const EducationTextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: left;
+  align-items: center;
+  background-color: darkslategray;
+  /* background: linear-gradient(#121113, #121113, #4b385e, #4b385e, #4b385e); */
+  padding: 75px;
+  min-height: 100vh;
+  width: 100%;
+  /* width: 90%; */
 `;
 
-export const EducationText = styled.p`
+export const EducationTextContainer = styled.p`
   ${sharedBodyFontStyles}
-  text-align: left;
+`;
+
+export const EducationGrid = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* width: 90%; */
+`;
+
+export const EducationColumnHeading = styled.h3`
+  ${sharedSectionHeadingStyles}
 `;
