@@ -9,12 +9,12 @@
   },
   "education": [
     {
-      "institution": "Various Online Resources",
-      "major": "",
-      "degree": "",
+      "institution": "Various online resources",
+      "major": "Continuing education",
+      "degree": " ",
       "startDate": "May 2019",
       "endDate": "current",
-      "summary": "Since graduation, I've continued my education through various online resources including Udemy, Pluralsight, and more. My most recent experience was finishing a full-stack ReactJS + NodeJS developer course.",
+      "summary": "Since graduation, I've continued my education through various online resources including Udemy, Pluralsight, and more. My most recent experience was finishing a full-stack ReactJS + NodeJS developer course through Udemy.",
       "location": {
         "city": "",
         "state": ""
@@ -23,7 +23,7 @@
     {
       "institution": "Kansas State University",
       "major": "Computer Science",
-      "degree": "B.S.",
+      "degree": "BS in",
       "startDate": "January 2017",
       "endDate": "May 2019",
       "summary": "My education at KSU was very broad, challenging, and a lot of fun. The faculty and instructors were an integral in establishing a foundation I still rely on today.",
@@ -35,7 +35,7 @@
     {
       "institution": "Butler Community College",
       "major": "Mathematics",
-      "degree": "A.S.",
+      "degree": "AS in",
       "startDate": "August 2012",
       "endDate": "May 2016",
       "summary": "I attended Butler Community College on scholarship directly after high school. I tried my hand at a few different majors and eventually myself gravitating towards Mathematics.",
@@ -48,7 +48,7 @@
   "experience": {
     "jobs": [
       {
-        "organization": "NetApp SolidFire",
+        "organization": "NetApp - SolidFire",
         "title": "Software Engineer",
         "summary": "Software development, software testing, and project scoping on an HCI Deployment Engine.",
         "startDate": "June 2019",
@@ -57,10 +57,27 @@
           "city": "Wichita",
           "state": "KS"
         },
+        "technologies": [
+          "Python",
+          "TypeScript",
+          "Go",
+          "Flask",
+          "Pytest",
+          "Angular",
+          "Jasmine",
+          "Protractor",
+          "Git",
+          "Docker",
+          "Groovy",
+          "Jenkins", 
+          "Jira",
+          "REST",
+          "Agile Development"
+        ],
         "exitStatement": "My team was eliminated due to restructuring. While searching for my next position, I’ve learned React and the common libraries within it's ecosystem. I am eager to leverage my experience toward a challenging new role."
       },
       {
-        "organization": "Kansas State University iTAC",
+        "organization": "Kansas State University - iTAC",
         "title": "Lead of Development",
         "summary": "Software research and development, IT technical support, and new-hire training.",
         "startDate": "February 2017",
@@ -69,10 +86,18 @@
           "city": "Manhattan",
           "state": "KS"
         },
+        "technologies": [
+          "C#",
+          "JavaScript",
+          "SQL",
+          ".NET",
+          "Visual Studio",
+          "ServiceNow"
+        ],
         "exitStatement": "I graduated from KSU and landed my first post-grad job as a Software Engineer at NetApp."
       },
       {
-        "organization": "Kansas State University Computer Science",
+        "organization": "Kansas State University - Computer Science",
         "title": "Undergraduate Teaching Assistant",
         "summary": "Assisted instructors with in-class activities, graded class assignments, and tutored underclassmen on programming in Python.",
         "startDate": "August 2017",
@@ -81,37 +106,13 @@
           "city": "Manhattan",
           "state": "KS"
         },
+        "technologies": [
+          "Python3",
+          "HTML/CSS",
+          "Jupyter Notebook"
+        ],
         "exitStatement": " I left my position as a TA to accomodate the extra hours needed for my new position as Lead of Development at iTAC."
       }
-    ]
-  },
-  "skills": {
-    "languages": [
-      "JavaScript",
-      "Python",
-      "Golang",
-      "C#"
-    ],
-    "frameworks": [
-      "React",
-      "Angular",
-      "Vue",
-      "Express",
-      "Flask"
-    ],
-    "tools": [
-      "Docker",
-      "Git",
-      "Jenkins",
-      "AWS"
-    ],
-    "paradigms": [
-      "REST",
-      "Agile",
-      "Scrum",
-      "Data Structures",
-      "Algorithms",
-      "Database Design"
     ]
   },
   "social": {

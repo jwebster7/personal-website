@@ -10,7 +10,6 @@ const fadeIn = keyframes`
     opacity: 0;
   }
   100% {
-    visibility: visible;
     opacity: 1;
   }
 `;
@@ -20,28 +19,41 @@ const fadeOut = keyframes`
     opacity: 1;
   }
   100% {
-    visibility: hidden;
     opacity: 0;
   }
 `;
 
 const leftSlideIn = keyframes`
   from {
+    opacity: 0;
     transform: translateX(-300%);
   }
 
   to {
+    opacity: 1;
     transform: translateX(0%);
   }
 `;
 
 const rightSlideIn = keyframes`
   from {
+    opacity: 0;
     transform: translateX(300%);
   }
 
   to {
+    opacity: 1;
     transform: translateX(0%);
+  }
+`;
+
+const rightSlideOut = keyframes`
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(300%);
   }
 `;
 
@@ -66,15 +78,15 @@ const bottomSlideIn = keyframes`
 `;
 
 export const fadeInAnimation = css`
+  opacity: 0;
   animation: ${fadeIn} 1.25s ease-in-out 1.25s;
   animation-fill-mode: forwards;
-  visibility: hidden;
 `;
 
 export const fadeOutAnimation = css`
-  animation: ${fadeOut} 1.25s ease-in-out;
+  animation: ${fadeOut} 1.25s ease-in-out 1.25s;
   animation-fill-mode: backwards;
-  visibility: visible;
+  opacity: 0;
 `;
 
 export const leftSlideInAnimation = css`
@@ -82,8 +94,11 @@ export const leftSlideInAnimation = css`
 `;
 
 export const rightSlideInAnimation = css`
-  /* visibility: hidden; */
   animation: ${rightSlideIn} 1.25s ease-out;
+`;
+
+export const rightSlideOutAnimation = css`
+  animation: ${rightSlideOut} 1.25s ease-out;
 `;
 
 export const topSlideDownAnimation = css`

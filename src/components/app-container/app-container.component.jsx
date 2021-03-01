@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useInView } from "react-intersection-observer";
 import { ThemeProvider } from "styled-components";
 
@@ -8,8 +8,8 @@ import About from "../about/about.component";
 import Education from "../education/education.component";
 import Experience from "../experience/experience.component";
 import Footer from "../footer/footer.component";
-import Navigation from "../navigation/navigation.component";
 import Landing from "../landing/landing.component";
+import Navigation from "../navigation/navigation.component";
 
 import { Content, Layout } from "./app-container.styles";
 
@@ -25,17 +25,20 @@ const AppContainer = () => {
   const [educationRef, educationInView, educationEntry] = useInView(
     inViewConfig
   );
+  const [skillsRef, skillsInView, skillsEntry] = useInView(inViewConfig);
 
   const entries = {
     aboutEntry,
     experienceEntry,
-    educationEntry
+    educationEntry,
+    skillsEntry
   };
 
   const inViewTrackers = {
     aboutInView,
     experienceInView,
-    educationInView
+    educationInView,
+    skillsInView
   };
 
   const scrollToRef = (entry) => {

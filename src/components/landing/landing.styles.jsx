@@ -6,7 +6,7 @@
 // #fff5ee - font
 // darkslategray
 // #3d808b
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 import {
   fadeInAnimation,

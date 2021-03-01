@@ -25,13 +25,14 @@ const Institute = ({
   const startEndDate =
     !!startDate && !!endDate ? `${startDate} - ${endDate}` : "";
 
-  const degreeMajor = !!degree && !!major ? `${degree} in ${major}` : null;
+  const degreeMajor = !!degree && !!major ? `${degree} ${major}` : null;
+
   return (
     <InstituteContainer>
       <InstituteContentGrid>
         <InstituteContentBox>
-          <InstituteHeading>{institution}</InstituteHeading>
           <InstituteHeading>{degreeMajor}</InstituteHeading>
+          <InstituteHeading>{institution}</InstituteHeading>
         </InstituteContentBox>
 
         <InstituteContentBox>

@@ -1,16 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 import { sharedBodyFontStyles } from "../shared.styles";
-
-const profilePicTransition = keyframes`
-  from {
-    transform: translateX(-300%);
-  }
-
-  to {
-    transform: translateX(0%);
-  }
-`;
 
 export const AboutContainer = styled.div`
   display: flex;
@@ -39,10 +29,15 @@ export const AboutContentContainer = styled.div`
   }
 `;
 
-export const AboutTextContainer = styled.div``;
+export const AboutTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+`;
 
-export const AboutText = styled.p`
+export const AboutText = styled.span`
   ${sharedBodyFontStyles}
+  margin-bottom: 25px;
 `;
 
 export const ProfilePictureContainer = styled.div`

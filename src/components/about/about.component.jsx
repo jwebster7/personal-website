@@ -3,7 +3,7 @@ import React, { useEffect, useState, forwardRef } from "react";
 import StyledHeading from "../styled-heading/styled-heading.component";
 
 import profilePic from "../../assets/profile-pic-cropped.png";
-import staticData from "../../shared/mockData.json";
+import data from "../../shared/static.json";
 
 import {
   AboutContainer,
@@ -24,8 +24,8 @@ const About = forwardRef((props, ref) => {
   /* Read in static content here instead of API call. */
   useEffect(() => {
     setState({
-      title: staticData.about.title,
-      body: staticData.about.body,
+      title: data.about.title,
+      body: data.about.body,
       loading: false
     });
 

@@ -1,9 +1,6 @@
 import styled, { css } from "styled-components";
 
-import {
-  sharedBodyFontStyles,
-  rightSlideInAnimation,
-} from "../shared.styles";
+import { sharedBodyFontStyles, rightSlideInAnimation } from "../shared.styles";
 
 const sharedTextStyles = css`
   ${sharedBodyFontStyles}
@@ -25,7 +22,6 @@ export const NavigationContainer = styled.nav`
 
   border-radius: 0 0 0 75px;
   background: rgba(18, 17, 19, 0.6);
-  /* background: rgba(47, 79, 79, 0.6); */
   backdrop-filter: blur(5px);
 
   ${rightSlideInAnimation}
@@ -37,7 +33,23 @@ export const NavigationContainer = styled.nav`
   div:last-child {
     margin-right: 0;
   }
+
+  @media only screen and (max-width: 1300px) {
+    width: 100%;
+    border-radius: 0;
+  }
 `;
+
+// ${({ sectionInView }) => {
+//   const style = sectionInView
+//     ? css`
+//         ${fadeInAnimation}
+//       `
+//     : css`
+//         ${fadeOutAnimation}
+//       `;
+//   return style;
+// }};
 
 export const NavigationLinkContainer = styled.div`
   display: flex;
@@ -52,11 +64,11 @@ export const NavigationLinkContainer = styled.div`
     content: "";
     width: 0%;
     border-top: 3px solid #5b9999;
-    -o-transition: width 0.2s ease-in-out .1s;
-    -ms-transition: width 0.2s ease-in-out .1s;
-    -moz-transition: width 0.2s ease-in-out .1s;
-    -webkit-transition: width 0.2s ease-in-out .1s;
-    transition: width 0.2s ease-in-out .1s;
+    -o-transition: width 0.2s ease-in-out 0.1s;
+    -ms-transition: width 0.2s ease-in-out 0.1s;
+    -moz-transition: width 0.2s ease-in-out 0.1s;
+    -webkit-transition: width 0.2s ease-in-out 0.1s;
+    transition: width 0.2s ease-in-out 0.1s;
   }
 
   :hover {

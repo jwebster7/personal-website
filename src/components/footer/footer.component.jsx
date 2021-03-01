@@ -10,13 +10,13 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 
-import staticData from "../../shared/mockData.json";
+import data from "../../shared/static.json";
 
 import { FooterContainer, SocialIcon } from "./footer.styles";
 
 const Footer = () => {
-  const iconLinks = !!staticData.social.iconlinks
-    ? staticData.social.iconlinks
+  const iconLinks = !!data.social.iconlinks
+    ? data.social.iconlinks
     : {};
   return (
     <FooterContainer>

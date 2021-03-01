@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { sharedBodyFontStyles, sharedHeadingStyles, sharedSectionHeadingStyles } from "../shared.styles";
+import { sharedBodyFontStyles, sharedSectionHeadingStyles } from "../shared.styles";
 
 export const EducationContainer = styled.div`
   display: flex;
@@ -15,7 +15,7 @@ export const EducationContainer = styled.div`
   /* width: 90%; */
 `;
 
-export const EducationTextContainer = styled.p`
+export const EducationTextContainer = styled.span`
   ${sharedBodyFontStyles}
 `;
 

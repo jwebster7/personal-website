@@ -38,6 +38,11 @@ export const FooterContainer = styled.div`
   * {
     font-size: 1.75rem;
   }
+
+  @media only screen and (max-width: 1300px) {
+    width: 100%;
+    border-radius: 0;
+  }
 `;
 
 export const SocialIcon = styled.a`

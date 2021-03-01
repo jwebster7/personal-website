@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
-import {
-  sharedBodyFontStyles,
-  sharedHeadingStyles,
-  sharedSectionHeadingStyles
-} from "../shared.styles";
+import { sharedSectionHeadingStyles } from "../shared.styles";
 
 export const ExperienceContainer = styled.div`
   display: flex;
@@ -25,10 +21,6 @@ export const ExperienceContainer = styled.div`
 //     width: 100%;
 //   }
 // `;
-
-export const ExperienceTextContainer = styled.p`
-  ${sharedBodyFontStyles}
-`;
 
 export const ExperienceGrid = styled.div`
   display: flex;

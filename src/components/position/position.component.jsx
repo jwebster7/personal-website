@@ -8,7 +8,6 @@ import {
   PositionText
 } from "./position.styles";
 
-// TODO: redo this and the styling a bit to be responsive
 const Position = ({
   organization,
   title,
@@ -16,6 +15,7 @@ const Position = ({
   endDate,
   summary,
   location,
+  technologies,
   exitStatement
 }) => {
   const cityState =
@@ -24,6 +24,8 @@ const Position = ({
       : "";
   const startEndDate =
     !!startDate && !!endDate ? `${startDate} - ${endDate}` : "";
+  const technologyString = !!technologies ? technologies.join(", ") : "";
+
   return (
     <PositionContainer>
       <PositionContentGrid>
@@ -36,7 +38,10 @@ const Position = ({
           <PositionDates>{cityState}</PositionDates>
         </PositionContentBox>
       </PositionContentGrid>
-      <PositionText>{summary}</PositionText>
+      <PositionContentBox>
+        <PositionText>{summary}</PositionText>
+        <PositionText>{`Technologies: ${technologyString}`}</PositionText>
+      </PositionContentBox>
     </PositionContainer>
   );
 };

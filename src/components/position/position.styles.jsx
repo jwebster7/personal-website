@@ -21,7 +21,7 @@ const positionSubHeadingStyles = css`
 export const PositionContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 0 30px 0;
+  margin: 0 0 50px 0;
 `;
 
 export const PositionContentGrid = styled.div`
@@ -43,7 +43,7 @@ export const PositionHeading = styled.h1`
   /* margin-right: auto; */
 `;
 
-export const PositionDates = styled.p`
+export const PositionDates = styled.span`
   ${positionSubHeadingStyles}
   margin-left: auto;
   @media only screen and (max-width: 1300px) {
@@ -59,7 +59,8 @@ export const PositionTextContainer = styled.div`
   align-items: left;
 `;
 
-export const PositionText = styled.p`
+export const PositionText = styled.span`
   ${positionBodyFontStyles}
   text-align: left;
+  margin-top: 25px;
 `;

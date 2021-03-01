@@ -14,10 +14,10 @@ import Position from "../position/position.component";
 import StyledHeading from "../styled-heading/styled-heading.component";
 import { ExperienceContainer, ExperienceGrid } from "./experience.styles";
 
-import staticData from "../../shared/mockData.json";
+import data from "../../shared/static.json";
 
 const Experience = forwardRef((props, ref) => {
-  const jobData = staticData?.experience?.jobs;
+  const jobData = data?.experience?.jobs;
   const jobPath = jobData.map((position, index) => {
     return (
       <Position
@@ -28,6 +28,7 @@ const Experience = forwardRef((props, ref) => {
         endDate={position?.endDate}
         summary={position?.summary}
         location={position?.location}
+        technologies={position?.technologies}
         exitStatement={position?.exitStatement}
       />
     );

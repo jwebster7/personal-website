@@ -10,14 +10,19 @@ import {
 const Navigation = ({
   scrollTo,
   aboutEntry,
+  contactEntry,
   experienceEntry,
   educationEntry,
+  skillsEntry,
   aboutInView,
+  contactInView,
   experienceInView,
-  educationInView
+  educationInView,
+  skillsInView
 }) => {
+  const sectionInView = aboutInView || educationInView || experienceInView || skillsInView;
   return (
-    <NavigationContainer>
+    <NavigationContainer sectionInView={sectionInView}>
       <NavigationLinkContainer
         onClick={() => scrollTo(aboutEntry)}
         inView={aboutInView}
@@ -36,11 +41,11 @@ const Navigation = ({
       >
         Education
       </NavigationLinkContainer>
-      <NavigationLinkContainer>
+      <NavigationLinkContainer
+        onClick={() => scrollTo(skillsEntry)}
+        inView={skillsInView}
+      >
         Skills
-      </NavigationLinkContainer>
-      <NavigationLinkContainer exact to="/contact">
-        Contact
       </NavigationLinkContainer>
     </NavigationContainer>
   );

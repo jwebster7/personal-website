@@ -21,7 +21,7 @@ const instituteSubHeadingStyles = css`
 export const InstituteContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 0 30px 0;
+  margin: 0 0 50px 0;
 `;
 
 export const InstituteContentGrid = styled.div`
@@ -38,11 +38,10 @@ export const InstituteContentBox = styled.div`
 `;
 
 export const InstituteHeading = styled.h1`
-  ${instituteHeadingStyles}/* font-size: 2.25rem; */
-  /* margin-top: 0; */
+  ${instituteHeadingStyles}
 `;
 
-export const InstituteDates = styled.p`
+export const InstituteDates = styled.div`
   ${instituteSubHeadingStyles}
   margin-left: auto;
   @media only screen and (max-width: 1300px) {
@@ -58,52 +57,8 @@ export const InstituteTextContainer = styled.div`
   align-items: left;
 `;
 
-export const InstituteText = styled.p`
+export const InstituteText = styled.span`
   ${instituteBodyFontStyles}
   text-align: left;
+  margin-top: 25px;
 `;
-
-// const InstituteHeadingStyles = css`
-//   ${sharedHeadingStyles}
-// `;
-
-// export const InstituteContainer = styled.div`
-//   /* display: flex;
-//   flex-direction: row;
-//   justify-content: space-between; */
-//   /* align-items: center; */
-//   /* width: 80%; */
-//   display: grid;
-//   // there's probably a better way to get this functionality
-//   grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
-//   width: 100%;
-// `;
-
-// export const InstituteHeading = styled.h1`
-//   ${InstituteHeadingStyles}
-//   /* font-size: 2.25rem; */
-//   /* margin-top: 0; */
-// `;
-
-// export const InstituteDate = styled.p`
-//   ${InstituteHeadingStyles}
-//   /* font-size: 1.75rem; */
-//   /* font-weight: 600; */
-//   margin-bottom: 0;
-// `;
-
-// export const InstituteBlock = styled.div`
-//   /* width: 50%; */
-// `;
-
-// export const InstituteTextContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   align-items: left;
-// `;
-
-// export const InstituteText = styled.p`
-//   ${sharedBodyFontStyles}
-//   text-align: left;
-// `;
