@@ -57,18 +57,18 @@ export const NavigationLinkContainer = styled.div`
   align-items: center;
   ${sharedTextStyles}
   text-decoration: none;
-  transition: all 0.3s linear 0.2s;
+  transition: all 0.15s linear .15s;
   font-weight: 600;
 
   :after {
     content: "";
     width: 0%;
     border-top: 3px solid #5b9999;
-    -o-transition: width 0.2s ease-in-out 0.1s;
-    -ms-transition: width 0.2s ease-in-out 0.1s;
-    -moz-transition: width 0.2s ease-in-out 0.1s;
-    -webkit-transition: width 0.2s ease-in-out 0.1s;
-    transition: width 0.2s ease-in-out 0.1s;
+    /* -o-transition: width 0.15s linear .15s;
+    -ms-transition: width 0.15s linear .15s;
+    -moz-transition: width 0.15s linear .15s;
+    -webkit-transition: width 0.15s linear .15s; */
+    transition: width 0.15s linear .15s;
   }
 
   :hover {

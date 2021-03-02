@@ -6,21 +6,25 @@ import {
 } from "./navigation.styles";
 
 // TODO: add in a brand icon to the left of the nav container
-
 const Navigation = ({
   scrollTo,
   aboutEntry,
-  contactEntry,
   experienceEntry,
   educationEntry,
+  projectsEntry,
   skillsEntry,
   aboutInView,
-  contactInView,
   experienceInView,
   educationInView,
+  projectsInView,
   skillsInView
 }) => {
-  const sectionInView = aboutInView || educationInView || experienceInView || skillsInView;
+  const sectionInView =
+    aboutInView ||
+    educationInView ||
+    experienceInView ||
+    projectsInView ||
+    skillsInView;
   return (
     <NavigationContainer sectionInView={sectionInView}>
       <NavigationLinkContainer
@@ -40,6 +44,12 @@ const Navigation = ({
         inView={educationInView}
       >
         Education
+      </NavigationLinkContainer>
+      <NavigationLinkContainer
+        onClick={() => scrollTo(projectsEntry)}
+        inView={projectsInView}
+      >
+        Projects
       </NavigationLinkContainer>
       <NavigationLinkContainer
         onClick={() => scrollTo(skillsEntry)}

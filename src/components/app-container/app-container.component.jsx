@@ -14,7 +14,8 @@ import Navigation from "../navigation/navigation.component";
 import { Content, Layout } from "./app-container.styles";
 
 const inViewConfig = {
-  threshold: 0.76
+  threshold: 0.65,
+  delay: 150
 };
 
 const AppContainer = () => {

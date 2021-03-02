@@ -12,7 +12,7 @@ export const StyledHeadingContainer = styled.div`
   flex-direction: row;
   width: 100%;
   align-items: center;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 `;
 
 export const StyledHeadingText = styled.h1`
