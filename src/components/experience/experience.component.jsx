@@ -1,15 +1,5 @@
 import React, { forwardRef } from "react";
 
-// import {
-//   faChalkboardTeacher,
-//   faCodeBranch,
-//   faLaptopCode,
-//   faLaptopHouse,
-//   faSave,
-//   faSchool,
-//   faUniversity
-// } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Position from "../position/position.component";
 import StyledHeading from "../styled-heading/styled-heading.component";
 import { ExperienceContainer, ExperienceGrid } from "./experience.styles";
@@ -37,9 +27,7 @@ const Experience = forwardRef((props, ref) => {
   return (
     <ExperienceContainer ref={ref}>
       <StyledHeading heading={"Experience"} />
-      {/* <ExperienceContent> */}
-        <ExperienceGrid>{jobPath}</ExperienceGrid>
-      {/* </ExperienceContent> */}
+      <ExperienceGrid>{jobPath}</ExperienceGrid>
     </ExperienceContainer>
   );
 });

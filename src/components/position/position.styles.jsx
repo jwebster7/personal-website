@@ -22,31 +22,36 @@ export const PositionContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 0 50px 0;
+  width: 100%;
 `;
 
 export const PositionContentGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(575px, 1fr));
-  @media (max-width: 1300px) {
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  @media (max-width: 1100px) {
+    flex-direction: column;
   }
 `;
 
 export const PositionContentBox = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
 `;
 
 export const PositionHeading = styled.h1`
   ${positionHeadingStyles}
-  /* margin-right: auto; */
+  white-space: nowrap;
 `;
 
 export const PositionDates = styled.span`
   ${positionSubHeadingStyles}
   margin-left: auto;
-  @media only screen and (max-width: 1300px) {
+  /* white-space: nowrap; */
+  @media only screen and (max-width: 1100px) {
     margin-left: 0;
     margin-right: auto;
   }
@@ -62,5 +67,4 @@ export const PositionTextContainer = styled.div`
 export const PositionText = styled.span`
   ${positionBodyFontStyles}
   text-align: left;
-  margin-top: 25px;
 `;

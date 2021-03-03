@@ -39,7 +39,7 @@ export const FooterContainer = styled.div`
     font-size: 1.75rem;
   }
 
-  @media only screen and (max-width: 1300px) {
+  @media only screen and (max-width: 1100px) {
     width: 100%;
     border-radius: 0;
   }
@@ -50,8 +50,8 @@ export const SocialIcon = styled.a`
     color: #fff5ee;
     text-decoration: none;
     /* transition: color 0.3s ease-in-out; */
-    transition: color 0.3s ease-in-out 0.1s;
-    transition: transform .2s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    transition: transform .3s ease-in-out;
     font-weight: 600;
 
     :hover {

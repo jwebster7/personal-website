@@ -11,7 +11,6 @@ const Landing = () => {
     <LandingContainer>
       <LandingNameHeading>Joseph Webster</LandingNameHeading>
       <LandingHorizontalLine />
-      {/* <LandingTitleHeading>{"{ Software Developer }"} </LandingTitleHeading> */}
       <LandingTitleHeading>Software Developer</LandingTitleHeading>
     </LandingContainer>
   );

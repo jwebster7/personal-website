@@ -109,33 +109,55 @@ export const bottomSlideUpAnimation = css`
   animation: ${bottomSlideIn} 1.25s ease-out;
 `;
 
+export const sharedSectionContainerStyles = css`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 75px;
+  min-height: 100vh;
+  width: 100%;
+  
+`;
+
 export const sharedSectionHeadingStyles = css`
-  font-size: 3rem;
-  margin: 0 50px;
+  font-size: 2.25rem;
+  margin: 0 calc(30px - .75rem) 0 30px;
+  letter-spacing: .75rem;
 `;
 
 export const sharedHeadingStyles = css`
-  /* font-size: 3rem; */
-  font-size: 1.75rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
   color: #fff5ee;
-  letter-spacing: 0.25rem;
-  margin: 0;
+  letter-spacing: 0.15rem;
+  margin: 0.25rem 0;
 `;
 
 export const sharedSubheadingStyles = css`
-  font-size: 1.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
   color: #fff5ee;
-  letter-spacing: 0.25rem;
-  margin: 0;
+  letter-spacing: 0.15rem;
+  margin: 0.25rem 0;
 `;
 
 export const sharedBodyFontStyles = css`
+  margin-top: 25px;
+  /* font-family: "Roboto Mono", serif; */
+  font-family: "Ubuntu Mono", monospace;
   font-size: 1.5rem;
-  font-family: "Roboto Mono", serif;
+  font-weight: 400;
   color: #fff5ee;
   text-align: left;
+  letter-spacing: 0.05rem;
+
+  @media only screen and (max-width: 1100px) {
+    /* text-align: justify; */
+  }
 `;
 
 export const sharedHorizontalLineStyles = css`

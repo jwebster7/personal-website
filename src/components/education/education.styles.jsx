@@ -1,18 +1,15 @@
 import styled from "styled-components";
 
-import { sharedBodyFontStyles, sharedSectionHeadingStyles } from "../shared.styles";
+import {
+  sharedBodyFontStyles,
+  sharedSectionContainerStyles,
+  sharedSectionHeadingStyles
+} from "../shared.styles";
 
 export const EducationContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: darkslategray;
-  /* background: linear-gradient(#121113, #121113, #4b385e, #4b385e, #4b385e); */
-  padding: 75px;
-  min-height: 100vh;
-  width: 100%;
-  /* width: 90%; */
+  /* background-color: darkslategray; */
+  background-color: #121113;
+  ${sharedSectionContainerStyles}
 `;
 
 export const EducationTextContainer = styled.span`
@@ -22,9 +19,9 @@ export const EducationTextContainer = styled.span`
 export const EducationGrid = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  /* width: 90%; */
+  flex-grow: 1;
+  justify-content: space-evenly;
+  width: 80%;
 `;
 
 export const EducationColumnHeading = styled.h3`

@@ -25,9 +25,13 @@ export const InstituteContainer = styled.div`
 `;
 
 export const InstituteContentGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(575px, 1fr));
-  @media (max-width: 1300px) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  @media (max-width: 1100px) {
+    flex-direction: column;
   }
 `;
 
@@ -44,7 +48,7 @@ export const InstituteHeading = styled.h1`
 export const InstituteDates = styled.div`
   ${instituteSubHeadingStyles}
   margin-left: auto;
-  @media only screen and (max-width: 1300px) {
+  @media only screen and (max-width: 1100px) {
     margin-left: 0;
     margin-right: auto;
   }
@@ -60,5 +64,5 @@ export const InstituteTextContainer = styled.div`
 export const InstituteText = styled.span`
   ${instituteBodyFontStyles}
   text-align: left;
-  margin-top: 25px;
+  margin-top: 30px;
 `;

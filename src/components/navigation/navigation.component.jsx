@@ -12,7 +12,6 @@ const Navigation = ({
   experienceEntry,
   educationEntry,
   projectsEntry,
-  skillsEntry,
   aboutInView,
   experienceInView,
   educationInView,
@@ -40,22 +39,16 @@ const Navigation = ({
         Experience
       </NavigationLinkContainer>
       <NavigationLinkContainer
-        onClick={() => scrollTo(educationEntry)}
-        inView={educationInView}
-      >
-        Education
-      </NavigationLinkContainer>
-      <NavigationLinkContainer
         onClick={() => scrollTo(projectsEntry)}
         inView={projectsInView}
       >
         Projects
       </NavigationLinkContainer>
       <NavigationLinkContainer
-        onClick={() => scrollTo(skillsEntry)}
-        inView={skillsInView}
+        onClick={() => scrollTo(educationEntry)}
+        inView={educationInView}
       >
-        Skills
+        Education
       </NavigationLinkContainer>
     </NavigationContainer>
   );
