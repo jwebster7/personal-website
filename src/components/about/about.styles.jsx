@@ -19,11 +19,15 @@ export const AboutContentContainer = styled.div`
   align-items: center;
   margin-top: 30px;
 
-  width: 80%;
+  width: 90%;
 
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1300px) {
     flex-direction: column-reverse;
     margin-top: 0;
+    width: 95%;
+  }
+
+  @media only screen and (max-width: 1100px) {
     width: 100%;
   }
 `;
@@ -35,9 +39,9 @@ export const AboutContentContainer = styled.div`
 export const AboutTextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 60%;
+  /* width: 60%; */
 
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1300px) {
     width: 100%;
   }
 `;
@@ -52,7 +56,7 @@ export const AboutSkillContainer = styled.div`
   grid-gap: 12.5px 25px;
   /* grid-template-rows: 50px 50px 50px; */
   justify-items: left;
-  margin: 25px 0 0 50px;
+  margin: 25px 0 0 25px;
 `;
 
 export const AboutSkill = styled.li`
@@ -62,30 +66,35 @@ export const AboutSkill = styled.li`
 `;
 
 export const ProfilePictureContainer = styled.div`
-  max-width: 450px;
+  max-width: 415px;
   max-height: 450px;
   margin: 0 0 0 75px;
   padding: 0;
-  border-radius: 100%;
+  border-radius: 33px;
   border: 0;
-  overflow: hidden;
-  @media only screen and (max-width: 1100px) {
+  /* overflow: hidden; */
+  @media only screen and (max-width: 1300px) {
     margin: 0 0 50px 0;
   }
 `;
 
 export const ProfilePicture = styled.img`
-  height: 100%;
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 415px;
+  height: 450px;
+  border: 0 transparent;
+  border-radius: 100%;
   background-color: #121113;
+  background-position: center;
 `;
 
 export const AboutLinkedInLink = styled.a`
   text-decoration: none;
   color: #fff5ee;
   transition: color 0.3s ease-in-out;
+
   :hover {
-    /* color: #5b9999; */
     color: #121113;
   }
 `;

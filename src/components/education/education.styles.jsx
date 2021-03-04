@@ -12,16 +12,24 @@ export const EducationContainer = styled.div`
   ${sharedSectionContainerStyles}
 `;
 
-export const EducationTextContainer = styled.span`
-  ${sharedBodyFontStyles}
-`;
-
-export const EducationGrid = styled.div`
+export const EducationContent = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-evenly;
-  width: 80%;
+  width: 90%;
+
+  @media only screen and (max-width: 1300px) {
+    width: 95%;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    width: 100%;
+  }
+`;
+
+export const EducationTextContainer = styled.span`
+  ${sharedBodyFontStyles}
 `;
 
 export const EducationColumnHeading = styled.h3`

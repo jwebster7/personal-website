@@ -11,12 +11,20 @@ export const ExperienceContainer = styled.div`
   ${sharedSectionContainerStyles}
 `;
 
-export const ExperienceGrid = styled.div`
+export const ExperienceContent = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-evenly;
-  width: 80%;
+  width: 90%;
+
+  @media only screen and (max-width: 1300px) {
+    width: 95%;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    width: 100%;
+  }
 `;
 
 export const ExperienceSectionTitle = styled.h1`

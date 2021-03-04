@@ -34,6 +34,10 @@ export const NavigationContainer = styled.nav`
     margin-right: 0;
   }
 
+  @media only screen and (max-width: 1300px) {
+    height: 75px;
+  }
+
   @media only screen and (max-width: 1100px) {
     width: 100%;
     border-radius: 0;

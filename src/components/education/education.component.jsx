@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 
 import Institute from "../institute/institute.component";
 import StyledHeading from "../styled-heading/styled-heading.component";
-import { EducationContainer, EducationGrid } from "./education.styles";
+import { EducationContainer, EducationContent } from "./education.styles";
 
 import data from "../../shared/static.json";
 
@@ -26,7 +26,7 @@ const Education = forwardRef((props, ref) => {
   return (
     <EducationContainer ref={ref}>
       <StyledHeading heading={"Education"} />
-      <EducationGrid>{educationPath}</EducationGrid>
+      <EducationContent>{educationPath}</EducationContent>
     </EducationContainer>
   );
 });

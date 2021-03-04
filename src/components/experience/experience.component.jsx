@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 
 import Position from "../position/position.component";
 import StyledHeading from "../styled-heading/styled-heading.component";
-import { ExperienceContainer, ExperienceGrid } from "./experience.styles";
+import { ExperienceContainer, ExperienceContent } from "./experience.styles";
 
 import data from "../../shared/static.json";
 
@@ -27,7 +27,7 @@ const Experience = forwardRef((props, ref) => {
   return (
     <ExperienceContainer ref={ref}>
       <StyledHeading heading={"Experience"} />
-      <ExperienceGrid>{jobPath}</ExperienceGrid>
+      <ExperienceContent>{jobPath}</ExperienceContent>
     </ExperienceContainer>
   );
 });

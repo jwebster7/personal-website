@@ -8,10 +8,11 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const ProjectsGrid = styled.div`
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
-  grid-gap: 75px 100px;
-  width: 80%;
-  margin: 25px 0;
+  display: flex;
+  /* flex-grow flex-shrink flex-basis */
+  flex: 1 1 auto;
+  /* flex-direction flex-wrap */
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
 `;

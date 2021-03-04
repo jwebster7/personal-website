@@ -9,13 +9,18 @@ import {
 export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   border-radius: 2em;
   /* border: 2.5px dotted #fff5ee; */
   background-color: #121113;
-  /* min-height: 600px; */
+  margin: 50px;
+  height: 600px;
   width: 550px;
   overflow: hidden;
+
+  @media only screen and (max-width: 1300px) {
+    margin: 0 50px 50px 50px;
+  }
 `;
 
 export const ProjectLinkedImageContainer = styled.a`
@@ -80,7 +85,8 @@ export const ProjectLinkContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  margin-top: 50px;
+  padding-top: 25px;
+  margin-top: auto;
 `;
 
 export const ProjectLink = styled.a`
@@ -99,6 +105,4 @@ export const ProjectRepository = styled.a`
 
 export const ProjectText = styled.span`
   ${sharedBodyFontStyles}
-  text-align: justify;
-
 `;

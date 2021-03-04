@@ -39,6 +39,10 @@ export const FooterContainer = styled.div`
     font-size: 1.75rem;
   }
 
+  @media only screen and (max-width: 1300px) {
+    height: 75px;
+  }
+
   @media only screen and (max-width: 1100px) {
     width: 100%;
     border-radius: 0;

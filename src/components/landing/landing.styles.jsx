@@ -22,25 +22,25 @@ export const LandingContainer = styled.div`
 
 export const LandingNameHeading = styled.h1`
   ${sharedHeadingStyles}
+  margin: 12.5px 0;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  margin: 25px 0;
   font-size: 5rem;
+  font-weight: 400;
   ${topSlideDownAnimation}
 `;
 
 export const LandingHorizontalLine = styled.div`
   ${sharedHorizontalLineStyles}
-  width: 675px;
+  width: 650px;
+  /* width: 42em; */
   ${rightSlideInAnimation}
 `;
 
 export const LandingTitleHeading = styled.h1`
   ${sharedHeadingStyles}
+  margin: 12.5px 0;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  /* font-size: 3.5rem; use this if using brackets */
   font-size: 4rem;
-  margin: 25px 0;
+  font-weight: 400;
   ${fadeInAnimation}
 `;
