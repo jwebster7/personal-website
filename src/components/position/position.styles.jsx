@@ -24,7 +24,7 @@ export const PositionContainer = styled.div`
   margin: 0 0 50px 0;
   width: 100%;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     margin: 0 0 25px 0;
   }
 `;

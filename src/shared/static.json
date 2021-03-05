@@ -58,7 +58,8 @@
       {
         "organization": "NetApp | SolidFire",
         "title": "Software Engineer",
-        "summary": "Software development, software testing, and project scoping on an HCI Deployment Engine.",
+        "summary": "After graduation, I accepted an offer for a position at NetApp. We primarily worked with a stack consisting of Python and TypeScript, but also had opportunity to use Go and other technologies. Working in a fast-paced agile environment, I was able to consistently deliver commitments and improve overall team efficiency.",
+        "responsibilities": "Software development, software testing, and project scoping on an HCI Deployment Engine.",
         "startDate": "June 2019",
         "endDate": "October 2020",
         "location": {
@@ -87,7 +88,8 @@
       {
         "organization": "Kansas State University | iTAC",
         "title": "Lead of Development",
-        "summary": "Software research and development, IT technical support, and new-hire training.",
+        "summary": "Also during my time at K-State, I worked in the Information Technology Assistance Center as an IT Consultant. I also lead a small team of three developers to build new tools to replace antiquated tools and technologies. During my senior year, I moved onto the research and development of expanding our Virtual Agent by scripting custom decision trees to provide automated support to K-State students, faculty, and staff. This was a great experience because it allowed me to grow as a developer while assisting those around me.",
+        "responsibilities": "Software research and development, IT technical support, and new-hire training.",
         "startDate": "February 2017",
         "endDate": "May 2019",
         "location": {
@@ -96,10 +98,10 @@
         },
         "technologies": [
           "C#",
-          "JavaScript",
-          "SQL",
           ".NET",
           "Visual Studio",
+          "JavaScript",
+          "SQL",
           "ServiceNow"
         ],
         "exitStatement": "I graduated from KSU and landed my first post-grad job as a Software Engineer at NetApp."
@@ -107,7 +109,8 @@
       {
         "organization": "Kansas State University | Computer Science",
         "title": "Undergraduate Teaching Assistant",
-        "summary": "Assisted instructors with in-class activities, graded class assignments, and tutored students on the fundamentals of programming using Python.",
+        "summary": "While attending K-State, I had the opportunity to work as an Undergraduate Teaching Assistant in the Department of Computer Science. This was an incredibly rewarding experience because I was able to help students grow in their understanding of Computer Science.",
+        "responsibilities": "Assisted instructors with in-class activities, graded class assignments, and tutored students on the fundamentals of programming using Python.",
         "startDate": "August 2017",
         "endDate": "December 2018",
         "location": {

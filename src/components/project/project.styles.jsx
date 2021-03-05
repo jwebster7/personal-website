@@ -13,15 +13,16 @@ export const ProjectContainer = styled.div`
   background-color: #121113;
   margin: 50px;
   height: 600px;
-  width: 500px;
+  width: 600px;
   overflow: hidden;
 
   /* @media only screen and (max-width: 1300px) {
     margin: 0 0 50px 0;
   } */
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     height: 400px;
+    min-width: 300px;
     /* width: 400px; */
     width: 100%;
   }
@@ -63,7 +64,7 @@ export const ProjectTitle = styled.h1`
   transition: color 0.3s ease-in-out;
   font-weight: 600;
   margin-right: 25px;
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     margin-right: 12.5px;
     white-space: nowrap;
   }
@@ -87,7 +88,7 @@ export const ProjectTextContainer = styled.div`
   flex-grow: 1;
   padding: 40px;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     padding: 20px;
   }
 `;

@@ -13,6 +13,7 @@ const Position = ({
   title,
   startDate,
   endDate,
+  responsibilities,
   summary,
   location,
   technologies,
@@ -25,6 +26,7 @@ const Position = ({
   const startEndDate =
     !!startDate && !!endDate ? `${startDate} - ${endDate}` : "";
   const technologyString = !!technologies ? technologies.join(", ") : "";
+  const jobDuties = !!responsibilities ? responsibilities : "";
 
   return (
     <PositionContainer>
@@ -39,7 +41,8 @@ const Position = ({
         </PositionContentBox>
       </PositionContentGrid>
       <PositionContentBox>
-        <PositionText>{summary}</PositionText>
+        <PositionText>{`${summary}`}</PositionText>
+        <PositionText>{`Responsibilities: ${jobDuties}`}</PositionText>
         <PositionText>{`Technologies: ${technologyString}`}</PositionText>
       </PositionContentBox>
     </PositionContainer>

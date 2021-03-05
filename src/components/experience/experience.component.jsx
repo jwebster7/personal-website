@@ -9,17 +9,29 @@ import data from "../../shared/static.json";
 const Experience = forwardRef((props, ref) => {
   const jobData = data?.experience?.jobs;
   const jobPath = jobData.map((position, index) => {
+    const {
+      organization,
+      title,
+      startDate,
+      endDate,
+      responsibilities,
+      summary,
+      location,
+      technologies,
+      exitStatement
+    } = position;
     return (
       <Position
         key={index}
-        organization={position?.organization}
-        title={position?.title}
-        startDate={position?.startDate}
-        endDate={position?.endDate}
-        summary={position?.summary}
-        location={position?.location}
-        technologies={position?.technologies}
-        exitStatement={position?.exitStatement}
+        organization={organization}
+        title={title}
+        startDate={startDate}
+        endDate={endDate}
+        responsibilities={responsibilities}
+        summary={summary}
+        location={location}
+        technologies={technologies}
+        exitStatement={exitStatement}
       />
     );
   });

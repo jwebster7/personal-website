@@ -18,7 +18,7 @@ export const LandingContainer = styled.div`
   min-height: 100vh;
   width: 100%;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 750px) {
     display: none;
   }
 `;

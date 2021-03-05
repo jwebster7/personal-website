@@ -48,7 +48,7 @@ export const FooterContainer = styled.div`
     border-radius: 0;
   }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     height: 50px;
     padding: 0 25px;
   }
@@ -68,7 +68,7 @@ export const SocialIcon = styled.a`
       transform: scale(1.25);
     }
 
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 600px) {
       font-size: 1rem;
     }
   }

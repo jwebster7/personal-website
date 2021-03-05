@@ -119,7 +119,7 @@ export const sharedSectionContainerStyles = css`
   min-height: 100vh;
   width: 100%;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     padding: 50px 25px;
     min-height: 0;
   }
@@ -129,7 +129,7 @@ export const sharedSectionHeadingStyles = css`
   font-size: 2.25rem;
   margin: 0 calc(30px - 0.75rem) 0 30px;
   letter-spacing: 0.75rem;
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     margin: 0 12.5px;
     font-size: 1.75rem;
     text-align: center;
@@ -143,7 +143,7 @@ export const sharedHeadingStyles = css`
   color: #fff5ee;
   letter-spacing: 0.15rem;
   margin: 0.25rem 0;
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     font-size: 1rem;
     letter-spacing: normal;
     white-space: normal;
@@ -158,7 +158,7 @@ export const sharedSubheadingStyles = css`
   letter-spacing: 0.15rem;
   margin: 0.25rem 0;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     font-size: .8rem;
     letter-spacing: normal;
     white-space: normal;
@@ -175,7 +175,7 @@ export const sharedBodyFontStyles = css`
   text-align: left;
   letter-spacing: 0.05rem;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     margin-top: 12.5px;
     font-size: 1rem;
     letter-spacing: normal;
@@ -189,7 +189,7 @@ export const sharedHorizontalLineStyles = css`
   opacity: 0.7;
   border-top: 5px solid #fff5ee;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
   }
 `;
 

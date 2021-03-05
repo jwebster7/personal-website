@@ -39,7 +39,7 @@ export const NavigationContainer = styled.nav`
     border-radius: 0;
   }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     /* background: none;
     backdrop-filter: none; */
     height: 50px;
@@ -95,7 +95,7 @@ export const NavigationLinkContainer = styled.div`
     return style;
   }};
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     height: 50px;
     margin: 0 12.5px 0 0;
   }

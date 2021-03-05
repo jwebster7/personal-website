@@ -49,15 +49,14 @@ export const AboutText = styled.span`
   ${sharedBodyFontStyles}
 `;
 
-export const AboutSkillContainer = styled.div`
+export const AboutSkillContainer = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 12.5px 25px;
-  /* grid-template-rows: 50px 50px 50px; */
   justify-items: left;
   margin: 25px 0 0 25px;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     grid-gap: 0;
     margin: 0 0 0 12.5px;
   }
@@ -98,7 +97,7 @@ export const ProfilePicture = styled.img`
     max-width: 310px;
   }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     max-height: 300px;
     max-width: 275px;
   }

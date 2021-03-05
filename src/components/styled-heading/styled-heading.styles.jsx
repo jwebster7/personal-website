@@ -13,7 +13,7 @@ export const StyledHeadingContainer = styled.div`
   align-items: center;
   margin-bottom: 50px;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     margin-bottom: 25px;
     font-size: 1.75rem;
     text-align: center;
