@@ -27,23 +27,20 @@ const AppContainer = () => {
   const [educationRef, educationInView, educationEntry] = useInView(
     inViewConfig
   );
-  const [skillsRef, skillsInView, skillsEntry] = useInView(inViewConfig);
   const [projectsRef, projectsInView, projectsEntry] = useInView(inViewConfig);
 
   const entries = {
     aboutEntry,
     experienceEntry,
     educationEntry,
-    projectsEntry,
-    skillsEntry
+    projectsEntry
   };
 
   const inViewTrackers = {
     aboutInView,
     experienceInView,
     educationInView,
-    projectsInView,
-    skillsInView
+    projectsInView
   };
 
   const scrollToRef = (entry) => {

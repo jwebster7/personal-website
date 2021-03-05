@@ -6,19 +6,22 @@ import {
   sharedSectionHeadingStyles
 } from "../shared.styles";
 
-
 export const StyledHeadingContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
   align-items: center;
   margin-bottom: 50px;
+
+  @media only screen and (max-width: 500px) {
+    margin-bottom: 25px;
+    font-size: 1.75rem;
+    text-align: center;
+  }
 `;
 
 export const StyledHeadingText = styled.h1`
   ${sharedHeadingStyles}
-  /* font-size: 3.5rem;
-  margin: 0 50px; */
   ${sharedSectionHeadingStyles}
 `;
 

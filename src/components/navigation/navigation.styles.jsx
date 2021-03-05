@@ -26,10 +26,6 @@ export const NavigationContainer = styled.nav`
 
   ${rightSlideInAnimation}
 
-  div {
-    margin: 0 50px 0 0;
-  }
-
   div:last-child {
     margin-right: 0;
   }
@@ -41,6 +37,13 @@ export const NavigationContainer = styled.nav`
   @media only screen and (max-width: 1100px) {
     width: 100%;
     border-radius: 0;
+  }
+
+  @media only screen and (max-width: 500px) {
+    /* background: none;
+    backdrop-filter: none; */
+    height: 50px;
+    padding: 0 25px;
   }
 `;
 
@@ -57,10 +60,12 @@ export const NavigationContainer = styled.nav`
 
 export const NavigationLinkContainer = styled.div`
   cursor: pointer;
+  ${sharedTextStyles}
   display: flex;
   flex-direction: column;
   align-items: center;
-  ${sharedTextStyles}
+  justify-content: center;
+  margin: 0 50px 0 0;
   text-decoration: none;
   transition: color 0.15s linear 0.15s;
   font-weight: 600;
@@ -89,4 +94,9 @@ export const NavigationLinkContainer = styled.div`
       : `color: #fff5ee`;
     return style;
   }};
+
+  @media only screen and (max-width: 500px) {
+    height: 50px;
+    margin: 0 12.5px 0 0;
+  }
 `;

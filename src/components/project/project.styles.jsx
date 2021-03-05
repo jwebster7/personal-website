@@ -9,17 +9,21 @@ import {
 export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* flex-grow: 1; */
   border-radius: 2em;
-  /* border: 2.5px dotted #fff5ee; */
   background-color: #121113;
   margin: 50px;
   height: 600px;
-  width: 550px;
+  width: 500px;
   overflow: hidden;
 
-  @media only screen and (max-width: 1300px) {
-    margin: 0 50px 50px 50px;
+  /* @media only screen and (max-width: 1300px) {
+    margin: 0 0 50px 0;
+  } */
+
+  @media only screen and (max-width: 500px) {
+    height: 400px;
+    /* width: 400px; */
+    width: 100%;
   }
 `;
 
@@ -59,6 +63,10 @@ export const ProjectTitle = styled.h1`
   transition: color 0.3s ease-in-out;
   font-weight: 600;
   margin-right: 25px;
+  @media only screen and (max-width: 500px) {
+    margin-right: 12.5px;
+    white-space: nowrap;
+  }
 `;
 
 export const ProjectTitleLine = styled.div`
@@ -67,7 +75,7 @@ export const ProjectTitleLine = styled.div`
 `;
 
 export const ProjectLinkText = styled.h1`
-  ${sharedSubheadingStyles}
+  ${sharedHeadingStyles}
   transition: color 0.3s ease-in-out;
   font-weight: 500;
   font-size: 1.4rem;
@@ -78,6 +86,10 @@ export const ProjectTextContainer = styled.div`
   flex-direction: column;
   flex-grow: 1;
   padding: 40px;
+
+  @media only screen and (max-width: 500px) {
+    padding: 20px;
+  }
 `;
 
 export const ProjectLinkContainer = styled.div`

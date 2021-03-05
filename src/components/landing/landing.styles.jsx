@@ -5,7 +5,6 @@ import {
   rightSlideInAnimation,
   sharedHeadingStyles,
   sharedHorizontalLineStyles,
-  sharedSectionContainerStyles,
   topSlideDownAnimation
 } from "../shared.styles";
 
@@ -18,6 +17,10 @@ export const LandingContainer = styled.div`
   padding: 50px;
   min-height: 100vh;
   width: 100%;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const LandingNameHeading = styled.h1`

@@ -47,6 +47,11 @@ export const FooterContainer = styled.div`
     width: 100%;
     border-radius: 0;
   }
+
+  @media only screen and (max-width: 500px) {
+    height: 50px;
+    padding: 0 25px;
+  }
 `;
 
 export const SocialIcon = styled.a`
@@ -55,12 +60,16 @@ export const SocialIcon = styled.a`
     text-decoration: none;
     /* transition: color 0.3s ease-in-out; */
     transition: color 0.3s ease-in-out;
-    transition: transform .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     font-weight: 600;
 
     :hover {
       color: #5b9999;
       transform: scale(1.25);
+    }
+
+    @media only screen and (max-width: 500px) {
+      font-size: 1rem;
     }
   }
 `;

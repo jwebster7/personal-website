@@ -16,10 +16,10 @@ export const ExperienceContent = styled.div`
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-evenly;
-  width: 90%;
+  width: 80%;
 
   @media only screen and (max-width: 1300px) {
-    width: 95%;
+    width: 90%;
   }
 
   @media only screen and (max-width: 1100px) {

@@ -23,6 +23,10 @@ export const PositionContainer = styled.div`
   flex-direction: column;
   margin: 0 0 50px 0;
   width: 100%;
+
+  @media only screen and (max-width: 500px) {
+    margin: 0 0 25px 0;
+  }
 `;
 
 export const PositionContentGrid = styled.div`

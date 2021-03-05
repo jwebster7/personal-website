@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 import {
   sharedBodyFontStyles,
-  sharedSubheadingStyles,
   sharedSectionContainerStyles
 } from "../shared.styles";
 
@@ -19,12 +18,12 @@ export const AboutContentContainer = styled.div`
   align-items: center;
   margin-top: 30px;
 
-  width: 90%;
+  width: 80%;
 
   @media only screen and (max-width: 1300px) {
     flex-direction: column-reverse;
     margin-top: 0;
-    width: 95%;
+    width: 90%;
   }
 
   @media only screen and (max-width: 1100px) {
@@ -57,6 +56,11 @@ export const AboutSkillContainer = styled.div`
   /* grid-template-rows: 50px 50px 50px; */
   justify-items: left;
   margin: 25px 0 0 25px;
+
+  @media only screen and (max-width: 500px) {
+    grid-gap: 0;
+    margin: 0 0 0 12.5px;
+  }
 `;
 
 export const AboutSkill = styled.li`
@@ -66,27 +70,38 @@ export const AboutSkill = styled.li`
 `;
 
 export const ProfilePictureContainer = styled.div`
-  max-width: 415px;
-  max-height: 450px;
+  /* max-width: 415px;
+  max-height: 450px; */
   margin: 0 0 0 75px;
   padding: 0;
-  border-radius: 33px;
   border: 0;
   /* overflow: hidden; */
   @media only screen and (max-width: 1300px) {
-    margin: 0 0 50px 0;
+    margin: 0 0 25px 0;
   }
 `;
 
 export const ProfilePicture = styled.img`
+  display: block;
   margin: 0;
   padding: 0;
-  width: 415px;
-  height: 450px;
-  border: 0 transparent;
-  border-radius: 100%;
+  height: 400px;
+  width: 360px;
+  /* border: 0 transparent; */
+  /* border: 10px solid #fff5ee; */
+  border-radius: 2em;
   background-color: #121113;
   background-position: center;
+
+  @media only screen and (max-width: 1300px) {
+    max-height: 350px;
+    max-width: 310px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    max-height: 300px;
+    max-width: 275px;
+  }
 `;
 
 export const AboutLinkedInLink = styled.a`

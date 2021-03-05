@@ -16,14 +16,9 @@ const Navigation = ({
   experienceInView,
   educationInView,
   projectsInView,
-  skillsInView
 }) => {
   const sectionInView =
-    aboutInView ||
-    educationInView ||
-    experienceInView ||
-    projectsInView ||
-    skillsInView;
+    aboutInView || educationInView || experienceInView || projectsInView;
   return (
     <NavigationContainer sectionInView={sectionInView}>
       <NavigationLinkContainer

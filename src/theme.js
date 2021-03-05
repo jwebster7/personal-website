@@ -11,7 +11,7 @@ export const lightTheme = {
   headerBackground: `rgba(18, 17, 19, 0.6)`
 };
 
-export const darkTheme = {
+export const theme = {
   backgroundColorRichBlack: `#121113`,
   backgroundColorSlateGray: `#2f4f4f`,
   bodyFontColor: `${contentFontColor}`,
@@ -33,7 +33,7 @@ export const darkTheme = {
   headerBackground: `rgba(47, 79, 79, 0.6)`
 };
 
-export const theme = {
-  lightTheme,
-  darkTheme
-};
+// export const theme = {
+//   lightTheme,
+//   darkTheme
+// };

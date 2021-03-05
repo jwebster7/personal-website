@@ -22,6 +22,11 @@ export const InstituteContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 0 50px 0;
+  width: 100%;
+
+  @media only screen and (max-width: 500px) {
+    margin: 0 0 25px 0;
+  }
 `;
 
 export const InstituteContentGrid = styled.div`
@@ -64,5 +69,4 @@ export const InstituteTextContainer = styled.div`
 export const InstituteText = styled.span`
   ${instituteBodyFontStyles}
   text-align: left;
-  margin-top: 30px;
 `;
