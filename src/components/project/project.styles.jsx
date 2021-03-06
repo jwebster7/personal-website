@@ -12,24 +12,24 @@ export const ProjectContainer = styled.div`
   border-radius: 2em;
   background-color: #121113;
   margin: 50px;
-  height: 600px;
+  min-height: 600px;
   width: 600px;
   overflow: hidden;
 
   /* @media only screen and (max-width: 1300px) {
+    min-width: 350px;
+    width: 100%;
     margin: 0 0 50px 0;
   } */
 
   @media only screen and (max-width: 600px) {
-    height: 400px;
+    margin: 0 25px 50px 25px;
+    min-height: 400px;
     min-width: 300px;
-    /* width: 400px; */
-    width: 100%;
   }
 `;
 
 export const ProjectLinkedImageContainer = styled.a`
-  height: 50%;
   opacity: 0.75;
   transition: opacity 0.3s ease-in-out;
 
@@ -45,10 +45,19 @@ export const ProjectLinkedImageContainer = styled.a`
 `;
 
 export const ProjectImage = styled.img`
-  width: 100%;
-  height: 100%;
+  height: 335px;
+  width: 600px;
   background-size: cover;
   background-position: center;
+
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    height: 167.5px;
+    width: 300px;
+  }
 `;
 
 export const ProjectTitleContainer = styled.div`
@@ -89,7 +98,7 @@ export const ProjectTextContainer = styled.div`
   padding: 40px;
 
   @media only screen and (max-width: 600px) {
-    padding: 20px;
+    padding: 25px;
   }
 `;
 

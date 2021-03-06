@@ -67,14 +67,14 @@ export const NavigationLinkContainer = styled.div`
   justify-content: center;
   margin: 0 50px 0 0;
   text-decoration: none;
-  transition: color 0.15s linear 0.15s;
+  transition: color 0.15s linear 0.2s;
   font-weight: 600;
 
   :after {
     content: "";
     width: 0%;
     border-top: 2.5px solid #5b9999;
-    transition: width 0.15s linear 0.15s;
+    transition: width 0.15s linear 0.2s;
   }
 
   :hover {

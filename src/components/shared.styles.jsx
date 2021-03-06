@@ -79,7 +79,7 @@ const bottomSlideIn = keyframes`
 
 export const fadeInAnimation = css`
   opacity: 0;
-  animation: ${fadeIn} 1.25s ease-in-out 1.25s;
+  animation: ${fadeIn} 1s ease-in-out 1s;
   animation-fill-mode: forwards;
 `;
 
@@ -90,11 +90,11 @@ export const fadeOutAnimation = css`
 `;
 
 export const leftSlideInAnimation = css`
-  animation: ${leftSlideIn} 1.25s ease-out;
+  animation: ${leftSlideIn} 1s ease-out;
 `;
 
 export const rightSlideInAnimation = css`
-  animation: ${rightSlideIn} 1.25s ease-out;
+  animation: ${rightSlideIn} 1s ease-out;
 `;
 
 export const rightSlideOutAnimation = css`
@@ -102,7 +102,7 @@ export const rightSlideOutAnimation = css`
 `;
 
 export const topSlideDownAnimation = css`
-  animation: ${topSlideIn} 1.25s ease-out;
+  animation: ${topSlideIn} 1s ease-out;
 `;
 
 export const bottomSlideUpAnimation = css`
@@ -131,7 +131,7 @@ export const sharedSectionHeadingStyles = css`
   letter-spacing: 0.75rem;
   @media only screen and (max-width: 600px) {
     margin: 0 12.5px;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 `;

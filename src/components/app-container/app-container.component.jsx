@@ -15,8 +15,7 @@ import Projects from "../projects/projects.component";
 import { Content, Layout } from "./app-container.styles";
 
 const inViewConfig = {
-  threshold: 0.5,
-  delay: 150
+  threshold: 0.4,
 };
 
 const AppContainer = () => {

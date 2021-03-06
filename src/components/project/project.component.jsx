@@ -38,7 +38,7 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
         rel="noopener noreferrer"
         aria-label="website link"
       >
-        <ProjectImage src={ProjectImageMap[id]} />
+        <ProjectImage src={ProjectImageMap[id]} alt={title} />
       </ProjectLinkedImageContainer>
       <ProjectTextContainer>
         <ProjectTitleContainer>
