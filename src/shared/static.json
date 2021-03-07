@@ -82,8 +82,7 @@
           "Jira",
           "REST",
           "Agile Development"
-        ],
-        "exitStatement": "My team was eliminated due to restructuring. While searching for my next position, I’ve learned React and the common libraries within it's ecosystem. I am eager to leverage my experience toward a challenging new role."
+        ]
       },
       {
         "organization": "Kansas State University | iTAC",
@@ -103,8 +102,7 @@
           "JavaScript",
           "SQL",
           "ServiceNow"
-        ],
-        "exitStatement": "I graduated from KSU and landed my first post-grad job as a Software Engineer at NetApp."
+        ]
       },
       {
         "organization": "Kansas State University | Computer Science",
@@ -121,8 +119,7 @@
           "Python3",
           "HTML/CSS",
           "Jupyter Notebook"
-        ],
-        "exitStatement": " I left my position as a TA to accomodate the extra hours needed for my new position as Lead of Development at iTAC."
+        ]
       }
     ]
   },

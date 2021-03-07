@@ -16,8 +16,7 @@ const Position = ({
   responsibilities,
   summary,
   location,
-  technologies,
-  exitStatement
+  technologies
 }) => {
   const cityState =
     !!location.city && !!location.state

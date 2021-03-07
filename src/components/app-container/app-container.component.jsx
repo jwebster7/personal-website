@@ -1,8 +1,5 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import { ThemeProvider } from "styled-components";
-
-import { theme } from "../../theme";
 
 import About from "../about/about.component";
 import Education from "../education/education.component";
@@ -15,7 +12,7 @@ import Projects from "../projects/projects.component";
 import { Content, Layout } from "./app-container.styles";
 
 const inViewConfig = {
-  threshold: 0.4,
+  threshold: 0.4
 };
 
 const AppContainer = () => {
@@ -47,19 +44,17 @@ const AppContainer = () => {
   };
 
   return (
-    <ThemeProvider theme={theme}>
-      <Layout>
-        <Navigation scrollTo={scrollToRef} {...entries} {...inViewTrackers} />
-        <Content>
-          <Landing />
-          <About ref={aboutRef} />
-          <Experience ref={experienceRef} />
-          <Projects ref={projectsRef} />
-          <Education ref={educationRef} />
-        </Content>
-        <Footer />
-      </Layout>
-    </ThemeProvider>
+    <Layout>
+      <Navigation scrollTo={scrollToRef} {...entries} {...inViewTrackers} />
+      <Content>
+        <Landing />
+        <About ref={aboutRef} />
+        <Experience ref={experienceRef} />
+        <Projects ref={projectsRef} />
+        <Education ref={educationRef} />
+      </Content>
+      <Footer />
+    </Layout>
   );
 };
 

@@ -18,7 +18,6 @@ export const FooterContainer = styled.div`
 
   border-radius: 0 75px 0 0;
   background: rgba(18, 17, 19, 0.6);
-  /* background: rgba(47, 79, 79, 0.6); */
   backdrop-filter: blur(5px);
 
   ${leftSlideInAnimation}
@@ -58,7 +57,6 @@ export const SocialIcon = styled.a`
   svg {
     color: #fff5ee;
     text-decoration: none;
-    /* transition: color 0.3s ease-in-out; */
     transition: color 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
     font-weight: 600;

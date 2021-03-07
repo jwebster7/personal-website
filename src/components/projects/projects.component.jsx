@@ -29,7 +29,6 @@ const Projects = forwardRef((props, ref) => {
               repo={project?.repo}
               title={project?.title}
               summary={project?.summary}
-              technologies={project?.technologies}
             />
           );
         })}

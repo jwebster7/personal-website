@@ -31,14 +31,9 @@ export const AboutContentContainer = styled.div`
   }
 `;
 
-// export const AboutHeading = styled.h1`
-//   ${sharedHeadingStyles}
-// `;
-
 export const AboutTextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* width: 60%; */
 
   @media only screen and (max-width: 1300px) {
     width: 100%;
@@ -69,12 +64,9 @@ export const AboutSkill = styled.li`
 `;
 
 export const ProfilePictureContainer = styled.div`
-  /* max-width: 415px;
-  max-height: 450px; */
   margin: 0 0 0 75px;
   padding: 0;
   border: 0;
-  /* overflow: hidden; */
   @media only screen and (max-width: 1300px) {
     margin: 0 0 25px 0;
   }
@@ -86,8 +78,6 @@ export const ProfilePicture = styled.img`
   padding: 0;
   height: 400px;
   width: 360px;
-  /* border: 0 transparent; */
-  /* border: 10px solid #fff5ee; */
   border-radius: 2em;
   background-color: #121113;
   background-position: center;

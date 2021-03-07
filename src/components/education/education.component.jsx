@@ -13,7 +13,6 @@ const Education = forwardRef((props, ref) => {
       <Institute
         key={index}
         institution={education?.institution}
-        // completionDate={education?.completionDate}
         major={education?.major}
         degree={education?.degree}
         startDate={education?.startDate}

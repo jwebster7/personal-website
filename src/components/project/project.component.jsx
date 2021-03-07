@@ -21,14 +21,6 @@ import {
 
 import { ProjectImageMap } from "../../assets/index";
 
-/**
- * Cards for displaying project info.
- * Each card should have:
- *  1. Image
- *  2. Link to project hosted (if applicable)
- *  3. Link to the project repo.
- *  4. Summary
- */
 const Project = ({ id, url, repo, title, summary, technologies }) => {
   return (
     <ProjectContainer>

@@ -15,7 +15,5 @@ export const Layout = styled.div`
 `;
 
 export const Content = styled.div`
-  ${layoutStyles}/* position: absolute;
-  top: 0;
-  z-index: 99; */
+  ${layoutStyles}
 `;

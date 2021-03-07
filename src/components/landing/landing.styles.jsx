@@ -25,7 +25,7 @@ export const LandingContainer = styled.div`
 
 export const LandingNameHeading = styled.h1`
   ${sharedHeadingStyles}
-  margin: 12.5px 0;
+  margin: 12.5px -.15em 12.5px 0;
   font-family: "Open Sans", sans-serif;
   font-size: 5rem;
   font-weight: 400;
@@ -34,8 +34,7 @@ export const LandingNameHeading = styled.h1`
 
 export const LandingHorizontalLine = styled.div`
   ${sharedHorizontalLineStyles}
-  width: 650px;
-  /* width: 42em; */
+  width: 45em;
   ${rightSlideInAnimation}
 `;
 

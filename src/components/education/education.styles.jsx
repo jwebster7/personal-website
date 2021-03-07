@@ -7,7 +7,6 @@ import {
 } from "../shared.styles";
 
 export const EducationContainer = styled.div`
-  /* background-color: darkslategray; */
   background-color: #121113;
   ${sharedSectionContainerStyles}
 `;

@@ -141,8 +141,8 @@ export const sharedHeadingStyles = css`
   font-size: 1.5rem;
   font-weight: 500;
   color: #fff5ee;
-  letter-spacing: 0.15rem;
-  margin: 0.25rem 0;
+  letter-spacing: 0.1em;
+  margin: 0.25em 0;
   @media only screen and (max-width: 600px) {
     font-size: 1rem;
     letter-spacing: normal;
@@ -155,11 +155,11 @@ export const sharedSubheadingStyles = css`
   font-size: 1.25rem;
   font-weight: 300;
   color: #fff5ee;
-  letter-spacing: 0.15rem;
-  margin: 0.25rem 0;
+  letter-spacing: 0.1em;
+  margin: 0.25em 0;
 
   @media only screen and (max-width: 600px) {
-    font-size: .8rem;
+    font-size: 0.8rem;
     letter-spacing: normal;
     white-space: normal;
   }
@@ -173,7 +173,6 @@ export const sharedBodyFontStyles = css`
   font-weight: 400;
   color: #fff5ee;
   text-align: left;
-  letter-spacing: 0.05rem;
 
   @media only screen and (max-width: 600px) {
     margin-top: 12.5px;
@@ -184,6 +183,8 @@ export const sharedBodyFontStyles = css`
 `;
 
 export const sharedHorizontalLineStyles = css`
+  margin: 0;
+  padding: 0;
   border-color: #fff5ee;
   border: 0;
   opacity: 0.7;
