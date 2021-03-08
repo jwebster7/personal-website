@@ -3,7 +3,7 @@ import React, { useEffect, useState, forwardRef } from "react";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import StyledHeading from "../styled-heading/styled-heading.component";
+import StyledHeading from "../../components/styled-heading/styled-heading.component";
 
 import profilePic from "../../assets/profile-pic-cropped.png";
 import data from "../../shared/static.json";

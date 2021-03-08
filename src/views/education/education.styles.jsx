@@ -4,7 +4,7 @@ import {
   sharedBodyFontStyles,
   sharedSectionContainerStyles,
   sharedSectionHeadingStyles
-} from "../shared.styles";
+} from "../../components/shared.styles";
 
 export const EducationContainer = styled.div`
   background-color: #121113;

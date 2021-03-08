@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 
-import Institute from "../institute/institute.component";
-import StyledHeading from "../styled-heading/styled-heading.component";
+import Institute from "../../components/institute/institute.component";
+import StyledHeading from "../../components/styled-heading/styled-heading.component";
 import { EducationContainer, EducationContent } from "./education.styles";
 
 import data from "../../shared/static.json";

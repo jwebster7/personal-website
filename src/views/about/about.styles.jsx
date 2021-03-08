@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {
   sharedBodyFontStyles,
   sharedSectionContainerStyles
-} from "../shared.styles";
+} from "../../components/shared.styles";
 
 export const AboutContainer = styled.div`
   background-color: darkslategray;

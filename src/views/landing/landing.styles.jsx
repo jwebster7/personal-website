@@ -6,7 +6,7 @@ import {
   sharedHeadingStyles,
   sharedHorizontalLineStyles,
   topSlideDownAnimation
-} from "../shared.styles";
+} from "../../components/shared.styles";
 
 export const LandingContainer = styled.div`
   display: flex;
