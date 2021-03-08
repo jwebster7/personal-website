@@ -26,7 +26,7 @@ export const ProjectContainer = styled.div`
     width: 500px;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 750px) {
     height: 400px;
     width: 300px;
   }
@@ -56,7 +56,7 @@ export const ProjectLinkedImageContainer = styled.a`
     width: 100%;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 750px) {
     width: 300px;
   }
 `;
@@ -67,7 +67,7 @@ export const ProjectImage = styled.img`
   background-size: cover;
   background-position: center;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 750px) {
     height: 167.5px;
   }
 `;
@@ -85,7 +85,7 @@ export const ProjectTitle = styled.h1`
   font-weight: 600;
   margin-right: 25px;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 750px) {
     margin-right: 12.5px;
     white-space: nowrap;
   }
@@ -115,7 +115,7 @@ export const ProjectTextContainer = styled.div`
     width: 100%;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 750px) {
     padding: 25px;
   }
 `;

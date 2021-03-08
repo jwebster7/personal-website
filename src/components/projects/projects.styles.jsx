@@ -39,7 +39,7 @@ export const ProjectsGrid = styled.div`
     width: 100%;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 750px) {
     margin: 0 25px 50px 25px;
     min-height: 400px;
     min-width: 300px;

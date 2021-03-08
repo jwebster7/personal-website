@@ -1,64 +1,31 @@
 import styled, { css } from "styled-components";
 
-import { sharedBodyFontStyles, rightSlideInAnimation } from "../shared.styles";
+import { sharedBodyFontStyles } from "../shared.styles";
 
 const sharedTextStyles = css`
   ${sharedBodyFontStyles}
 `;
 
-export const NavigationContainer = styled.nav`
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  right: 0;
-  height: 90px;
-  min-width: 40vw;
-  padding: 0 75px;
-
+export const NavigationLinkContainer = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  border-radius: 0 0 0 75px;
-  background: rgba(18, 17, 19, 0.6);
-  backdrop-filter: blur(5px);
-
-  ${rightSlideInAnimation}
+  width: 100%;
 
   div:last-child {
     margin-right: 0;
   }
 
-  @media only screen and (max-width: 1300px) {
-    height: 75px;
-  }
-
-  @media only screen and (max-width: 1100px) {
-    width: 100%;
-    border-radius: 0;
-  }
-
-  @media only screen and (max-width: 600px) {
-    /* background: none;
-    backdrop-filter: none; */
-    height: 50px;
-    padding: 0 25px;
+  @media only screen and (max-width: ${(props) => props.changeMenuOn}) {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
   }
 `;
 
-// ${({ sectionInView }) => {
-//   const style = sectionInView
-//     ? css`
-//         ${fadeInAnimation}
-//       `
-//     : css`
-//         ${fadeOutAnimation}
-//       `;
-//   return style;
-// }};
-
-export const NavigationLinkContainer = styled.div`
+export const NavigationLink = styled.div`
   cursor: pointer;
   ${sharedTextStyles}
   display: flex;
@@ -95,8 +62,7 @@ export const NavigationLinkContainer = styled.div`
     return style;
   }};
 
-  @media only screen and (max-width: 600px) {
-    height: 50px;
-    margin: 0 12.5px 0 0;
+  @media only screen and (max-width: ${(props) => props.changeMenuOn}) {
+    margin: 10px 0;
   }
 `;

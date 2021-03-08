@@ -1,9 +1,11 @@
 import React from "react";
 
-import {
-  NavigationContainer,
-  NavigationLinkContainer
-} from "./navigation.styles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+
+import NavBar from "../navbar/navbar.component";
+
+import { NavigationLinkContainer, NavigationLink } from "./navigation.styles";
 
 // TODO: add in a brand icon to the left of the nav container
 const Navigation = ({
@@ -15,37 +17,53 @@ const Navigation = ({
   aboutInView,
   experienceInView,
   educationInView,
-  projectsInView,
+  projectsInView
 }) => {
   const sectionInView =
     aboutInView || educationInView || experienceInView || projectsInView;
+
+  const changeMenuOn = "750px";
   return (
-    <NavigationContainer sectionInView={sectionInView}>
-      <NavigationLinkContainer
-        onClick={() => scrollTo(aboutEntry)}
-        inView={aboutInView}
-      >
-        Profile
-      </NavigationLinkContainer>
-      <NavigationLinkContainer
-        onClick={() => scrollTo(experienceEntry)}
-        inView={experienceInView}
-      >
-        Experience
-      </NavigationLinkContainer>
-      <NavigationLinkContainer
-        onClick={() => scrollTo(projectsEntry)}
-        inView={projectsInView}
-      >
-        Projects
-      </NavigationLinkContainer>
-      <NavigationLinkContainer
-        onClick={() => scrollTo(educationEntry)}
-        inView={educationInView}
-      >
-        Education
-      </NavigationLinkContainer>
-    </NavigationContainer>
+    <NavBar
+      menu={
+        <NavigationLinkContainer
+          sectionInView={sectionInView}
+          changeMenuOn={changeMenuOn}
+        >
+          <NavigationLink
+            onClick={() => scrollTo(aboutEntry)}
+            inView={aboutInView}
+            changeMenuOn={changeMenuOn}
+          >
+            Profile
+          </NavigationLink>
+          <NavigationLink
+            onClick={() => scrollTo(experienceEntry)}
+            inView={experienceInView}
+            changeMenuOn={changeMenuOn}
+          >
+            Experience
+          </NavigationLink>
+          <NavigationLink
+            onClick={() => scrollTo(projectsEntry)}
+            inView={projectsInView}
+            changeMenuOn={changeMenuOn}
+          >
+            Projects
+          </NavigationLink>
+          <NavigationLink
+            onClick={() => scrollTo(educationEntry)}
+            inView={educationInView}
+            changeMenuOn={changeMenuOn}
+          >
+            Education
+          </NavigationLink>
+        </NavigationLinkContainer>
+      }
+      changeMenuOn={changeMenuOn}
+      menuOpenButton={<FontAwesomeIcon icon={faBars} size="2x" />}
+      menuCloseButton={<FontAwesomeIcon icon={faTimes} size="2x" />}
+    />
   );
 };
 
