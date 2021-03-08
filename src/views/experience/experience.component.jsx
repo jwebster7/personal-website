@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 
-import Position from "../position/position.component";
-import StyledHeading from "../styled-heading/styled-heading.component";
+import Position from "../../components/position/position.component";
+import StyledHeading from "../../components/styled-heading/styled-heading.component";
 import { ExperienceContainer, ExperienceContent } from "./experience.styles";
 
 import data from "../../shared/static.json";
