@@ -22,6 +22,7 @@ export const AboutContentContainer = styled.div`
 
   @media only screen and (max-width: 1300px) {
     flex-direction: column-reverse;
+    justify-content: space-evenly;
     margin-top: 0;
     width: 90%;
   }
@@ -78,7 +79,7 @@ export const ProfilePicture = styled.img`
   padding: 0;
   height: 400px;
   width: 360px;
-  border-radius: 2em;
+  border-radius: 1.5em;
   background-color: #121113;
   background-position: center;
 

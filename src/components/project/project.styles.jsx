@@ -2,36 +2,43 @@ import styled from "styled-components";
 import {
   sharedBodyFontStyles,
   sharedHeadingStyles,
-  sharedHorizontalLineStyles,
-  sharedSubheadingStyles
+  sharedHorizontalLineStyles
 } from "../shared.styles";
 
 export const ProjectContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  border-radius: 2em;
+  border-radius: 1.5em;
+  box-shadow: 0 0 25px 5px #121113;
   background-color: #121113;
-  margin: 50px;
-  min-height: 600px;
-  width: 600px;
+  margin: 50px 0;
+  min-height: 335px;
+  height: auto;
+  max-width: 1300px;
   overflow: hidden;
 
-  /* @media only screen and (max-width: 1300px) {
-    min-width: 350px;
-    width: 100%;
-    margin: 0 0 50px 0;
-  } */
+  @media only screen and (max-width: 1300px) {
+    /* margin: 25px 0; */
+    width: 600px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    margin: 25px 0;
+    width: 500px;
+  }
 
   @media only screen and (max-width: 600px) {
-    margin: 0 25px 50px 25px;
-    min-height: 400px;
-    min-width: 300px;
+    height: 400px;
+    width: 300px;
   }
 `;
 
 export const ProjectLinkedImageContainer = styled.a`
   opacity: 0.75;
   transition: opacity 0.3s ease-in-out;
+  max-height: 335px;
+  max-width: 600px;
+  height: auto;
+  width: 50%;
 
   :hover {
     cursor: pointer;
@@ -42,28 +49,32 @@ export const ProjectLinkedImageContainer = styled.a`
       transition: transform 5s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
   }
-`;
 
-export const ProjectImage = styled.img`
-  height: 335px;
-  width: 600px;
-  background-size: cover;
-  background-position: center;
-
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1300px) {
+    max-height: 335px;
+    max-width: 600px;
     width: 100%;
   }
 
   @media only screen and (max-width: 600px) {
-    height: 167.5px;
     width: 300px;
+  }
+`;
+
+export const ProjectImage = styled.img`
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+
+  @media only screen and (max-width: 600px) {
+    height: 167.5px;
   }
 `;
 
 export const ProjectTitleContainer = styled.div`
   display: flex;
   flex-direction: row;
-  width: 100%;
   align-items: center;
 `;
 
@@ -73,6 +84,7 @@ export const ProjectTitle = styled.h1`
   transition: color 0.3s ease-in-out;
   font-weight: 600;
   margin-right: 25px;
+
   @media only screen and (max-width: 600px) {
     margin-right: 12.5px;
     white-space: nowrap;
@@ -96,6 +108,12 @@ export const ProjectTextContainer = styled.div`
   flex-direction: column;
   flex-grow: 1;
   padding: 40px;
+  width: 50%;
+
+  @media only screen and (max-width: 1300px) {
+    height: 100%;
+    width: 100%;
+  }
 
   @media only screen and (max-width: 600px) {
     padding: 25px;
