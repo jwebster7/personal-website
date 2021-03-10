@@ -1,10 +1,11 @@
 import React, { forwardRef } from "react";
 
 import Institute from "../../components/institute/institute.component";
-import StyledHeading from "../../components/styled-heading/styled-heading.component";
-import { EducationContainer, EducationContent } from "./education.styles";
+import SectionContainer from "../../components/section-container/section-container.component";
+import SectionHeading from "../../components/section-heading/section-heading.component";
+import { EducationContent } from "./education.styles";
 
-import data from "../../shared/static.json";
+import data from "../../data/static.json";
 
 const Education = forwardRef((props, ref) => {
   const educationData = data?.education;
@@ -23,10 +24,10 @@ const Education = forwardRef((props, ref) => {
     );
   });
   return (
-    <EducationContainer ref={ref}>
-      <StyledHeading heading={"Education"} />
+    <SectionContainer ref={ref} backgroundColor="#121113">
+      <SectionHeading heading={"Education"} />
       <EducationContent>{educationPath}</EducationContent>
-    </EducationContainer>
+    </SectionContainer>
   );
 });
 

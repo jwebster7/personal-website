@@ -1,10 +1,11 @@
 import React, { forwardRef } from "react";
 
+import ContentContainer from "../../components/content-container/content-container.component";
 import Position from "../../components/position/position.component";
-import StyledHeading from "../../components/styled-heading/styled-heading.component";
-import { ExperienceContainer, ExperienceContent } from "./experience.styles";
+import SectionContainer from "../../components/section-container/section-container.component";
+import SectionHeading from "../../components/section-heading/section-heading.component";
 
-import data from "../../shared/static.json";
+import data from "../../data/static.json";
 
 const Experience = forwardRef((props, ref) => {
   const jobData = data?.experience?.jobs;
@@ -37,10 +38,10 @@ const Experience = forwardRef((props, ref) => {
   });
 
   return (
-    <ExperienceContainer ref={ref}>
-      <StyledHeading heading={"Experience"} />
-      <ExperienceContent>{jobPath}</ExperienceContent>
-    </ExperienceContainer>
+    <SectionContainer ref={ref} backgroundColor="#121113">
+      <SectionHeading heading={"Experience"} />
+      <ContentContainer>{jobPath}</ContentContainer>
+    </SectionContainer>
   );
 });
 

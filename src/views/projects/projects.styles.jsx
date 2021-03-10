@@ -1,19 +1,10 @@
 import styled from "styled-components";
-import { sharedSectionContainerStyles } from "../../components/shared.styles";
 
-export const ProjectsContainer = styled.div`
-  background-color: #336666;
-  ${sharedSectionContainerStyles}
-`;
+import ContentContainer from "../../components/content-container/content-container.component";
 
-export const ProjectsGrid = styled.div`
-  display: flex;
-  /* flex-grow flex-shrink flex-basis */
-  flex: 1 1 auto;
-  /* flex-direction flex-wrap */
+export const ProjectsContent = styled(ContentContainer)`
   flex-flow: column wrap;
   justify-content: space-around;
-  align-items: center;
   width: 90%;
 
   > div:nth-child(odd) {
@@ -28,7 +19,7 @@ export const ProjectsGrid = styled.div`
     flex-direction: row-reverse;
 
     /* > div {
-      margin-left: 40px;
+      margin-right: 40px;
     } */
   }
 

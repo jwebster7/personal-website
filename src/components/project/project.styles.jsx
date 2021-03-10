@@ -1,7 +1,9 @@
 import styled from "styled-components";
+
+import Heading from "../../components/heading/heading.component";
+
 import {
   sharedBodyFontStyles,
-  sharedHeadingStyles,
   sharedHorizontalLineStyles
 } from "../shared.styles";
 
@@ -30,7 +32,7 @@ export const ProjectImageLink = styled.a`
   right: 0;
   bottom: 0;
 
-  transition: transform 1000ms ease;
+  transition: transform 600ms ease-in-out;
 
   * {
     border-radius: 0.5em;
@@ -69,7 +71,7 @@ export const ProjectImageOverlay = styled.div`
 
   opacity: 0;
   background: rgba(18, 17, 19, 0.75);
-  transition: opacity 500ms ease;
+  transition: opacity 300ms ease-in-out;
 
   h1 {
     margin: 0 1em;
@@ -115,13 +117,12 @@ export const ProjectLink = styled.a`
   color: #fff5ee;
   text-decoration: none;
   margin: 0 0 0 1em;
-  transition: color 0500ms ease;
   font-weight: 500;
   font-size: 1.4rem;
   white-space: nowrap;
 
   svg {
-    transition: color 0500ms ease;
+    transition: color 300ms ease-in-out;
     :hover {
       text-decoration: none;
       color: #121113;
@@ -141,12 +142,8 @@ export const ProjectTitleContainer = styled.div`
   align-items: center;
 `;
 
-export const ProjectTitle = styled.h1`
-  ${sharedHeadingStyles}
-  white-space: nowrap;
-  transition: color 0500ms ease;
+export const ProjectTitle = styled(Heading)`
   font-weight: 600;
-  margin-right: 1em;
 
   @media only screen and (max-width: 750px) {
     white-space: nowrap;
@@ -158,10 +155,6 @@ export const ProjectTitle = styled.h1`
 export const ProjectTitleLine = styled.div`
   ${sharedHorizontalLineStyles}
   width: 100%;
-`;
-
-export const ProjectText = styled.span`
-  ${sharedBodyFontStyles}
 `;
 
 export const ProjectTech = styled.span`

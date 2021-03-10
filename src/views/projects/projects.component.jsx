@@ -1,11 +1,12 @@
 import React, { forwardRef, useEffect, useState } from "react";
 
 import Project from "../../components/project/project.component";
-import StyledHeading from "../../components/styled-heading/styled-heading.component";
+import SectionContainer from "../../components/section-container/section-container.component";
+import SectionHeading from "../../components/section-heading/section-heading.component";
 
-import { ProjectsContainer, ProjectsGrid } from "./projects.styles";
+import { ProjectsContent } from "./projects.styles";
 
-import data from "../../shared/static.json";
+import data from "../../data/static.json";
 
 const Projects = forwardRef((props, ref) => {
   const [projects, setProjects] = useState([]);
@@ -16,9 +17,9 @@ const Projects = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <ProjectsContainer ref={ref}>
-      <StyledHeading heading={"Projects"} />
-      <ProjectsGrid>
+    <SectionContainer ref={ref} backgroundColor="#336666">
+      <SectionHeading heading={"Projects"} />
+      <ProjectsContent>
         {projects.map((project, index) => {
           return (
             <Project
@@ -32,8 +33,8 @@ const Projects = forwardRef((props, ref) => {
             />
           );
         })}
-      </ProjectsGrid>
-    </ProjectsContainer>
+      </ProjectsContent>
+    </SectionContainer>
   );
 });
 

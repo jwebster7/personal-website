@@ -1,34 +1,18 @@
 import styled from "styled-components";
 
-import {
-  sharedBodyFontStyles,
-  sharedSectionContainerStyles
-} from "../../components/shared.styles";
+import { sharedBodyFontStyles } from "../../components/shared.styles";
 
-export const AboutContainer = styled.div`
-  background-color: #336666;
-  ${sharedSectionContainerStyles}
-`;
+import ContentContainer from "../../components/content-container/content-container.component";
 
-export const AboutContentContainer = styled.div`
-  display: flex;
+export const AboutContentContainer = styled(ContentContainer)`
   flex-direction: row;
   flex-grow: 0.6;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 30px;
-
-  width: 80%;
 
   @media only screen and (max-width: 1300px) {
     flex-direction: column-reverse;
     justify-content: space-evenly;
     margin-top: 0;
-    width: 90%;
-  }
-
-  @media only screen and (max-width: 1100px) {
-    width: 100%;
   }
 `;
 
@@ -39,10 +23,6 @@ export const AboutTextContainer = styled.div`
   @media only screen and (max-width: 1300px) {
     width: 100%;
   }
-`;
-
-export const AboutText = styled.span`
-  ${sharedBodyFontStyles}
 `;
 
 export const AboutSkillContainer = styled.ul`
@@ -80,7 +60,7 @@ export const ProfilePicture = styled.img`
   padding: 0;
   height: 400px;
   width: 360px;
-  border-radius: .5em;
+  border-radius: 0.5em;
   background-color: #336666;
   background-position: center;
 
@@ -97,8 +77,8 @@ export const ProfilePicture = styled.img`
 
 export const AboutLinkedInLink = styled.a`
   text-decoration: none;
-  color: #FFF5EE;
-  transition: color 0500ms ease;
+  color: #fff5ee;
+  transition: color 300ms ease-in-out;
 
   :hover {
     color: #121113;

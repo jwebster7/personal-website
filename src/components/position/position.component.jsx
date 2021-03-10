@@ -1,11 +1,13 @@
 import React from "react";
+
+import Heading from "../../components/heading/heading.component";
+import SubHeading from "../../components/sub-heading/sub-heading.component";
+import Text from "../../components/text/text.component";
+
 import {
   PositionContainer,
   PositionContentBox,
-  PositionContentGrid,
-  PositionDates,
-  PositionHeading,
-  PositionText
+  PositionContentGrid
 } from "./position.styles";
 
 const Position = ({
@@ -31,18 +33,18 @@ const Position = ({
     <PositionContainer>
       <PositionContentGrid>
         <PositionContentBox>
-          <PositionHeading>{title}</PositionHeading>
-          <PositionHeading>{organization}</PositionHeading>
+          <Heading>{title}</Heading>
+          <Heading>{organization}</Heading>
         </PositionContentBox>
         <PositionContentBox>
-          <PositionDates>{startEndDate}</PositionDates>
-          <PositionDates>{cityState}</PositionDates>
+          <SubHeading>{startEndDate}</SubHeading>
+          <SubHeading>{cityState}</SubHeading>
         </PositionContentBox>
       </PositionContentGrid>
       <PositionContentBox>
-        <PositionText>{`${summary}`}</PositionText>
-        <PositionText>{`Responsibilities: ${jobDuties}`}</PositionText>
-        <PositionText>{`Technologies: ${technologyString}`}</PositionText>
+        <Text>{summary}</Text>
+        <Text>{`Responsibilities: ${jobDuties}`}</Text>
+        <Text>{`Technologies: ${technologyString}`}</Text>
       </PositionContentBox>
     </PositionContainer>
   );

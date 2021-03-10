@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 
-import data from "../../shared/static.json";
+import data from "../../data/static.json";
 
 import { FooterContainer, SocialIcon } from "./footer.styles";
 

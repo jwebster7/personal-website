@@ -1,10 +1,11 @@
 import React from "react";
 
+import Heading from "../../components/heading/heading.component";
+import SubHeading from "../../components/sub-heading/sub-heading.component";
+import Text from "../../components/text/text.component";
+
 import {
   InstituteContainer,
-  InstituteDates,
-  InstituteText,
-  InstituteHeading,
   InstituteContentGrid,
   InstituteContentBox
 } from "./institute.styles";
@@ -31,16 +32,16 @@ const Institute = ({
     <InstituteContainer>
       <InstituteContentGrid>
         <InstituteContentBox>
-          <InstituteHeading>{degreeMajor}</InstituteHeading>
-          <InstituteHeading>{institution}</InstituteHeading>
+          <Heading>{degreeMajor}</Heading>
+          <Heading>{institution}</Heading>
         </InstituteContentBox>
 
         <InstituteContentBox>
-          <InstituteDates>{startEndDate}</InstituteDates>
-          <InstituteDates>{cityState}</InstituteDates>
+          <SubHeading>{startEndDate}</SubHeading>
+          <SubHeading>{cityState}</SubHeading>
         </InstituteContentBox>
       </InstituteContentGrid>
-      <InstituteText>{summary}</InstituteText>
+      <Text>{summary}</Text>
     </InstituteContainer>
   );
 };

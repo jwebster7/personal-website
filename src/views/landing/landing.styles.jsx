@@ -1,18 +1,17 @@
 import styled from "styled-components";
 
+import Heading from "../../components/heading/heading.component";
+import SectionContainer from "../../components/section-container/section-container.component";
+
 import {
   fadeInAnimation,
   rightSlideInAnimation,
-  sharedHeadingStyles,
   sharedHorizontalLineStyles,
   topSlideDownAnimation
 } from "../../components/shared.styles";
 
-export const LandingContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+export const LandingContainer = styled(SectionContainer)`
   justify-content: center;
-  align-items: center;
   background-color: #121113;
   padding: 50px;
   min-height: 100vh;
@@ -23,9 +22,8 @@ export const LandingContainer = styled.div`
   }
 `;
 
-export const LandingNameHeading = styled.h1`
-  ${sharedHeadingStyles}
-  margin: 12.5px -.15em 12.5px 0;
+export const LandingNameHeading = styled(Heading)`
+  margin: 12.5px -0.15em 12.5px 0;
   font-family: "Open Sans", sans-serif;
   font-size: 5rem;
   font-weight: 400;
@@ -38,8 +36,7 @@ export const LandingHorizontalLine = styled.div`
   ${rightSlideInAnimation}
 `;
 
-export const LandingTitleHeading = styled.h1`
-  ${sharedHeadingStyles}
+export const LandingTitleHeading = styled(Heading)`
   margin: 12.5px 0;
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;

@@ -1,5 +1,7 @@
 import React from "react";
 
+import Text from "../../components/text/text.component";
+
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,7 +13,6 @@ import {
   ProjectLink,
   ProjectTech,
   ProjectTechnologies,
-  ProjectText,
   ProjectCaptionContainer,
   ProjectTitle,
   ProjectTitleLine,
@@ -63,7 +64,7 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
             <FontAwesomeIcon icon={faGithub} size="lg" />
           </ProjectLink>
         </ProjectTitleContainer>
-        <ProjectText>{summary}</ProjectText>
+        <Text>{summary}</Text>
         <ProjectTechnologies>{technologyDisplay}</ProjectTechnologies>
       </ProjectCaptionContainer>
     </ProjectContainer>

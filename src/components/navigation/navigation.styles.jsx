@@ -34,14 +34,14 @@ export const NavigationLink = styled.div`
   justify-content: center;
   margin: 0 50px 0 0;
   text-decoration: none;
-  transition: color 250ms ease-in-out;
+  transition: color 300ms ease-in-out;
   font-weight: 600;
 
   :after {
     content: "";
     width: 0%;
     border-top: 3px solid #5b9999;
-    transition: width 250ms ease-in-out;
+    transition: width 300ms ease-in-out;
   }
 
   :hover {

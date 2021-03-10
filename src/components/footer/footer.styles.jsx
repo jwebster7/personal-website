@@ -60,7 +60,7 @@ export const SocialIcon = styled.a`
   svg {
     color: #FFF5EE;
     text-decoration: none;
-    transition: color 250ms ease-in-out, transform 250ms ease-in-out;
+    transition: color 300ms ease-in-out, transform 300ms ease-in-out;
     font-weight: 600;
 
     :hover {
