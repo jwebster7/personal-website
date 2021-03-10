@@ -58,7 +58,7 @@
       {
         "organization": "NetApp | SolidFire",
         "title": "Software Engineer",
-        "summary": "After graduation, I accepted an offer for a position at NetApp. We primarily worked with a stack consisting of Python and TypeScript, but also had opportunity to use Go and other technologies. Working in a fast-paced agile environment, I was able to consistently deliver commitments.",
+        "summary": "After graduation, I accepted an offer for a position at NetApp. I primarily worked with Python and TypeScript, but worked with and was exposed to many different technologies. I was always able to meet my commitments despite product requirements constantly evolving.",
         "responsibilities": "Software development, software testing, and project scoping on an HCI Deployment Engine.",
         "startDate": "June 2019",
         "endDate": "October 2020",
@@ -87,7 +87,7 @@
       {
         "organization": "Kansas State University | iTAC",
         "title": "Lead of Development",
-        "summary": "Also during my time at K-State, I worked in the Information Technology Assistance Center as an IT Consultant. I also lead a small team of three developers to build new, user-friendly tools to replace antiquated technologies. During my senior year, I began research and development of expanding the Virtual Agent by scripting custom decision trees to provide automated support to K-State students, faculty, and staff. This was a great experience because it allowed me to grow as a developer while assisting those around me.",
+        "summary": "During my time at K-State, I worked in the Information Technology Assistance Center as an IT Consultant. I was given the opportunity to lead a team of developers in building new solutions to replace antiquated tools and technologies. My time at iTAC was a great experience because it allowed me to grow as a developer while assisting those around me.",
         "responsibilities": "Software research and development, IT technical support, and new-hire training.",
         "startDate": "February 2017",
         "endDate": "May 2019",
@@ -107,7 +107,7 @@
       {
         "organization": "Kansas State University | Computer Science",
         "title": "Undergraduate Teaching Assistant",
-        "summary": "While attending K-State, I had the opportunity to work as an Undergraduate Teaching Assistant in the Department of Computer Science. This was an incredibly rewarding experience because I was able to help students grow in their understanding of Computer Science.",
+        "summary": "While attending K-State, I worked as an Undergraduate Teaching Assistant in the Department of Computer Science. This was an incredibly rewarding experience, as I was able to assist new students in establishing a fundamental understanding of Computer Science.",
         "responsibilities": "Assisted instructors with in-class activities, graded class assignments, and tutored students on the fundamentals of programming using Python.",
         "startDate": "August 2017",
         "endDate": "December 2018",
@@ -116,7 +116,7 @@
           "state": "KS"
         },
         "technologies": [
-          "Python3",
+          "Python",
           "HTML/CSS",
           "Jupyter Notebook"
         ]
@@ -136,7 +136,7 @@
         "React",
         "Redux",
         "Redux-Saga",
-        "Styled Components",
+        "styled-components",
         "Functional Components",
         "Reselect",
         "Express.js",
@@ -157,7 +157,6 @@
         "React",
         "React ContextAPI",
         "React Hooks",
-        "React useReducer",
         "styled-components",
         "Functional Components",
         "Axios",

@@ -68,6 +68,7 @@ export const ProfilePictureContainer = styled.div`
   margin: 0 0 0 75px;
   padding: 0;
   border: 0;
+  background-color: darkslategray;
   @media only screen and (max-width: 1300px) {
     margin: 0 0 25px 0;
   }
@@ -80,7 +81,7 @@ export const ProfilePicture = styled.img`
   height: 400px;
   width: 360px;
   border-radius: 1.5em;
-  background-color: #121113;
+  background-color: darkslategray;
   background-position: center;
 
   @media only screen and (max-width: 1300px) {

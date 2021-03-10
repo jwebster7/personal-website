@@ -7,38 +7,25 @@ import {
 
 export const ProjectContainer = styled.div`
   display: flex;
-  border-radius: 1.5em;
-  box-shadow: 0 0 25px 5px #121113;
-  background-color: #121113;
   margin: 50px 0;
   min-height: 335px;
   height: auto;
-  max-width: 1300px;
-  overflow: hidden;
+  max-width: 1500px;
+  width: 90%;
+  align-items: center;
 
   @media only screen and (max-width: 1300px) {
-    /* margin: 25px 0; */
-    width: 600px;
+    align-items: center;
   }
 
   @media only screen and (max-width: 900px) {
     margin: 25px 0;
-    width: 500px;
-  }
-
-  @media only screen and (max-width: 750px) {
-    height: 400px;
-    width: 300px;
   }
 `;
 
 export const ProjectLinkedImageContainer = styled.a`
   opacity: 0.75;
   transition: opacity 0.3s ease-in-out;
-  max-height: 335px;
-  max-width: 600px;
-  height: auto;
-  width: 50%;
 
   :hover {
     cursor: pointer;
@@ -49,26 +36,67 @@ export const ProjectLinkedImageContainer = styled.a`
       transition: transform 5s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
   }
-
-  @media only screen and (max-width: 1300px) {
-    max-height: 335px;
-    max-width: 600px;
-    width: 100%;
-  }
-
-  @media only screen and (max-width: 750px) {
-    width: 300px;
-  }
 `;
 
 export const ProjectImage = styled.img`
-  width: 100%;
-  height: 100%;
+  border-radius: 1em;
   background-size: cover;
   background-position: center;
 
   @media only screen and (max-width: 750px) {
-    height: 167.5px;
+    width: 100%;
+  }
+`;
+
+export const ProjectCaptionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0 40px;
+  /* background: rgba(18, 17, 19, 0.6); */
+
+  @media only screen and (max-width: 1300px) {
+    padding: 40px 0;
+    height: 100%;
+    width: 600px;
+  }
+
+  @media only screen and (max-width: 750px) {
+    padding: 20px 0;
+    width: 100%;
+  }
+`;
+
+export const ProjectLinkContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: auto;
+  margin: 0;
+`;
+
+export const ProjectLink = styled.a`
+  display: flex;
+  align-items: center;
+
+  color: #fff5ee;
+  text-decoration: none;
+  margin: 0 0 0 1em;
+  transition: color 0.3s ease-in-out;
+  font-weight: 500;
+  font-size: 1.4rem;
+  white-space: nowrap;
+
+  :hover > svg {
+    text-decoration: none;
+    color: #5b9999;
+  }
+
+  @media only screen and (max-width: 750px) {
+    * {
+      font-size: 1rem;
+    }
   }
 `;
 
@@ -83,11 +111,12 @@ export const ProjectTitle = styled.h1`
   white-space: nowrap;
   transition: color 0.3s ease-in-out;
   font-weight: 600;
-  margin-right: 25px;
+  margin-right: 1em;
 
   @media only screen and (max-width: 750px) {
-    margin-right: 12.5px;
     white-space: nowrap;
+    margin: 0 1em 0 0;
+    align-content: center;
   }
 `;
 
@@ -96,53 +125,37 @@ export const ProjectTitleLine = styled.div`
   width: 100%;
 `;
 
-export const ProjectLinkText = styled.h1`
-  ${sharedHeadingStyles}
-  transition: color 0.3s ease-in-out;
-  font-weight: 500;
-  font-size: 1.4rem;
-`;
-
-export const ProjectTextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  padding: 40px;
-  width: 50%;
-
-  @media only screen and (max-width: 1300px) {
-    height: 100%;
-    width: 100%;
-  }
-
-  @media only screen and (max-width: 750px) {
-    padding: 25px;
-  }
-`;
-
-export const ProjectLinkContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  padding-top: 25px;
-  margin-top: auto;
-`;
-
-export const ProjectLink = styled.a`
-  text-decoration: none;
-
-  :hover > h1 {
-    color: #5b9999;
-    /* color: #121113; */
-  }
-`;
-
-export const ProjectRepository = styled.a`
-  margin-left: auto;
-  text-decoration: none;
-`;
-
 export const ProjectText = styled.span`
   ${sharedBodyFontStyles}
+`;
+
+export const ProjectTech = styled.span`
+  ${sharedBodyFontStyles}
+  margin: 1em 1em 0 0;
+  padding: 0.5em 1em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 1em;
+  background: rgba(18, 17, 19, 0.6);
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: italic;
+  white-space: nowrap;
+
+  @media screen and (max-width: 750px) {
+    font-size: 0.5rem;
+    margin: 1em 1em 0 0;
+  }
+`;
+
+export const ProjectTechnologies = styled.div`
+  margin: 1em 0;
+  width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
 `;

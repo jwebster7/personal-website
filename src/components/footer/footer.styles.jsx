@@ -4,7 +4,7 @@ import { leftSlideInAnimation } from "../shared.styles";
 
 export const FooterContainer = styled.div`
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
   bottom: 0;
   left: 0;
   height: 90px;

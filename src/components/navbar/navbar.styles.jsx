@@ -85,7 +85,7 @@ export const NavBarContainer = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 1000;
 
   /* padding: 25px 75px;
   min-height: 90px;

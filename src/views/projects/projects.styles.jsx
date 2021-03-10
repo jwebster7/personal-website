@@ -18,11 +18,18 @@ export const ProjectsGrid = styled.div`
 
   > div:nth-child(odd) {
     flex-direction: row;
-    /* flex-flow: row wrap; */
+
+    /* > div {
+      margin-left: 40px;
+    } */
   }
 
   > div:nth-child(even) {
     flex-direction: row-reverse;
+
+    /* > div {
+      margin-left: 40px;
+    } */
   }
 
   @media only screen and (max-width: 1300px) {

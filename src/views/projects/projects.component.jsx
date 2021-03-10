@@ -1,12 +1,11 @@
-import React, { forwardRef, useState } from "react";
+import React, { forwardRef, useEffect, useState } from "react";
 
-import StyledHeading from "../styled-heading/styled-heading.component";
+import Project from "../../components/project/project.component";
+import StyledHeading from "../../components/styled-heading/styled-heading.component";
 
 import { ProjectsContainer, ProjectsGrid } from "./projects.styles";
 
 import data from "../../shared/static.json";
-import { useEffect } from "react";
-import Project from "../project/project.component";
 
 const Projects = forwardRef((props, ref) => {
   const [projects, setProjects] = useState([]);
@@ -29,6 +28,7 @@ const Projects = forwardRef((props, ref) => {
               repo={project?.repo}
               title={project?.title}
               summary={project?.summary}
+              technologies={project?.technologies}
             />
           );
         })}

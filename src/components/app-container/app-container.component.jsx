@@ -1,13 +1,13 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
-import About from "../about/about.component";
-import Education from "../education/education.component";
-import Experience from "../experience/experience.component";
+import About from "../../views/about/about.component";
+import Education from "../../views/education/education.component";
+import Experience from "../../views/experience/experience.component";
 import Footer from "../footer/footer.component";
-import Landing from "../landing/landing.component";
+import Landing from "../../views/landing/landing.component";
 import Navigation from "../navigation/navigation.component";
-import Projects from "../projects/projects.component";
+import Projects from "../../views/projects/projects.component";
 
 import { Content, Layout } from "./app-container.styles";
 

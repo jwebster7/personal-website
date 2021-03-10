@@ -1,8 +1,7 @@
 import React from "react";
-import {
-  faCodeBranch,
-  faExternalLinkAlt
-} from "@fortawesome/free-solid-svg-icons";
+
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -12,8 +11,10 @@ import {
   ProjectLinkContainer,
   ProjectLinkText,
   ProjectLink,
+  ProjectTech,
+  ProjectTechnologies,
   ProjectText,
-  ProjectTextContainer,
+  ProjectCaptionContainer,
   ProjectTitle,
   ProjectTitleLine,
   ProjectTitleContainer
@@ -22,6 +23,11 @@ import {
 import { ProjectImageMap } from "../../assets/index";
 
 const Project = ({ id, url, repo, title, summary, technologies }) => {
+  const technologyDisplay = !!technologies
+    ? technologies.map((tech, index) => {
+        return <ProjectTech key={index}>{tech}</ProjectTech>;
+      })
+    : null;
   return (
     <ProjectContainer>
       <ProjectLinkedImageContainer
@@ -32,26 +38,19 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
       >
         {/* <ProjectImage width="600px" height="335px" src={ProjectImageMap[id]} alt={title} /> */}
         <ProjectImage src={ProjectImageMap[id]} alt={title} />
-
       </ProjectLinkedImageContainer>
-      <ProjectTextContainer>
+      <ProjectCaptionContainer>
         <ProjectTitleContainer>
           <ProjectTitle>{title}</ProjectTitle>
           <ProjectTitleLine />
-        </ProjectTitleContainer>
-        <ProjectText>{summary}</ProjectText>
-
-        <ProjectLinkContainer>
           <ProjectLink
             href={url}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="website link"
           >
-            <ProjectLinkText>
-              {"Visit Website "}
-              <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
-            </ProjectLinkText>
+            {/* {"Visit Website "} */}
+            <FontAwesomeIcon icon={faExternalLinkAlt} size="lg" />
           </ProjectLink>
           <ProjectLink
             href={repo}
@@ -59,13 +58,13 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
             rel="noopener noreferrer"
             aria-label="code repository"
           >
-            <ProjectLinkText>
-              {"GitHub Repo "}
-              <FontAwesomeIcon icon={faCodeBranch} size="sm" />
-            </ProjectLinkText>
+            {/* {"GitHub Repo "} */}
+            <FontAwesomeIcon icon={faGithub} size="lg" />
           </ProjectLink>
-        </ProjectLinkContainer>
-      </ProjectTextContainer>
+        </ProjectTitleContainer>
+        <ProjectText>{summary}</ProjectText>
+        <ProjectTechnologies>{technologyDisplay}</ProjectTechnologies>
+      </ProjectCaptionContainer>
     </ProjectContainer>
   );
 };
