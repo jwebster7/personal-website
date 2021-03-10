@@ -6,7 +6,7 @@ import {
 } from "../../components/shared.styles";
 
 export const AboutContainer = styled.div`
-  background-color: darkslategray;
+  background-color: #336666;
   ${sharedSectionContainerStyles}
 `;
 
@@ -68,7 +68,7 @@ export const ProfilePictureContainer = styled.div`
   margin: 0 0 0 75px;
   padding: 0;
   border: 0;
-  background-color: darkslategray;
+  background-color: #336666;
   @media only screen and (max-width: 1300px) {
     margin: 0 0 25px 0;
   }
@@ -80,8 +80,8 @@ export const ProfilePicture = styled.img`
   padding: 0;
   height: 400px;
   width: 360px;
-  border-radius: 1.5em;
-  background-color: darkslategray;
+  border-radius: .5em;
+  background-color: #336666;
   background-position: center;
 
   @media only screen and (max-width: 1300px) {
@@ -97,8 +97,8 @@ export const ProfilePicture = styled.img`
 
 export const AboutLinkedInLink = styled.a`
   text-decoration: none;
-  color: #fff5ee;
-  transition: color 0.3s ease-in-out;
+  color: #FFF5EE;
+  transition: color 0500ms ease;
 
   :hover {
     color: #121113;

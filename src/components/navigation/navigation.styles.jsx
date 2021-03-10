@@ -34,14 +34,14 @@ export const NavigationLink = styled.div`
   justify-content: center;
   margin: 0 50px 0 0;
   text-decoration: none;
-  transition: color 0.15s linear 0.2s;
+  transition: color 250ms ease-in-out;
   font-weight: 600;
 
   :after {
     content: "";
     width: 0%;
-    border-top: 2.5px solid #5b9999;
-    transition: width 0.15s linear 0.2s;
+    border-top: 3px solid #5b9999;
+    transition: width 250ms ease-in-out;
   }
 
   :hover {
@@ -51,14 +51,13 @@ export const NavigationLink = styled.div`
   ${({ inView }) => {
     const style = inView
       ? `
-        color: #5b9999;
+        color: #5B9999;
         :after {
           content: "";
-          border-top: 3px solid #5b9999;
           width: 95%;
         }
     `
-      : `color: #fff5ee`;
+      : `color: #FFF5EE`;
     return style;
   }};
 

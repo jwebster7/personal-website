@@ -7,9 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   ProjectContainer,
   ProjectImage,
-  ProjectLinkedImageContainer,
-  ProjectLinkContainer,
-  ProjectLinkText,
+  ProjectImageLink,
   ProjectLink,
   ProjectTech,
   ProjectTechnologies,
@@ -17,7 +15,8 @@ import {
   ProjectCaptionContainer,
   ProjectTitle,
   ProjectTitleLine,
-  ProjectTitleContainer
+  ProjectTitleContainer,
+  ProjectImageOverlay
 } from "./project.styles";
 
 import { ProjectImageMap } from "../../assets/index";
@@ -30,15 +29,19 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
     : null;
   return (
     <ProjectContainer>
-      <ProjectLinkedImageContainer
+      <ProjectImageLink
         href={url}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="website link"
       >
-        {/* <ProjectImage width="600px" height="335px" src={ProjectImageMap[id]} alt={title} /> */}
+        <ProjectImageOverlay>
+          <ProjectTitleLine />
+          <ProjectTitle>Visit Site</ProjectTitle>
+          <ProjectTitleLine />
+        </ProjectImageOverlay>
         <ProjectImage src={ProjectImageMap[id]} alt={title} />
-      </ProjectLinkedImageContainer>
+      </ProjectImageLink>
       <ProjectCaptionContainer>
         <ProjectTitleContainer>
           <ProjectTitle>{title}</ProjectTitle>
@@ -49,7 +52,6 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
             rel="noopener noreferrer"
             aria-label="website link"
           >
-            {/* {"Visit Website "} */}
             <FontAwesomeIcon icon={faExternalLinkAlt} size="lg" />
           </ProjectLink>
           <ProjectLink
@@ -58,7 +60,6 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
             rel="noopener noreferrer"
             aria-label="code repository"
           >
-            {/* {"GitHub Repo "} */}
             <FontAwesomeIcon icon={faGithub} size="lg" />
           </ProjectLink>
         </ProjectTitleContainer>

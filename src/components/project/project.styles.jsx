@@ -23,28 +23,60 @@ export const ProjectContainer = styled.div`
   }
 `;
 
-export const ProjectLinkedImageContainer = styled.a`
-  opacity: 0.75;
-  transition: opacity 0.3s ease-in-out;
+export const ProjectImageLink = styled.a`
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  transition: transform 1000ms ease;
+
+  * {
+    border-radius: 0.5em;
+  }
 
   :hover {
     cursor: pointer;
-    opacity: 1;
-
-    img {
-      transform: scale(1.1);
-      transition: transform 5s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-    }
+    transform: scale(1.05);
   }
 `;
 
 export const ProjectImage = styled.img`
-  border-radius: 1em;
+  display: block;
   background-size: cover;
   background-position: center;
 
   @media only screen and (max-width: 750px) {
     width: 100%;
+  }
+`;
+
+export const ProjectImageOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 2em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  background: rgba(18, 17, 19, 0.75);
+  transition: opacity 500ms ease;
+
+  h1 {
+    margin: 0 1em;
+  }
+
+  :hover {
+    opacity: 1;
   }
 `;
 
@@ -83,14 +115,17 @@ export const ProjectLink = styled.a`
   color: #fff5ee;
   text-decoration: none;
   margin: 0 0 0 1em;
-  transition: color 0.3s ease-in-out;
+  transition: color 0500ms ease;
   font-weight: 500;
   font-size: 1.4rem;
   white-space: nowrap;
 
-  :hover > svg {
-    text-decoration: none;
-    color: #5b9999;
+  svg {
+    transition: color 0500ms ease;
+    :hover {
+      text-decoration: none;
+      color: #121113;
+    }
   }
 
   @media only screen and (max-width: 750px) {
@@ -109,7 +144,7 @@ export const ProjectTitleContainer = styled.div`
 export const ProjectTitle = styled.h1`
   ${sharedHeadingStyles}
   white-space: nowrap;
-  transition: color 0.3s ease-in-out;
+  transition: color 0500ms ease;
   font-weight: 600;
   margin-right: 1em;
 
@@ -138,7 +173,7 @@ export const ProjectTech = styled.span`
   justify-content: center;
   align-items: center;
 
-  border-radius: 1em;
+  border-radius: 0.5em;
   background: rgba(18, 17, 19, 0.6);
   text-align: center;
   font-size: 0.75rem;

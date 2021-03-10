@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { sharedSectionContainerStyles } from "../../components/shared.styles";
 
 export const ProjectsContainer = styled.div`
-  background-color: darkslategray;
+  background-color: #336666;
   ${sharedSectionContainerStyles}
 `;
 

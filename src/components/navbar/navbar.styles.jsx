@@ -17,7 +17,7 @@ export const SmallMenuContainer = styled.div`
     backdrop-filter: blur(5px);
 
     transition: width 0.1s ease;
-    /* transition: width 1s ease-in-out; */
+    /* transition: width 1s ease; */
     ${(props) => {
       if (props.showMenu) {
         return css`

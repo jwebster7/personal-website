@@ -11,7 +11,7 @@ const layoutStyles = css`
 export const Layout = styled.div`
   ${layoutStyles}
   background-color: #121113;
-  color: #fff5ee;
+  color: #FFF5EE;
 `;
 
 export const Content = styled.div`

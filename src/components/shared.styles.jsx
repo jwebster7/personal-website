@@ -1,8 +1,10 @@
-// #121113 - background
-// #5c4054
-// #966889
-// #A198AB
-// #fff5ee - font
+/**
+ * Theme
+ *  #336666 - myrtle green
+ *  #121113 - chinese black
+ *  #FFF5EE - seashell
+ *  #5B9999 - cadet blue
+ */
 import styled, { css, keyframes } from "styled-components";
 
 const fadeIn = keyframes`
