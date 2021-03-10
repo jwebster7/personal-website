@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import { rightSlideInAnimation } from "../shared.styles";
+import rightSlideInAnimation from "../../animations/right-slide-in.animation";
 
 export const SmallMenuContainer = styled.div`
   display: none;
@@ -41,7 +41,7 @@ export const SmallMenu = styled.div`
         return css`
           display: block;
           padding: 0 25px 25px 25px;
-          width: 100%
+          width: 100%;
         `;
       }
     }}
@@ -87,10 +87,6 @@ export const NavBarContainer = styled.div`
   right: 0;
   z-index: 1000;
 
-  /* padding: 25px 75px;
-  min-height: 90px;
-  min-width: 45vw; */
-
   width: 100%;
 
   display: flex;
@@ -98,27 +94,12 @@ export const NavBarContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  /* border-radius: 0 0 0 75px;
-  background: rgba(18, 17, 19, 0.6);
-  backdrop-filter: blur(5px); */
-
   ${rightSlideInAnimation}
-
-  /* @media only screen and (max-width: 1300px) {
-    min-height: 75px;
-    align-items: flex-start;
-  } */
-
-  /* @media only screen and (max-width: 1100px) {
-    width: 100%;
-    border-radius: 0;
-  } */
 
   @media only screen and (max-width: ${(props) => props.changeMenuOn}) {
     flex-direction: column;
     align-items: flex-end;
     min-height: 50px;
-    /* padding: 15px 25px; */
   }
 `;
 

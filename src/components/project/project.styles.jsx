@@ -1,11 +1,8 @@
 import styled from "styled-components";
 
+import ChipContainer from "../../components/chip-container/chip-container.component";
 import Heading from "../../components/heading/heading.component";
-
-import {
-  sharedBodyFontStyles,
-  sharedHorizontalLineStyles
-} from "../shared.styles";
+import Text from "../../components/text/text.component";
 
 export const ProjectContainer = styled.div`
   display: flex;
@@ -152,13 +149,7 @@ export const ProjectTitle = styled(Heading)`
   }
 `;
 
-export const ProjectTitleLine = styled.div`
-  ${sharedHorizontalLineStyles}
-  width: 100%;
-`;
-
-export const ProjectTech = styled.span`
-  ${sharedBodyFontStyles}
+export const ProjectTech = styled(Text)`
   margin: 1em 1em 0 0;
   padding: 0.5em 1em;
 
@@ -179,7 +170,7 @@ export const ProjectTech = styled.span`
   }
 `;
 
-export const ProjectTechnologies = styled.div`
+export const ProjectChipContainer = styled(ChipContainer)`
   margin: 1em 0;
   width: 100%;
   display: flex;

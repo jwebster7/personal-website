@@ -1,5 +1,7 @@
 import React from "react";
 
+import CustomChip from "../../components/custom-chip/custom-chip.component";
+import HorizontalLine from "../../components/horizontal-line/horizontal-line.component";
 import Text from "../../components/text/text.component";
 
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -11,11 +13,9 @@ import {
   ProjectImage,
   ProjectImageLink,
   ProjectLink,
-  ProjectTech,
-  ProjectTechnologies,
   ProjectCaptionContainer,
+  ProjectChipContainer,
   ProjectTitle,
-  ProjectTitleLine,
   ProjectTitleContainer,
   ProjectImageOverlay
 } from "./project.styles";
@@ -23,9 +23,9 @@ import {
 import { ProjectImageMap } from "../../assets/index";
 
 const Project = ({ id, url, repo, title, summary, technologies }) => {
-  const technologyDisplay = !!technologies
+  const technologyChips = !!technologies
     ? technologies.map((tech, index) => {
-        return <ProjectTech key={index}>{tech}</ProjectTech>;
+        return <CustomChip key={index}>{tech}</CustomChip>;
       })
     : null;
   return (
@@ -37,16 +37,16 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
         aria-label="website link"
       >
         <ProjectImageOverlay>
-          <ProjectTitleLine />
+          <HorizontalLine />
           <ProjectTitle>Visit Site</ProjectTitle>
-          <ProjectTitleLine />
+          <HorizontalLine />
         </ProjectImageOverlay>
         <ProjectImage src={ProjectImageMap[id]} alt={title} />
       </ProjectImageLink>
       <ProjectCaptionContainer>
         <ProjectTitleContainer>
           <ProjectTitle>{title}</ProjectTitle>
-          <ProjectTitleLine />
+          <HorizontalLine />
           <ProjectLink
             href={url}
             target="_blank"
@@ -65,7 +65,7 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
           </ProjectLink>
         </ProjectTitleContainer>
         <Text>{summary}</Text>
-        <ProjectTechnologies>{technologyDisplay}</ProjectTechnologies>
+        <ProjectChipContainer>{technologyChips}</ProjectChipContainer>
       </ProjectCaptionContainer>
     </ProjectContainer>
   );

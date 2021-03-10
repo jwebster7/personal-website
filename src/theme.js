@@ -1,3 +1,11 @@
+/**
+ * Theme
+ *  #336666 - myrtle green
+ *  #121113 - rich black
+ *  #FFF5EE - seashell
+ *  #5B9999 - cadet blue
+ */
+
 // frequently repeated styling attributes
 const primaryFontColor = "#fff5ee";
 const primaryFontFamily = `"Ubuntu", sans-serif`;

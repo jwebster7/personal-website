@@ -1,5 +1,7 @@
 import React from "react";
 
+import ChipContainer from "../chip-container/chip-container.component";
+import CustomChip from "../custom-chip/custom-chip.component";
 import Heading from "../../components/heading/heading.component";
 import SubHeading from "../../components/sub-heading/sub-heading.component";
 import Text from "../../components/text/text.component";
@@ -26,7 +28,16 @@ const Position = ({
       : "";
   const startEndDate =
     !!startDate && !!endDate ? `${startDate} - ${endDate}` : "";
-  const technologyString = !!technologies ? technologies.join(", ") : "";
+
+  const technologyChips = !!technologies
+    ? technologies.map((tech, index) => {
+        return (
+          <CustomChip key={index} useAlt>
+            {tech}
+          </CustomChip>
+        );
+      })
+    : "";
   const jobDuties = !!responsibilities ? responsibilities : "";
 
   return (
@@ -44,7 +55,7 @@ const Position = ({
       <PositionContentBox>
         <Text>{summary}</Text>
         <Text>{`Responsibilities: ${jobDuties}`}</Text>
-        <Text>{`Technologies: ${technologyString}`}</Text>
+        <ChipContainer>{technologyChips}</ChipContainer>
       </PositionContentBox>
     </PositionContainer>
   );

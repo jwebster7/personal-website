@@ -1,17 +1,18 @@
 import React from "react";
 
+import HorizontalLine from "../../components/horizontal-line/horizontal-line.component";
+
 import {
   SectionHeadingContainer,
-  SectionHeadingLine,
   SectionHeadingText
 } from "./section-heading.styles";
 
 const SectionHeading = ({ heading }) => {
   return (
     <SectionHeadingContainer>
-      <SectionHeadingLine />
+      <HorizontalLine />
       <SectionHeadingText>{heading}</SectionHeadingText>
-      <SectionHeadingLine />
+      <HorizontalLine />
     </SectionHeadingContainer>
   );
 };

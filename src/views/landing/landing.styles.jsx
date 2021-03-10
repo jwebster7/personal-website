@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
-import Heading from "../../components/heading/heading.component";
-import SectionContainer from "../../components/section-container/section-container.component";
+import fadeInAnimation from "../../animations/fade-in.animation";
+import rightSlideInAnimation from "../../animations/right-slide-in.animation";
+import topSlideDownAnimation from "../../animations/top-slide-in.animation";
 
-import {
-  fadeInAnimation,
-  rightSlideInAnimation,
-  sharedHorizontalLineStyles,
-  topSlideDownAnimation
-} from "../../components/shared.styles";
+import Heading from "../../components/heading/heading.component";
+import HorizontalLine from "../../components/horizontal-line/horizontal-line.component";
+import SectionContainer from "../../components/section-container/section-container.component";
 
 export const LandingContainer = styled(SectionContainer)`
   justify-content: center;
@@ -30,8 +28,7 @@ export const LandingNameHeading = styled(Heading)`
   ${topSlideDownAnimation}
 `;
 
-export const LandingHorizontalLine = styled.div`
-  ${sharedHorizontalLineStyles}
+export const LandingHorizontalLine = styled(HorizontalLine)`
   width: 45em;
   ${rightSlideInAnimation}
 `;

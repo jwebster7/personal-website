@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import { sharedHorizontalLineStyles } from "../shared.styles";
-
 export const SectionHeadingContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -27,9 +25,4 @@ export const SectionHeadingText = styled.h1`
     letter-spacing: 0.5rem;
     text-align: center;
   }
-`;
-
-export const SectionHeadingLine = styled.div`
-  ${sharedHorizontalLineStyles}
-  width: 100%;
 `;

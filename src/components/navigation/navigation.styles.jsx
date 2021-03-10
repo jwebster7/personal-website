@@ -1,10 +1,6 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
-import { sharedBodyFontStyles } from "../shared.styles";
-
-const sharedTextStyles = css`
-  ${sharedBodyFontStyles}
-`;
+import Text from "../../components/text/text.component";
 
 export const NavigationLinkContainer = styled.nav`
   display: flex;
@@ -25,9 +21,8 @@ export const NavigationLinkContainer = styled.nav`
   }
 `;
 
-export const NavigationLink = styled.div`
+export const NavigationLink = styled(Text)`
   cursor: pointer;
-  ${sharedTextStyles}
   display: flex;
   flex-direction: column;
   align-items: center;

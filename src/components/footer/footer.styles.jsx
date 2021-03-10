@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-import { leftSlideInAnimation } from "../shared.styles";
+import leftSlideInAnimation from "../../animations/left-slide-in.animation";
+
+// import { leftSlideInAnimation } from "../shared.styles";
 
 export const FooterContainer = styled.div`
   position: fixed;
@@ -58,7 +60,7 @@ export const FooterContainer = styled.div`
 
 export const SocialIcon = styled.a`
   svg {
-    color: #FFF5EE;
+    color: #fff5ee;
     text-decoration: none;
     transition: color 300ms ease-in-out, transform 300ms ease-in-out;
     font-weight: 600;

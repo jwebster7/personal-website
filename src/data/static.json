@@ -98,10 +98,12 @@
         "technologies": [
           "C#",
           ".NET",
-          "Visual Studio",
+          "C",
           "JavaScript",
           "SQL",
-          "ServiceNow"
+          "ServiceNow",
+          "Visual Studio",
+          "MVC"
         ]
       },
       {
@@ -118,7 +120,8 @@
         "technologies": [
           "Python",
           "HTML/CSS",
-          "Jupyter Notebook"
+          "Jupyter Notebook",
+          "Scratch"
         ]
       }
     ]
