@@ -11,7 +11,7 @@ import SectionContainer from "../../components/section-container/section-contain
 export const LandingContainer = styled(SectionContainer)`
   justify-content: center;
   background-color: #121113;
-  padding: 50px;
+  padding: 5em;
   min-height: 100vh;
   width: 100%;
 

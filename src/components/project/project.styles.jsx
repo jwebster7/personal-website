@@ -3,15 +3,17 @@ import styled from "styled-components";
 import ChipContainer from "../../components/chip-container/chip-container.component";
 import Heading from "../../components/heading/heading.component";
 import Text from "../../components/text/text.component";
+import HorizontalLine from "../horizontal-line/horizontal-line.component";
 
 export const ProjectContainer = styled.div`
-  display: flex;
   margin: 50px 0;
   min-height: 335px;
   height: auto;
   max-width: 1500px;
-  width: 90%;
+
+  display: flex;
   align-items: center;
+  width: 100%;
 
   @media only screen and (max-width: 1300px) {
     align-items: center;
@@ -19,6 +21,11 @@ export const ProjectContainer = styled.div`
 
   @media only screen and (max-width: 900px) {
     margin: 25px 0;
+  }
+
+  @media only screen and (max-width: 750px) {
+    margin: 25px 0;
+    width: 90%;
   }
 `;
 
@@ -84,27 +91,26 @@ export const ProjectCaptionContainer = styled.div`
   flex-direction: column;
   flex-grow: 1;
   padding: 0 40px;
-  /* background: rgba(18, 17, 19, 0.6); */
 
   @media only screen and (max-width: 1300px) {
     padding: 40px 0;
-    height: 100%;
-    width: 600px;
+    height: auto;
+    max-width: 600px;
+    width: 100%;
   }
 
   @media only screen and (max-width: 750px) {
     padding: 20px 0;
-    width: 100%;
   }
 `;
 
 export const ProjectLinkContainer = styled.div`
+  margin: auto 0 0 auto;
+
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-top: auto;
-  margin: 0;
 `;
 
 export const ProjectLink = styled.a`
@@ -127,6 +133,7 @@ export const ProjectLink = styled.a`
   }
 
   @media only screen and (max-width: 750px) {
+    margin: 0 0 0 1em;
     * {
       font-size: 1rem;
     }
@@ -144,8 +151,18 @@ export const ProjectTitle = styled(Heading)`
 
   @media only screen and (max-width: 750px) {
     white-space: nowrap;
-    margin: 0 1em 0 0;
     align-content: center;
+  }
+
+  @media only screen and (max-width: 500px) {
+    margin: 0 auto 0 0;
+  }
+`;
+
+export const ProjectHorizontalLine = styled(HorizontalLine)`
+  @media only screen and (max-width: 500px) {
+    display: none;
+    margin: 0;
   }
 `;
 
@@ -173,6 +190,7 @@ export const ProjectTech = styled(Text)`
 export const ProjectChipContainer = styled(ChipContainer)`
   margin: 1em 0;
   width: 100%;
+
   display: flex;
   flex: 1 1 auto;
   justify-content: space-between;

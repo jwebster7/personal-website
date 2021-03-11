@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 const ContentContainer = styled.div`
-  display: flex;
-  /* flex: 1 1 auto; */
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  min-height: 100%;
   width: 80%;
+
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
   @media only screen and (max-width: 1300px) {
     width: 90%;

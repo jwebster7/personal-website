@@ -6,14 +6,14 @@ const SectionContainer = styled.div`
   flex-grow: 1;
   justify-content: flex-start;
   align-items: center;
-  padding: 75px;
+  padding: 5em;
   min-height: 100vh;
   width: 100%;
 
   background-color: ${(props) => props.backgroundColor};
 
   @media only screen and (max-width: 750px) {
-    padding: 50px 25px;
+    padding: 3.75em 2em;
   }
 `;
 

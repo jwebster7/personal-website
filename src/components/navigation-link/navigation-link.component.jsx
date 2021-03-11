@@ -1,36 +1,19 @@
 import styled from "styled-components";
+import Text from "../text/text.component";
 
-import Text from "../../components/text/text.component";
-
-export const NavigationLinkContainer = styled.nav`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-
-  span:last-child {
-    margin-right: 0;
-  }
-
-  @media only screen and (max-width: ${(props) => props.changeMenuOn}) {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0;
-  }
-`;
-
-export const NavigationLink = styled(Text)`
+const NavigationLink = styled(Text)`
   cursor: pointer;
+  margin: 0 2.5em 0 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 2.5em 0 0;
+
   text-decoration: none;
   transition: color 300ms ease-in-out;
   font-weight: 600;
+  white-space: nowrap;
 
   :after {
     content: "";
@@ -43,10 +26,11 @@ export const NavigationLink = styled(Text)`
     color: #5b9999;
   }
 
-  ${({ inView }) => {
-    const style = inView
+  ${({ active }) => {
+    const style = active
       ? `
         color: #5B9999;
+        // font-style: italic;
         :after {
           content: "";
           width: 95%;
@@ -60,3 +44,5 @@ export const NavigationLink = styled(Text)`
     margin: 10px 0;
   }
 `;
+
+export default NavigationLink;

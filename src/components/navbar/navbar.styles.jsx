@@ -100,6 +100,7 @@ export const NavBarContainer = styled.div`
     flex-direction: column;
     align-items: flex-end;
     min-height: 50px;
+    width: 5em;
   }
 `;
 

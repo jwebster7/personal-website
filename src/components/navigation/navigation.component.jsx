@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 import NavBar from "../navbar/navbar.component";
+import NavigationLink from "../navigation-link/navigation-link.component";
 
-import { NavigationLinkContainer, NavigationLink } from "./navigation.styles";
+import { NavigationLinkContainer } from "./navigation.styles";
 
 // TODO: add in a brand icon to the left of the nav container
 const Navigation = ({
@@ -32,28 +33,28 @@ const Navigation = ({
         >
           <NavigationLink
             onClick={() => scrollTo(aboutEntry)}
-            inView={aboutInView}
+            active={aboutInView}
             changeMenuOn={changeMenuOn}
           >
             Profile
           </NavigationLink>
           <NavigationLink
             onClick={() => scrollTo(experienceEntry)}
-            inView={experienceInView}
+            active={experienceInView}
             changeMenuOn={changeMenuOn}
           >
             Experience
           </NavigationLink>
           <NavigationLink
             onClick={() => scrollTo(projectsEntry)}
-            inView={projectsInView}
+            active={projectsInView}
             changeMenuOn={changeMenuOn}
           >
             Projects
           </NavigationLink>
           <NavigationLink
             onClick={() => scrollTo(educationEntry)}
-            inView={educationInView}
+            active={educationInView}
             changeMenuOn={changeMenuOn}
           >
             Education

@@ -17,7 +17,9 @@
   },
   "education": [
     {
-      "institution": "Various online resources",
+      "id": "0",
+      "tab": "Present",
+      "organization": "Various online resources",
       "major": "Continuing education",
       "degree": " ",
       "startDate": "May 2019",
@@ -29,7 +31,9 @@
       }
     },
     {
-      "institution": "Kansas State University",
+      "id": "1",
+      "tab": "KSU",
+      "organization": "Kansas State University",
       "major": "Computer Science",
       "degree": "BS in",
       "startDate": "January 2017",
@@ -41,7 +45,9 @@
       }
     },
     {
-      "institution": "Butler Community College",
+      "id": "2",
+      "tab": "BCC",
+      "organization": "Butler Community College",
       "major": "Mathematics",
       "degree": "AS in",
       "startDate": "August 2012",
@@ -53,79 +59,86 @@
       }
     }
   ],
-  "experience": {
-    "jobs": [
-      {
-        "organization": "NetApp | SolidFire",
-        "title": "Software Engineer",
-        "summary": "After graduation, I accepted an offer for a position at NetApp. I primarily worked with Python and TypeScript, but worked with and was exposed to many different technologies. I was always able to meet my commitments despite product requirements constantly evolving.",
-        "responsibilities": "Software development, software testing, and project scoping on an HCI Deployment Engine.",
-        "startDate": "June 2019",
-        "endDate": "October 2020",
-        "location": {
-          "city": "Wichita",
-          "state": "KS"
-        },
-        "technologies": [
-          "Python",
-          "TypeScript",
-          "Go",
-          "Flask",
-          "Pytest",
-          "Angular",
-          "Jasmine",
-          "Protractor",
-          "Git",
-          "Docker",
-          "Groovy",
-          "Jenkins",
-          "Jira",
-          "REST",
-          "Agile Development"
-        ]
+  "experience": [
+    {
+      "id": "0",
+      "tab": "NetApp",
+      "company": "NetApp | SolidFire",
+      "organization": "NetApp | SolidFire",
+      "title": "Software Engineer",
+      "summary": "After graduation, I accepted an offer for a position at NetApp. I primarily worked with Python and TypeScript, but worked with and was exposed to many different technologies. I was always able to meet my commitments despite product requirements constantly evolving.",
+      "responsibilities": "Software development, software testing, and project scoping on a HCI Deployment Engine.",
+      "startDate": "June 2019",
+      "endDate": "October 2020",
+      "location": {
+        "city": "Wichita",
+        "state": "KS"
       },
-      {
-        "organization": "Kansas State University | iTAC",
-        "title": "Lead of Development",
-        "summary": "During my time at K-State, I worked in the Information Technology Assistance Center as an IT Consultant. I was given the opportunity to lead a team of developers in building new solutions to replace antiquated tools and technologies. My time at iTAC was a great experience because it allowed me to grow as a developer while assisting those around me.",
-        "responsibilities": "Software research and development, IT technical support, and new-hire training.",
-        "startDate": "February 2017",
-        "endDate": "May 2019",
-        "location": {
-          "city": "Manhattan",
-          "state": "KS"
-        },
-        "technologies": [
-          "C#",
-          ".NET",
-          "C",
-          "JavaScript",
-          "SQL",
-          "ServiceNow",
-          "Visual Studio",
-          "MVC"
-        ]
+      "technologies": [
+        "Python",
+        "TypeScript",
+        "Go",
+        "Flask",
+        "Pytest",
+        "Angular",
+        "Jasmine",
+        "Protractor",
+        "Git",
+        "Docker",
+        "Groovy",
+        "Jenkins",
+        "Jira",
+        "REST",
+        "Agile Development"
+      ]
+    },
+    {
+      "id": "1",
+      "tab": "iTAC",
+      "company": "Kansas State University | iTAC",
+      "organization": "Kansas State University | iTAC",
+      "title": "Lead of Development",
+      "summary": "During my time at K-State, I worked in the Information Technology Assistance Center as an IT Consultant. I was given the opportunity to lead a team of developers in building new solutions to replace antiquated tools and technologies. My time at iTAC was a great experience because it allowed me to grow as a developer while assisting those around me.",
+      "responsibilities": "Software research and development, IT technical support, and new-hire training.",
+      "startDate": "February 2017",
+      "endDate": "May 2019",
+      "location": {
+        "city": "Manhattan",
+        "state": "KS"
       },
-      {
-        "organization": "Kansas State University | Computer Science",
-        "title": "Undergraduate Teaching Assistant",
-        "summary": "While attending K-State, I worked as an Undergraduate Teaching Assistant in the Department of Computer Science. This was an incredibly rewarding experience, as I was able to assist new students in establishing a fundamental understanding of Computer Science.",
-        "responsibilities": "Assisted instructors with in-class activities, graded class assignments, and tutored students on the fundamentals of programming using Python.",
-        "startDate": "August 2017",
-        "endDate": "December 2018",
-        "location": {
-          "city": "Manhattan",
-          "state": "KS"
-        },
-        "technologies": [
-          "Python",
-          "HTML/CSS",
-          "Jupyter Notebook",
-          "Scratch"
-        ]
-      }
-    ]
-  },
+      "technologies": [
+        "C#",
+        ".NET",
+        "C",
+        "JavaScript",
+        "SQL",
+        "ServiceNow",
+        "Visual Studio",
+        "MVC"
+      ]
+    },
+    {
+      "id": "2",
+      "tab": "KSU",
+      "company": "Kansas State University | Computer Science",
+      "organization": "Kansas State University | Computer Science",
+      "title": "Undergraduate Teaching Assistant",
+      "summary": "While attending K-State, I worked as an Undergraduate Teaching Assistant in the Department of Computer Science. This was an incredibly rewarding experience, as I was able to assist new students in establishing a fundamental understanding of Computer Science.",
+      "responsibilities": "Assisted instructors with in-class activities, graded class assignments, and tutored students on the fundamentals of programming using Python.",
+      "startDate": "August 2017",
+      "endDate": "December 2018",
+      "location": {
+        "city": "Manhattan",
+        "state": "KS"
+      },
+      "technologies": [
+        "Python",
+        "HTML/CSS",
+        "Jupyter Notebook",
+        "Scratch"
+      ]
+    }
+  ],
   "projects": [
     {
       "id": 0,

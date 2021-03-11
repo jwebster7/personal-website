@@ -5,7 +5,7 @@ export const SectionHeadingContainer = styled.div`
   flex-direction: row;
   width: 100%;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 2.5em;
 
   @media only screen and (max-width: 750px) {
     margin-bottom: 25px;

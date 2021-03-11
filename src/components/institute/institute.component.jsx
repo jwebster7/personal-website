@@ -11,7 +11,7 @@ import {
 } from "./institute.styles";
 
 const Institute = ({
-  institution,
+  organization,
   degree,
   major,
   startDate,
@@ -33,7 +33,7 @@ const Institute = ({
       <InstituteContentGrid>
         <InstituteContentBox>
           <Heading>{degreeMajor}</Heading>
-          <Heading>{institution}</Heading>
+          <Heading>{organization}</Heading>
         </InstituteContentBox>
 
         <InstituteContentBox>

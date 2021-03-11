@@ -5,7 +5,7 @@ import ContentContainer from "../../components/content-container/content-contain
 export const ProjectsContent = styled(ContentContainer)`
   flex-flow: column wrap;
   justify-content: space-around;
-  width: 90%;
+  width: 85%;
 
   > div:nth-child(odd) {
     flex-direction: row;
@@ -38,8 +38,6 @@ export const ProjectsContent = styled(ContentContainer)`
   }
 
   @media only screen and (max-width: 750px) {
-    margin: 0 25px 50px 25px;
-    min-height: 400px;
-    min-width: 300px;
+    margin: 0 0 1em;
   }
 `;

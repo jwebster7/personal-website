@@ -12,9 +12,10 @@ export const StyledChip = styled(Text)`
   border-radius: 0.5em;
   ${(props) => {
     // this is fine for now, but I should redo this to use a themeprovider
+    // cadet-blue - rgba(51, 102, 102, 0.6)
     const useAlt = !!props.useAlt;
     const backgroundColor = useAlt
-      ? `rgba(51, 102, 102, 0.6)`
+      ? `rgb(51, 102, 102)`
       : `rgba(18, 17, 19, 0.6)`;
     return `background: ${backgroundColor};`;
   }}

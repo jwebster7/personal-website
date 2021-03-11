@@ -1,7 +1,6 @@
 import React from "react";
 
 import CustomChip from "../../components/custom-chip/custom-chip.component";
-import HorizontalLine from "../../components/horizontal-line/horizontal-line.component";
 import Text from "../../components/text/text.component";
 
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -15,6 +14,7 @@ import {
   ProjectLink,
   ProjectCaptionContainer,
   ProjectChipContainer,
+  ProjectHorizontalLine,
   ProjectTitle,
   ProjectTitleContainer,
   ProjectImageOverlay
@@ -37,16 +37,16 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
         aria-label="website link"
       >
         <ProjectImageOverlay>
-          <HorizontalLine />
+          <ProjectHorizontalLine />
           <ProjectTitle>Visit Site</ProjectTitle>
-          <HorizontalLine />
+          <ProjectHorizontalLine />
         </ProjectImageOverlay>
         <ProjectImage src={ProjectImageMap[id]} alt={title} />
       </ProjectImageLink>
       <ProjectCaptionContainer>
         <ProjectTitleContainer>
           <ProjectTitle>{title}</ProjectTitle>
-          <HorizontalLine />
+          <ProjectHorizontalLine />
           <ProjectLink
             href={url}
             target="_blank"
