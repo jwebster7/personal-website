@@ -9,10 +9,10 @@ const frames = keyframes`
   }
 `;
 
-const fadeInAnimation = css`
+const delayedFadeInAnimation = css`
   opacity: 0;
-  animation: ${frames} 1s ease-in-out;
+  animation: ${frames} 1.25s ease-in-out 1s;
   animation-fill-mode: forwards;
 `;
 
-export default fadeInAnimation;
+export default delayedFadeInAnimation;

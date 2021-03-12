@@ -2,7 +2,7 @@ import { css, keyframes } from "styled-components";
 
 const frames = keyframes`
   from {
-    transform: translateY(-500%);
+    transform: translateY(-600%);
   }
 
   to {
@@ -11,7 +11,7 @@ const frames = keyframes`
 `;
 
 export const topSlideInAnimation = css`
-  animation: ${frames} 1s ease-out;
+  animation: ${frames} 1s ease-in-out;
 `;
 
 export default topSlideInAnimation;

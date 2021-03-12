@@ -1,17 +1,18 @@
-import React, { useState } from "react";
+import React, { memo, useMemo, useState } from "react";
 
 import TimelineNavigator from "../../components/timeline-navigator/timeline-navigator.component";
-import HorizontalLine from "../horizontal-line/horizontal-line.component";
 
 const Timeline = ({ idMap, eventMap }) => {
   const [selectedId, setSelectedId] = useState(0);
-  const navigationList = !!idMap
-    ? Object.entries(idMap).map(([key, value]) => {
-        const { id, tab } = value;
-        const isActive = parseInt(id) === parseInt(selectedId);
-        return { id: id, tab: tab, active: isActive };
-      })
-    : null;
+  const navigationList = useMemo(() => {
+    return !!idMap
+      ? Object.entries(idMap).map(([key, value]) => {
+          const { id, tab } = value;
+          const isActive = parseInt(id) === parseInt(selectedId);
+          return { id: id, tab: tab, active: isActive };
+        })
+      : null;
+  }, [idMap, selectedId]);
 
   const handleSelectTab = (id) => {
     setSelectedId(id);
@@ -28,4 +29,4 @@ const Timeline = ({ idMap, eventMap }) => {
   );
 };
 
-export default Timeline;
+export default memo(Timeline);

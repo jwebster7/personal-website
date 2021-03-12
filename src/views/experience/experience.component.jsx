@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useState } from "react";
+import React, { forwardRef, memo, useEffect, useMemo, useState } from "react";
 
 import ContentContainer from "../../components/content-container/content-container.component";
 import Position from "../../components/position/position.component";
@@ -20,23 +20,28 @@ const Experience = forwardRef((props, ref) => {
     setPositionMap(positionMap);
   }, [setPositionMap]);
 
-  const eventIdMap = !!positionIdMap
-    ? Object.entries(positionIdMap).reduce((obj, [id, position]) => {
-        obj[id] = (
-          <Position
-            organization={position?.organization}
-            title={position?.title}
-            startDate={position?.startDate}
-            endDate={position?.endDate}
-            responsibilities={position?.responsibilities}
-            summary={position?.summary}
-            location={position?.location}
-            technologies={position?.technologies}
-          />
-        );
-        return obj;
-      }, {})
-    : {};
+  const eventIdMap = useMemo(() => {
+    return !!positionIdMap
+      ? Object.entries(positionIdMap).reduce((obj, [id, position]) => {
+          console.log("re-calculating the eventIdMap in experience");
+          obj[id] = (
+            <Position
+              organization={position?.organization}
+              title={position?.title}
+              startDate={position?.startDate}
+              endDate={position?.endDate}
+              responsibilities={position?.responsibilities}
+              summary={position?.summary}
+              location={position?.location}
+              technologies={position?.technologies}
+            />
+          );
+          return obj;
+        }, {})
+      : {};
+  }, [positionIdMap]);
+
+  console.log("re-calculating the Experience view");
 
   return (
     <SectionContainer ref={ref} backgroundColor="#121113">
@@ -48,35 +53,4 @@ const Experience = forwardRef((props, ref) => {
   );
 });
 
-export default Experience;
-
-// const jobList = data?.experience?.jobs;
-// const jobPath = jobList.map((position, index) => {
-//   const {
-//     id,
-//     organization,
-//     title,
-//     startDate,
-//     endDate,
-//     responsibilities,
-//     summary,
-//     location,
-//     technologies,
-//     exitStatement
-//   } = position;
-
-//   return (
-// <Position
-//   key={index}
-//   organization={organization}
-//   title={title}
-//   startDate={startDate}
-//   endDate={endDate}
-//   responsibilities={responsibilities}
-//   summary={summary}
-//   location={location}
-//   technologies={technologies}
-//   exitStatement={exitStatement}
-// />
-//   );
-// });
+export default memo(Experience);

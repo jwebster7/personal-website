@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo, useMemo } from "react";
 import { useInView } from "react-intersection-observer";
 
 import About from "../../views/about/about.component";
@@ -10,6 +10,7 @@ import Navigation from "../navigation/navigation.component";
 import Projects from "../../views/projects/projects.component";
 
 import { Content, Layout } from "./app-container.styles";
+// import AppProvider from "../../context/app.provider";
 
 const inViewConfig = {
   threshold: 0.4
@@ -58,4 +59,49 @@ const AppContainer = () => {
   );
 };
 
-export default AppContainer;
+export default memo(AppContainer);
+
+// const AppContainer = () => {
+//   const [aboutRef, aboutInView, aboutEntry] = useInView(inViewConfig);
+//   const [experienceRef, experienceInView, experienceEntry] = useInView(
+//     inViewConfig
+//   );
+//   const [educationRef, educationInView, educationEntry] = useInView(
+//     inViewConfig
+//   );
+//   const [projectsRef, projectsInView, projectsEntry] = useInView(inViewConfig);
+
+//   const entries = {
+//     aboutEntry,
+//     experienceEntry,
+//     educationEntry,
+//     projectsEntry
+//   };
+
+//   const inViewTrackers = {
+//     aboutInView,
+//     experienceInView,
+//     educationInView,
+//     projectsInView
+//   };
+
+//   const scrollToRef = (entry) => {
+//     entry.target.scrollIntoView({ behavior: "smooth" });
+//   };
+
+//   return (
+//     <Layout>
+//       <Navigation scrollTo={scrollToRef} {...entries} {...inViewTrackers} />
+//       <Content>
+//         <Landing />
+//         <About ref={aboutRef} />
+//         <Experience ref={experienceRef} />
+//         <Projects ref={projectsRef} />
+//         <Education ref={educationRef} />
+//       </Content>
+//       <Footer />
+//     </Layout>
+//   );
+// };
+
+// export default memo(AppContainer);

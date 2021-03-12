@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import delayedFadeInAnimation from "../../animations/delayed-fade-in.animation";
 import fadeInAnimation from "../../animations/fade-in.animation";
 import rightSlideInAnimation from "../../animations/right-slide-in.animation";
 import topSlideDownAnimation from "../../animations/top-slide-in.animation";
@@ -30,7 +31,7 @@ export const LandingNameHeading = styled(Heading)`
 
 export const LandingHorizontalLine = styled(HorizontalLine)`
   width: 45em;
-  ${rightSlideInAnimation}
+  ${fadeInAnimation}
 `;
 
 export const LandingTitleHeading = styled(Heading)`
@@ -38,5 +39,5 @@ export const LandingTitleHeading = styled(Heading)`
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
   font-weight: 400;
-  ${fadeInAnimation}
+  ${delayedFadeInAnimation}
 `;

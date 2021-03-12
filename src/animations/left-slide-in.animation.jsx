@@ -3,7 +3,7 @@ import { css, keyframes } from "styled-components";
 const frames = keyframes`
   from {
     opacity: 0;
-    transform: translateX(-300%);
+    transform: translateX(-100%);
   }
 
   to {
@@ -13,7 +13,7 @@ const frames = keyframes`
 `;
 
 const leftSlideInAnimation = css`
-  animation: ${frames} 1s ease-out;
+  animation: ${frames} 1s ease-in-out;
 `;
 
 export default leftSlideInAnimation;

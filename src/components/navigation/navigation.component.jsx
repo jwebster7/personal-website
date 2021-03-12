@@ -1,7 +1,8 @@
 import React from "react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+
+// import { useAppData } from "../../context/app.provider";
 
 import NavBar from "../navbar/navbar.component";
 import NavigationLink from "../navigation-link/navigation-link.component";
@@ -24,6 +25,7 @@ const Navigation = ({
     aboutInView || educationInView || experienceInView || projectsInView;
 
   const changeMenuOn = "750px";
+
   return (
     <NavBar
       menu={

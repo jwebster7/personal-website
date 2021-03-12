@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 import HorizontalLine from "../horizontal-line/horizontal-line.component";
 import NavigationLink from "../navigation-link/navigation-link.component";
@@ -18,6 +18,8 @@ const TimelineNavigator = ({ navigationList, handleSelectTab }) => {
       ))
     : null;
 
+  console.log("re-rendering timeline navigator");
+
   return (
     <TimelineNavigatorContainer>
       {navigationLinks}
@@ -26,4 +28,4 @@ const TimelineNavigator = ({ navigationList, handleSelectTab }) => {
   );
 };
 
-export default TimelineNavigator;
+export default memo(TimelineNavigator);

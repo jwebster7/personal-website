@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 import leftSlideInAnimation from "../../animations/left-slide-in.animation";
 
-// import { leftSlideInAnimation } from "../shared.styles";
-
 export const FooterContainer = styled.div`
   position: fixed;
   z-index: 1000;

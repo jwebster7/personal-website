@@ -31,9 +31,12 @@ const NavigationLink = styled(Text)`
       ? `
         color: #5B9999;
         // font-style: italic;
+        // padding: .25em;
+        // border-radius: .5em;
+        // border: 3px solid #5b9999;
         :after {
           content: "";
-          width: 95%;
+          width: 100%;
         }
     `
       : `color: #FFF5EE`;
