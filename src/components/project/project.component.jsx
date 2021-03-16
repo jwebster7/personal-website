@@ -1,6 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 
 import CustomChip from "../../components/custom-chip/custom-chip.component";
+import LinkedImage from "../../components/linked-image/linked-image.component";
 import Text from "../../components/text/text.component";
 
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -9,18 +10,30 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
   ProjectContainer,
-  ProjectImage,
-  ProjectImageLink,
   ProjectLink,
   ProjectCaptionContainer,
   ProjectChipContainer,
   ProjectHorizontalLine,
   ProjectTitle,
-  ProjectTitleContainer,
-  ProjectImageOverlay
+  ProjectTitleContainer
 } from "./project.styles";
 
 import { ProjectImageMap } from "../../assets/index";
+
+const imageSizes = {
+  initial: {
+    height: "335px",
+    width: "600px"
+  },
+  md: {
+    height: "auto",
+    width: "100%"
+  },
+  sm: {
+    height: "auto",
+    width: "100%"
+  }
+};
 
 const Project = ({ id, url, repo, title, summary, technologies }) => {
   const technologyChips = !!technologies
@@ -28,21 +41,16 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
         return <CustomChip key={index}>{tech}</CustomChip>;
       })
     : null;
+
   return (
     <ProjectContainer>
-      <ProjectImageLink
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="website link"
-      >
-        <ProjectImageOverlay>
-          <ProjectHorizontalLine />
-          <ProjectTitle>Visit Site</ProjectTitle>
-          <ProjectHorizontalLine />
-        </ProjectImageOverlay>
-        <ProjectImage src={ProjectImageMap[id]} alt={title} />
-      </ProjectImageLink>
+      <LinkedImage
+        url={url}
+        src={ProjectImageMap[id]}
+        alt={title}
+        sizes={imageSizes}
+        overlayText={title}
+      />
       <ProjectCaptionContainer>
         <ProjectTitleContainer>
           <ProjectTitle>{title}</ProjectTitle>
@@ -71,4 +79,4 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
   );
 };
 
-export default Project;
+export default memo(Project);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 import {
   LandingContainer,
@@ -17,4 +17,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default memo(Landing);

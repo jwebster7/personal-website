@@ -10,9 +10,9 @@ export const SmallMenuContainer = styled.div`
     justify-content: flex-start;
     align-items: flex-end;
 
-    width: 80px;
+    width: 5em;
 
-    border-radius: 0 0 0 15px;
+    border-radius: 0 0 0 1em;
     background: rgba(18, 17, 19, 0.6);
     backdrop-filter: blur(5px);
 
@@ -21,7 +21,7 @@ export const SmallMenuContainer = styled.div`
     ${(props) => {
       if (props.showMenu) {
         return css`
-          width: 160px;
+          width: 10em;
         `;
       }
     }}
@@ -30,7 +30,7 @@ export const SmallMenuContainer = styled.div`
 
 export const MenuIconContainer = styled.div`
   margin: 0;
-  padding: 15px 25px;
+  padding: 1em 1.5em;
 `;
 
 export const SmallMenu = styled.div`
@@ -40,7 +40,7 @@ export const SmallMenu = styled.div`
       if (props.showMenu) {
         return css`
           display: block;
-          padding: 0 25px 25px 25px;
+          padding: 0 1em 1em;
           width: 100%;
         `;
       }
@@ -48,7 +48,7 @@ export const SmallMenu = styled.div`
   }
 `;
 
-export const LargeMenu = styled.div`
+export const LargeMenuLinkContainer = styled.div`
   position: absolute;
   top: 0;
   right: 0;
@@ -58,17 +58,21 @@ export const LargeMenu = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  padding: 25px 75px;
+  padding: 1em 5em;
   min-height: 90px;
   min-width: 45vw;
 
-  border-radius: 0 0 0 75px;
+  border-radius: 0 0 0 5em;
   background: rgba(18, 17, 19, 0.6);
   backdrop-filter: blur(5px);
 
-  @media only screen and (max-width: 1300px) {
-    min-height: 75px;
-    align-items: flex-start;
+  span:last-child {
+    margin-right: 0;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    min-height: 5em;
+    align-items: center;
   }
 
   @media only screen and (max-width: 1100px) {
@@ -99,7 +103,7 @@ export const NavBarContainer = styled.div`
   @media only screen and (max-width: ${(props) => props.changeMenuOn}) {
     flex-direction: column;
     align-items: flex-end;
-    min-height: 50px;
+    min-height: 3em;
     width: 5em;
   }
 `;

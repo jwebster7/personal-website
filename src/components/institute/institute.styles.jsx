@@ -6,7 +6,7 @@ export const InstituteContainer = styled.div`
   margin: 0 0 50px 0;
   width: 100%;
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 768px) {
     margin: 0 0 25px 0;
   }
 `;

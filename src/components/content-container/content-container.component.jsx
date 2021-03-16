@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ContentContainer = styled.div`
   min-height: 100%;
-  width: 80%;
+  width: 85%;
 
   display: flex;
   flex: 1 1 auto;
@@ -10,8 +10,8 @@ const ContentContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
 
-  @media only screen and (max-width: 1300px) {
-    width: 90%;
+  @media only screen and (max-width: 1200px) {
+    width: 95%;
   }
 
   @media only screen and (max-width: 1100px) {

@@ -7,7 +7,7 @@ const StyledLink = styled.a`
 
   transition: color 300ms ease-in-out;
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 768px) {
     font-size: 1rem;
   }
 `;

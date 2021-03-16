@@ -1,3 +1,6 @@
+// import { Link } from "react-router-dom";
+// import { HashLink as Link } from 'react-router-hash-link';
+import { memo } from "react";
 import styled from "styled-components";
 import Text from "../text/text.component";
 
@@ -30,13 +33,15 @@ const NavigationLink = styled(Text)`
     const style = active
       ? `
         color: #5B9999;
-        // font-style: italic;
-        // padding: .25em;
-        // border-radius: .5em;
-        // border: 3px solid #5b9999;
         :after {
           content: "";
-          width: 100%;
+          width: 95%;
+        }
+
+        @media only screen and (max-width: 768px) {
+          :after {
+            width: 0%;
+          }
         }
     `
       : `color: #FFF5EE`;
@@ -44,8 +49,12 @@ const NavigationLink = styled(Text)`
   }};
 
   @media only screen and (max-width: ${(props) => props.changeMenuOn}) {
-    margin: 10px 0;
+    margin: 0 auto 1em;
+    font-size: 1rem;
+    line-height: 1.25;
+    white-space: normal;
+    /* text-align: justify; */
   }
 `;
 
-export default NavigationLink;
+export default memo(NavigationLink);

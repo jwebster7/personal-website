@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useState } from "react";
+import React, { forwardRef, memo, useEffect, useMemo, useState } from "react";
 
 import Project from "../../components/project/project.component";
 import SectionContainer from "../../components/section-container/section-container.component";
@@ -14,13 +14,11 @@ const Projects = forwardRef((props, ref) => {
   useEffect(() => {
     const projects = !!data?.projects ? data?.projects : [];
     setProjects(projects);
-  }, []);
+  }, [setProjects]);
 
-  return (
-    <SectionContainer ref={ref} backgroundColor="#336666">
-      <SectionHeading heading={"Projects"} />
-      <ProjectsContent>
-        {projects.map((project, index) => {
+  const projectComponents = useMemo(() => {
+    return !!projects
+      ? projects.map((project, index) => {
           return (
             <Project
               key={index}
@@ -32,10 +30,16 @@ const Projects = forwardRef((props, ref) => {
               technologies={project?.technologies}
             />
           );
-        })}
-      </ProjectsContent>
+        })
+      : null;
+  }, [projects]);
+
+  return (
+    <SectionContainer ref={ref} backgroundColor="#336666">
+      <SectionHeading heading={"Projects"} />
+      <ProjectsContent>{projectComponents}</ProjectsContent>
     </SectionContainer>
   );
 });
 
-export default Projects;
+export default memo(Projects);

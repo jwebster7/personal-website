@@ -6,8 +6,6 @@ import SectionContainer from "../../components/section-container/section-contain
 import SectionHeading from "../../components/section-heading/section-heading.component";
 import Timeline from "../../components/timeline/timeline.component";
 
-// import { useAppData } from "../../context/app.provider";
-
 import data from "../../data/static.json";
 
 const Education = forwardRef((props, ref) => {
@@ -15,7 +13,7 @@ const Education = forwardRef((props, ref) => {
 
   useEffect(() => {
     const educationList = data?.education;
-    let instituteMap = new Map();
+    let instituteMap = {};
     educationList.forEach((institute) => {
       instituteMap[institute?.id] = institute;
     });
@@ -25,8 +23,6 @@ const Education = forwardRef((props, ref) => {
   const eventIdMap = useMemo(() => {
     return !!instituteIdMap
       ? Object.entries(instituteIdMap).reduce((obj, [id, institute]) => {
-          console.log("re-calculating the eventIdMap in education");
-
           obj[id] = (
             <Institute
               organization={institute?.organization}
@@ -42,8 +38,6 @@ const Education = forwardRef((props, ref) => {
         }, {})
       : {};
   }, [instituteIdMap]);
-
-  console.log("re-calculating the Education view");
 
   return (
     <SectionContainer ref={ref} backgroundColor="#121113">

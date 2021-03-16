@@ -10,14 +10,15 @@
       "JavaScript",
       "Python",
       "React",
-      "Jest",
+      "Redux",
       "Node.js",
       "Styled Components"
-    ]
+    ],
+    "searchStatement": "I'm currently seeking my next development opportunity. If you'd like to work together, or have any questions please reach out to me on LinkedIn."
   },
   "education": [
     {
-      "id": "0",
+      "id": "2",
       "tab": "Present",
       "organization": "Various online resources",
       "major": "Continuing education",
@@ -45,7 +46,7 @@
       }
     },
     {
-      "id": "2",
+      "id": "0",
       "tab": "BCC",
       "organization": "Butler Community College",
       "major": "Mathematics",
@@ -61,12 +62,12 @@
   ],
   "experience": [
     {
-      "id": "0",
+      "id": "2",
       "tab": "NetApp",
       "company": "NetApp | SolidFire",
       "organization": "NetApp | SolidFire",
       "title": "Software Engineer",
-      "summary": "After graduation, I accepted an offer for a position at NetApp. I primarily worked with Python and TypeScript, but worked with and was exposed to many different technologies. I was always able to meet my commitments despite product requirements constantly evolving.",
+      "summary": "After graduation, I accepted an offer for a position at NetApp. I primarily worked with Python and TypeScript, but also worked with and was exposed to many different technologies. I was always able to meet my commitments despite product requirements constantly evolving.",
       "responsibilities": "Software development, software testing, and project scoping on a HCI Deployment Engine.",
       "startDate": "June 2019",
       "endDate": "October 2020",
@@ -118,7 +119,7 @@
       ]
     },
     {
-      "id": "2",
+      "id": "0",
       "tab": "KSU",
       "company": "Kansas State University | Computer Science",
       "organization": "Kansas State University | Computer Science",
@@ -145,7 +146,7 @@
       "url": "https://jwebster7-crown-clothing.herokuapp.com/",
       "repo": "https://github.com/jwebster7/crown-clothing",
       "title": "Crown Clothing",
-      "summary": "This is an e-commerce site I made as a final project in a Udemy course. I built it using React, Redux, and Express.js.",
+      "summary": "This is an e-commerce site I made as a final project in a Udemy course. I built it primarily with React, Redux, and Express.js.",
       "technologies": [
         "JavaScript",
         "SCSS",
@@ -167,7 +168,7 @@
       "url": "https://jwebster7-whats-the-weather.herokuapp.com/home",
       "repo": "https://github.com/jwebster7/weather-app",
       "title": "What's the Weather?",
-      "summary": "This is one of the first apps I made with React. I built it using React, Express.js and the OpenWeather API.",
+      "summary": "This is one of the first apps I made with React. I built it primarily with React, Express.js and the OpenWeather API.",
       "technologies": [
         "JavaScript",
         "React",

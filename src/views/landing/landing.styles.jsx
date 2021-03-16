@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 import delayedFadeInAnimation from "../../animations/delayed-fade-in.animation";
 import fadeInAnimation from "../../animations/fade-in.animation";
-import rightSlideInAnimation from "../../animations/right-slide-in.animation";
 import topSlideDownAnimation from "../../animations/top-slide-in.animation";
 
 import Heading from "../../components/heading/heading.component";
@@ -16,7 +15,7 @@ export const LandingContainer = styled(SectionContainer)`
   min-height: 100vh;
   width: 100%;
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 768px) {
     display: none;
   }
 `;

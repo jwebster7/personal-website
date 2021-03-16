@@ -9,10 +9,9 @@ const Heading = styled.h1`
   margin: 0.25em 1em .25em 0;
   white-space: nowrap;
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 768px) {
     font-size: 1.15rem;
     white-space: normal;
-    /* width: 100%; */
   }
 `;
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import {
-  LargeMenu,
+  LargeMenuLinkContainer,
   MenuIcon,
   MenuIconContainer,
   NavBarContainer,
@@ -17,12 +17,8 @@ const NavBar = ({ menu, changeMenuOn, menuOpenButton, menuCloseButton }) => {
 
   return (
     <NavBarContainer className="nav-bar" changeMenuOn={changeMenuOn}>
-      <LargeMenu changeMenuOn={changeMenuOn}>{menu}</LargeMenu>
-      <SmallMenuContainer
-        className="test-container"
-        changeMenuOn={changeMenuOn}
-        showMenu={showMenu}
-      >
+      <LargeMenuLinkContainer changeMenuOn={changeMenuOn}>{menu}</LargeMenuLinkContainer>
+      <SmallMenuContainer changeMenuOn={changeMenuOn} showMenu={showMenu}>
         <MenuIconContainer>
           {!showMenu ? (
             <MenuIcon onClick={handleClick} icon={menuOpenButton} />

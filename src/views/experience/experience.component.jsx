@@ -13,9 +13,9 @@ const Experience = forwardRef((props, ref) => {
 
   useEffect(() => {
     const jobList = data?.experience;
-    let positionMap = new Map();
+    let positionMap = {};
     jobList.forEach((position) => {
-      positionMap[position?.id] = position;
+      positionMap[parseInt(position?.id)] = position;
     });
     setPositionMap(positionMap);
   }, [setPositionMap]);
@@ -23,7 +23,6 @@ const Experience = forwardRef((props, ref) => {
   const eventIdMap = useMemo(() => {
     return !!positionIdMap
       ? Object.entries(positionIdMap).reduce((obj, [id, position]) => {
-          console.log("re-calculating the eventIdMap in experience");
           obj[id] = (
             <Position
               organization={position?.organization}
@@ -40,8 +39,6 @@ const Experience = forwardRef((props, ref) => {
         }, {})
       : {};
   }, [positionIdMap]);
-
-  console.log("re-calculating the Experience view");
 
   return (
     <SectionContainer ref={ref} backgroundColor="#121113">

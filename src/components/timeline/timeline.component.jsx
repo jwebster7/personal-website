@@ -3,7 +3,7 @@ import React, { memo, useMemo, useState } from "react";
 import TimelineNavigator from "../../components/timeline-navigator/timeline-navigator.component";
 
 const Timeline = ({ idMap, eventMap }) => {
-  const [selectedId, setSelectedId] = useState(0);
+  const [selectedId, setSelectedId] = useState(2);
   const navigationList = useMemo(() => {
     return !!idMap
       ? Object.entries(idMap).map(([key, value]) => {

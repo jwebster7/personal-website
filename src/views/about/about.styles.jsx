@@ -68,8 +68,8 @@ export const ProfilePicture = styled.img`
   display: block;
   margin: 0;
   padding: 0;
-  height: 400px;
-  width: 360px;
+  height: 350px;
+  width: 350px;
   border-radius: 0.5em;
   background-color: #336666;
   background-position: center;

@@ -2,12 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-// import { useAppData } from "../../context/app.provider";
-
 import NavBar from "../navbar/navbar.component";
 import NavigationLink from "../navigation-link/navigation-link.component";
-
-import { NavigationLinkContainer } from "./navigation.styles";
 
 // TODO: add in a brand icon to the left of the nav container
 const Navigation = ({
@@ -21,22 +17,17 @@ const Navigation = ({
   educationInView,
   projectsInView
 }) => {
-  const sectionInView =
-    aboutInView || educationInView || experienceInView || projectsInView;
-
-  const changeMenuOn = "750px";
+  const changeMenuOn = "768px";
 
   return (
     <NavBar
       menu={
-        <NavigationLinkContainer
-          sectionInView={sectionInView}
-          changeMenuOn={changeMenuOn}
-        >
+        <>
           <NavigationLink
             onClick={() => scrollTo(aboutEntry)}
             active={aboutInView}
             changeMenuOn={changeMenuOn}
+            to="profile"
           >
             Profile
           </NavigationLink>
@@ -44,6 +35,7 @@ const Navigation = ({
             onClick={() => scrollTo(experienceEntry)}
             active={experienceInView}
             changeMenuOn={changeMenuOn}
+            to="experience"
           >
             Experience
           </NavigationLink>
@@ -51,6 +43,7 @@ const Navigation = ({
             onClick={() => scrollTo(projectsEntry)}
             active={projectsInView}
             changeMenuOn={changeMenuOn}
+            to="projects"
           >
             Projects
           </NavigationLink>
@@ -58,10 +51,11 @@ const Navigation = ({
             onClick={() => scrollTo(educationEntry)}
             active={educationInView}
             changeMenuOn={changeMenuOn}
+            to="education"
           >
             Education
           </NavigationLink>
-        </NavigationLinkContainer>
+        </>
       }
       changeMenuOn={changeMenuOn}
       menuOpenButton={<FontAwesomeIcon icon={faBars} size="2x" />}

@@ -23,7 +23,7 @@ export const StyledChip = styled(Text)`
   font-size: 0.75rem;
   white-space: nowrap;
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 768px) {
     font-size: 0.5rem;
     margin: 1em 1em 0 0;
   }

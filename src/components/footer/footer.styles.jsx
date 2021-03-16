@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 import leftSlideInAnimation from "../../animations/left-slide-in.animation";
 
+// import { leftSlideInAnimation } from "../shared.styles";
+
 export const FooterContainer = styled.div`
   position: fixed;
   z-index: 1000;
@@ -9,21 +11,21 @@ export const FooterContainer = styled.div`
   left: 0;
   height: 90px;
   min-width: 40vw;
-  padding: 0 75px;
+  padding: 0 5em;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  border-radius: 0 75px 0 0;
+  border-radius: 0 5em 0 0;
   background: rgba(18, 17, 19, 0.6);
   backdrop-filter: blur(5px);
 
   ${leftSlideInAnimation}
 
   a {
-    margin: 0 50px 0 0;
+    margin: 0 3em 0 0;
   }
 
   a:first-child {
@@ -38,8 +40,8 @@ export const FooterContainer = styled.div`
     font-size: 1.75rem;
   }
 
-  @media only screen and (max-width: 1300px) {
-    height: 75px;
+  @media only screen and (max-width: 1200px) {
+    height: 5em;
   }
 
   @media only screen and (max-width: 1100px) {
@@ -48,8 +50,8 @@ export const FooterContainer = styled.div`
   }
 
   @media only screen and (max-width: 750px) {
-    height: 50px;
-    padding: 0 25px;
+    height: 3.125em;
+    padding: 0 1.5em;
     a {
       margin: 0;
     }
@@ -69,7 +71,7 @@ export const SocialIcon = styled.a`
     }
 
     @media only screen and (max-width: 750px) {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
 `;

@@ -3,7 +3,10 @@ import React, { memo } from "react";
 import HorizontalLine from "../horizontal-line/horizontal-line.component";
 import NavigationLink from "../navigation-link/navigation-link.component";
 
-import { TimelineNavigatorContainer } from "./timeline-navigator.styles";
+import {
+  TimelineLinkContainer,
+  TimelineNavigatorContainer
+} from "./timeline-navigator.styles";
 
 const TimelineNavigator = ({ navigationList, handleSelectTab }) => {
   const navigationLinks = !!navigationList
@@ -18,11 +21,9 @@ const TimelineNavigator = ({ navigationList, handleSelectTab }) => {
       ))
     : null;
 
-  console.log("re-rendering timeline navigator");
-
   return (
     <TimelineNavigatorContainer>
-      {navigationLinks}
+      <TimelineLinkContainer>{navigationLinks}</TimelineLinkContainer>
       <HorizontalLine />
     </TimelineNavigatorContainer>
   );

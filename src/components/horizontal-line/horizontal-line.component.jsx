@@ -8,9 +8,6 @@ const HorizontalLine = styled.div`
   opacity: 0.7;
   border-top: 5px solid #fff5ee;
   width: 100%;
-
-  @media only screen and (max-width: 750px) {
-  }
 `;
 
 export default HorizontalLine;

@@ -1,13 +1,10 @@
 // import { ThemeProvider } from "styled-components";
+// import theme from  "./theme";
+// import { HashRouter } from "react-router-dom";
 import AppContainer from "./components/app-container/app-container.component";
-// import theme from "./theme";
 
 function App() {
-  return (
-    // <ThemeProvider theme={theme}>
-      <AppContainer />
-    // </ThemeProvider>
-  );
+  return <AppContainer />;
 }
 
 export default App;

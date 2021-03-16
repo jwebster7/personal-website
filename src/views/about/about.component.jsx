@@ -8,7 +8,7 @@ import SectionHeading from "../../components/section-heading/section-heading.com
 import TextContainer from "../../components/text-container/text-container.component";
 import Text from "../../components/text/text.component";
 
-import profilePic from "../../assets/profile-pic-cropped.png";
+import profilePic from "../../assets/profile-pic-cropped.jpg";
 import data from "../../data/static.json";
 
 import {

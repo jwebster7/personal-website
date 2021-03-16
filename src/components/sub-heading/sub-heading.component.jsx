@@ -12,7 +12,7 @@ const SubHeading = styled.h1`
     margin: 0.25em auto 0.25em 0;
   }
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 768px) {
     font-size: 1rem;
     white-space: normal;
     margin: 0.25em 0 0.25em;

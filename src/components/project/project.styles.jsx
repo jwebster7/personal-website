@@ -6,26 +6,18 @@ import Text from "../../components/text/text.component";
 import HorizontalLine from "../horizontal-line/horizontal-line.component";
 
 export const ProjectContainer = styled.div`
-  margin: 50px 0;
-  min-height: 335px;
-  height: auto;
-  max-width: 1500px;
+  margin: 3rem 0;
 
   display: flex;
   align-items: center;
   width: 100%;
 
-  @media only screen and (max-width: 1300px) {
+  @media only screen and (max-width: 1200px) {
     align-items: center;
   }
 
   @media only screen and (max-width: 900px) {
-    margin: 25px 0;
-  }
-
-  @media only screen and (max-width: 750px) {
-    margin: 25px 0;
-    width: 90%;
+    margin: 0 0 1em;
   }
 `;
 
@@ -53,7 +45,7 @@ export const ProjectImage = styled.img`
   background-size: cover;
   background-position: center;
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 768px) {
     width: 100%;
   }
 `;
@@ -90,17 +82,15 @@ export const ProjectCaptionContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 0 40px;
 
-  @media only screen and (max-width: 1300px) {
-    padding: 40px 0;
-    height: auto;
-    max-width: 600px;
+  @media only screen and (max-width: 1200px) {
+    padding: 3em 0;
+    max-width: 37.5em;
     width: 100%;
   }
 
-  @media only screen and (max-width: 750px) {
-    padding: 20px 0;
+  @media only screen and (max-width: 768px) {
+    padding: 1em 0;
   }
 `;
 
@@ -132,7 +122,7 @@ export const ProjectLink = styled.a`
     }
   }
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 768px) {
     margin: 0 0 0 1em;
     * {
       font-size: 1rem;
@@ -149,7 +139,7 @@ export const ProjectTitleContainer = styled.div`
 export const ProjectTitle = styled(Heading)`
   font-weight: 600;
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 768px) {
     white-space: nowrap;
     align-content: center;
   }
@@ -181,7 +171,7 @@ export const ProjectTech = styled(Text)`
   font-style: italic;
   white-space: nowrap;
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 768px) {
     font-size: 0.5rem;
     margin: 1em 1em 0 0;
   }
