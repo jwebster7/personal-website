@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+import HorizontalLine from "../horizontal-line/horizontal-line.component";
+import NavigationLink from "../navigation-link/navigation-link.component";
+
 export const TimelineNavigatorContainer = styled.div`
   width: 100%;
   margin: 2em 0 4em;
@@ -9,7 +12,8 @@ export const TimelineNavigatorContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 512px) {
+    /* width: 80%; */
     margin: 0 0 1em;
   }
 `;
@@ -19,4 +23,21 @@ export const TimelineLinkContainer = styled.div`
   flex-direction: row-reverse;
   align-items: center;
   justify-content: flex-start;
-`
+
+  @media only screen and (max-width: 512px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+`;
+
+export const TimelineNavigationLink = styled(NavigationLink)`
+  @media screen and (max-width: 512px) {
+    margin-right: 0;
+  }
+`;
+
+export const TimelineHorizontalLine = styled(HorizontalLine)`
+  @media screen and (max-width: 512px) {
+    display: none;
+  }
+`;

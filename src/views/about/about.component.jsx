@@ -1,8 +1,18 @@
-import React, { useEffect, useState, forwardRef } from "react";
+import React, {
+  forwardRef,
+  lazy,
+  memo,
+  Suspense,
+  useEffect,
+  useState
+} from "react";
 
+import ChipContainer from "../../components/chip-container/chip-container.component";
+import CustomChip from "../../components/custom-chip/custom-chip.component";
 import LinkedImage from "../../components/linked-image/linked-image.component";
 import SectionContainer from "../../components/section-container/section-container.component";
 import SectionHeading from "../../components/section-heading/section-heading.component";
+import Spinner from "../../components/spinner/spinner.component";
 import TextContainer from "../../components/text-container/text-container.component";
 import Text from "../../components/text/text.component";
 
@@ -14,7 +24,10 @@ import {
   AboutSkill,
   AboutSkillContainer
 } from "./about.styles";
-import { CustomImage } from "../../components/custom-image/custom-image.component";
+
+const LazyCustomImage = lazy(() =>
+  import("../../components/custom-image/custom-image.component")
+);
 
 const About = forwardRef((props, ref) => {
   const [state, setState] = useState({
@@ -40,37 +53,45 @@ const About = forwardRef((props, ref) => {
     };
   }, []);
 
+  const aboutText = !!state.body
+    ? Object.keys(state.body).map((key, index) => {
+        const sectionContent = String(state.body[key]);
+        return <Text key={index}>{sectionContent}</Text>;
+      })
+    : null;
+
+  const aboutSkills = !!state.skills
+    ? state.skills.map((skill, index) => {
+        return <CustomChip key={index}>{skill}</CustomChip>;
+      })
+    : null;
+
   return !state.loading ? (
     <SectionContainer ref={ref} backgroundColor="#336666">
       <SectionHeading heading={"Profile"} />
       <AboutContentContainer>
         <TextContainer>
-          {Object.keys(state.body).map((key, index) => {
-            const sectionContent = String(state.body[key]);
-            return <Text key={index}>{sectionContent}</Text>;
-          })}
-          <AboutSkillContainer>
-            {state.skills.map((skill, index) => {
-              return <AboutSkill key={index}>{skill}</AboutSkill>;
-            })}
-          </AboutSkillContainer>
+          {aboutText}
+          <ChipContainer>{aboutSkills}</ChipContainer>
         </TextContainer>
         <LinkedImage
           url={state.linkedInLink}
           maxWidth="25em"
           overlayText="Contact Me"
         >
-          <CustomImage
-            src={profilePic}
-            height="400px"
-            width="400px"
-            alt="avatar"
-            loading="lazy"
-          />
+          <Suspense fallback={<Spinner />}>
+            <LazyCustomImage
+              src={profilePic}
+              height="400px"
+              width="400px"
+              alt="avatar"
+              loading="lazy"
+            />
+          </Suspense>
         </LinkedImage>
       </AboutContentContainer>
     </SectionContainer>
   ) : null;
 });
 
-export default About;
+export default memo(About);

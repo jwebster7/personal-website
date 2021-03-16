@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CustomImage = styled.img`
+const CustomImage = styled.img`
   display: block;
 
   height: auto;
@@ -10,3 +10,5 @@ export const CustomImage = styled.img`
   background-size: cover;
   background-position: center;
 `;
+
+export default CustomImage;

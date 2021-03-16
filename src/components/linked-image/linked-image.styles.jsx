@@ -11,21 +11,21 @@ export const LinkedImageLink = styled.a`
   right: 0;
   bottom: 0;
   margin: 0 0 1em;
-
   height: auto;
   width: 100%;
   max-width: ${({ maxWidth }) => {
-    // return !!maxWidth ? maxWidth : "25em";
     return maxWidth ?? "25em";
   }};
 
   border-radius: 0.5em;
-  transition: transform 600ms ease-in-out;
+  box-shadow: 10px 10px 10px #121113;
+  transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
   overflow: hidden;
 
   :hover {
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.03);
+    box-shadow: 15px 15px 15px #121113;
   }
 `;
 
@@ -43,6 +43,8 @@ export const LinkedImageOverlay = styled.div`
   align-items: center;
   opacity: 0;
   background: rgba(18, 17, 19, 0.75);
+  backdrop-filter: blur(5px);
+  border: 3px solid #fff5ee;
   border-radius: 0.5em;
   transition: opacity 300ms ease-in-out;
 

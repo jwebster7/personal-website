@@ -11,7 +11,7 @@ const frames = keyframes`
 
 const delayedFadeInAnimation = css`
   opacity: 0;
-  animation: ${frames} 1.25s ease-in-out 1s;
+  animation: ${frames} 1s ease-in-out 750ms;
   animation-fill-mode: forwards;
 `;
 

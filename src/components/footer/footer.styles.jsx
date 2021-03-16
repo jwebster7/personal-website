@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-import leftSlideInAnimation from "../../animations/left-slide-in.animation";
-
-// import { leftSlideInAnimation } from "../shared.styles";
+import fadeInAnimation from "../../animations/fade-in.animation";
 
 export const FooterContainer = styled.div`
   position: fixed;
@@ -18,11 +16,11 @@ export const FooterContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  ${fadeInAnimation}
+
   border-radius: 0 5em 0 0;
   background: rgba(18, 17, 19, 0.6);
   backdrop-filter: blur(5px);
-
-  ${leftSlideInAnimation}
 
   a {
     margin: 0 3em 0 0;

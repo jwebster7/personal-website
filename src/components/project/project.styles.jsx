@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import ChipContainer from "../../components/chip-container/chip-container.component";
 import Heading from "../../components/heading/heading.component";
 import Text from "../../components/text/text.component";
 import HorizontalLine from "../horizontal-line/horizontal-line.component";
@@ -8,7 +7,6 @@ import HorizontalLine from "../horizontal-line/horizontal-line.component";
 export const ProjectContainer = styled.div`
   margin: 3rem 0;
   width: 100%;
-
   display: flex;
   align-items: center;
 
@@ -19,32 +17,6 @@ export const ProjectContainer = styled.div`
   @media only screen and (max-width: 900px) {
     margin: 0 0 1em;
   }
-`;
-
-export const ProjectImage = styled.img`
-  display: block;
-  
-  height: auto;
-  width: 100%;
-
-  object-fit: cover;
-  background-size: cover;
-  background-position: center;
-
-  /* @media only screen and (max-width: 1280px) {
-    height: 280px;
-    max-width: 500;
-  }
-
-  @media only screen and (max-width: 768px) {
-    height: 225px;
-    max-width: 400px;
-    width: 100%;
-  }
-
-  @media only screen and (max-width: 512px) {
-    height: 167.5px;
-  } */
 `;
 
 export const ProjectCaptionContainer = styled.div`
@@ -65,7 +37,6 @@ export const ProjectCaptionContainer = styled.div`
 
 export const ProjectLinkContainer = styled.div`
   margin: auto 0 0 auto;
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -75,7 +46,6 @@ export const ProjectLinkContainer = styled.div`
 export const ProjectLink = styled.a`
   display: flex;
   align-items: center;
-
   color: #fff5ee;
   text-decoration: none;
   margin: 0 0 0 1em;
@@ -128,11 +98,9 @@ export const ProjectHorizontalLine = styled(HorizontalLine)`
 export const ProjectTech = styled(Text)`
   margin: 1em 1em 0 0;
   padding: 0.5em 1em;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   border-radius: 0.5em;
   background: rgba(18, 17, 19, 0.6);
   text-align: center;
@@ -144,14 +112,4 @@ export const ProjectTech = styled(Text)`
     font-size: 0.5rem;
     margin: 1em 1em 0 0;
   }
-`;
-
-export const ProjectChipContainer = styled(ChipContainer)`
-  margin: 1em 0;
-  width: 100%;
-
-  display: flex;
-  flex: 1 1 auto;
-  justify-content: space-between;
-  flex-wrap: wrap;
 `;

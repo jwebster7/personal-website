@@ -5,13 +5,13 @@ import ContentContainer from "../../components/content-container/content-contain
 export const ProjectsContent = styled(ContentContainer)`
   flex-flow: column wrap;
   justify-content: space-around;
-  width: 90%;
+  /* width: 85%; */
 
   > div:nth-child(odd) {
     flex-direction: row;
 
     > div {
-      margin-left: 2.5em;
+      margin-left: 3em;
     }
   }
 
@@ -19,7 +19,7 @@ export const ProjectsContent = styled(ContentContainer)`
     flex-direction: row-reverse;
 
     > div {
-      margin-right: 2.5em;
+      margin-right: 3em;
     }
   }
 

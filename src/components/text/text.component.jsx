@@ -13,7 +13,6 @@ const Text = styled.span`
     font-size: 1rem;
     line-height: 1.25;
     white-space: normal;
-    /* text-align: justify; */
   }
 `;
 

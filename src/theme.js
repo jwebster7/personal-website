@@ -6,12 +6,8 @@
  *  #5B9999 - cadet blue
  */
 
-// frequently repeated styling attributes
 const primaryFontColor = "#fff5ee";
 const primaryFontFamily = `"Ubuntu", sans-serif`;
-// const bodyfontSize = "1.25rem";
-// const bodyfontHeight = "1.5";
-// const bodyfontSpacing = "0.1em";
 
 const theme = {
   background: {

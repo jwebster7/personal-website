@@ -1,12 +1,24 @@
-import React, { forwardRef, memo, useEffect, useMemo, useState } from "react";
+import React, {
+  forwardRef,
+  lazy,
+  memo,
+  Suspense,
+  useEffect,
+  useMemo,
+  useState
+} from "react";
 
 import ContentContainer from "../../components/content-container/content-container.component";
 import Position from "../../components/position/position.component";
 import SectionContainer from "../../components/section-container/section-container.component";
 import SectionHeading from "../../components/section-heading/section-heading.component";
-import Timeline from "../../components/timeline/timeline.component";
+import Spinner from "../../components/spinner/spinner.component";
 
 import data from "../../data/static.json";
+
+const LazyTimeline = lazy(() =>
+  import("../../components/timeline/timeline.component")
+);
 
 const Experience = forwardRef((props, ref) => {
   const [positionIdMap, setPositionMap] = useState({});
@@ -44,7 +56,9 @@ const Experience = forwardRef((props, ref) => {
     <SectionContainer ref={ref} backgroundColor="#121113">
       <SectionHeading heading={"Experience"} />
       <ContentContainer>
-        <Timeline idMap={positionIdMap} eventMap={eventIdMap} />
+        <Suspense fallback={<Spinner />}>
+          <LazyTimeline idMap={positionIdMap} eventMap={eventIdMap} />
+        </Suspense>
       </ContentContainer>
     </SectionContainer>
   );

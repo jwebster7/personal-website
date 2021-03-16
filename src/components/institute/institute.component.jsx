@@ -1,5 +1,6 @@
 import React from "react";
 
+import CustomChip from "../custom-chip/custom-chip.component";
 import Heading from "../../components/heading/heading.component";
 import SubHeading from "../../components/sub-heading/sub-heading.component";
 import Text from "../../components/text/text.component";
@@ -9,6 +10,7 @@ import {
   InstituteContentGrid,
   InstituteContentBox
 } from "./institute.styles";
+import ChipContainer from "../chip-container/chip-container.component";
 
 const Institute = ({
   organization,
@@ -17,7 +19,8 @@ const Institute = ({
   startDate,
   endDate,
   location,
-  summary
+  summary,
+  featuredTopics
 }) => {
   const cityState =
     !!location.city && !!location.state
@@ -27,6 +30,16 @@ const Institute = ({
     !!startDate && !!endDate ? `${startDate} - ${endDate}` : "";
 
   const degreeMajor = !!degree && !!major ? `${degree} ${major}` : null;
+
+  const topics = !!featuredTopics
+    ? featuredTopics.map((topic, index) => {
+        return (
+          <CustomChip key={index} useAlt>
+            {topic}
+          </CustomChip>
+        );
+      })
+    : "";
 
   return (
     <InstituteContainer>
@@ -41,7 +54,10 @@ const Institute = ({
           <SubHeading>{cityState}</SubHeading>
         </InstituteContentBox>
       </InstituteContentGrid>
-      <Text>{summary}</Text>
+      <InstituteContentBox>
+        <Text>{summary}</Text>
+        <ChipContainer>{topics}</ChipContainer>
+      </InstituteContentBox>
     </InstituteContainer>
   );
 };

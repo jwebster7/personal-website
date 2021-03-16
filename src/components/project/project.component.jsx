@@ -1,5 +1,6 @@
-import React, { memo } from "react";
+import React, { lazy, memo, Suspense } from "react";
 
+import ChipContainer from "../../components/chip-container/chip-container.component";
 import CustomChip from "../../components/custom-chip/custom-chip.component";
 import LinkedImage from "../../components/linked-image/linked-image.component";
 import Text from "../../components/text/text.component";
@@ -12,14 +13,17 @@ import {
   ProjectContainer,
   ProjectLink,
   ProjectCaptionContainer,
-  ProjectChipContainer,
   ProjectHorizontalLine,
   ProjectTitle,
   ProjectTitleContainer
 } from "./project.styles";
 
 import { ProjectImageMap } from "../../assets/index";
-import { CustomImage } from "../custom-image/custom-image.component";
+import Spinner from "../spinner/spinner.component";
+
+const LazyCustomImage = lazy(() =>
+  import("../../components/custom-image/custom-image.component")
+);
 
 const Project = ({ id, url, repo, title, summary, technologies }) => {
   const technologyChips = !!technologies
@@ -28,16 +32,20 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
       })
     : null;
 
+  const projectImageSrc = ProjectImageMap[id];
+
   return (
     <ProjectContainer>
       <LinkedImage url={url} maxWidth="35em" overlayText={title}>
-        <CustomImage
-          src={ProjectImageMap[id]}
-          alt={title}
-          height="280px"
-          width="500px"
-          loading="lazy"
-        />
+        <Suspense fallback={<Spinner />}>
+          <LazyCustomImage
+            src={projectImageSrc}
+            alt={title}
+            height="280px"
+            width="500px"
+            loading="lazy"
+          />
+        </Suspense>
       </LinkedImage>
       <ProjectCaptionContainer>
         <ProjectTitleContainer>
@@ -61,7 +69,7 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
           </ProjectLink>
         </ProjectTitleContainer>
         <Text>{summary}</Text>
-        <ProjectChipContainer>{technologyChips}</ProjectChipContainer>
+        <ChipContainer>{technologyChips}</ChipContainer>
       </ProjectCaptionContainer>
     </ProjectContainer>
   );

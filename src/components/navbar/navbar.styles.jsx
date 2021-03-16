@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import rightSlideInAnimation from "../../animations/right-slide-in.animation";
+import fadeInAnimation from "../../animations/fade-in.animation";
 
 export const SmallMenuContainer = styled.div`
   display: none;
@@ -66,6 +66,8 @@ export const LargeMenuLinkContainer = styled.div`
   background: rgba(18, 17, 19, 0.6);
   backdrop-filter: blur(5px);
 
+  ${fadeInAnimation}
+
   span:last-child {
     margin-right: 0;
   }
@@ -74,7 +76,7 @@ export const LargeMenuLinkContainer = styled.div`
     min-height: 5em;
     align-items: center;
   }
-/* 
+  /* 
   @media only screen and (max-width: 1024px) {
     width: 100%;
     border-radius: 0;
@@ -97,8 +99,6 @@ export const NavBarContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  ${rightSlideInAnimation}
 
   @media only screen and (max-width: ${(props) => props.changeMenuOn}) {
     flex-direction: column;

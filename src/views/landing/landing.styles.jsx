@@ -25,7 +25,7 @@ export const LandingNameHeading = styled(Heading)`
   font-family: "Open Sans", sans-serif;
   font-size: 5rem;
   font-weight: 400;
-  ${topSlideDownAnimation}
+  ${fadeInAnimation}
 `;
 
 export const LandingHorizontalLine = styled(HorizontalLine)`

@@ -1,11 +1,13 @@
 import { css, keyframes } from "styled-components";
 
 const frames = keyframes`
-  0% {
+  from {
     opacity: 0;
+    /* transform: scale(.75); */
   }
-  100% {
+  to {
     opacity: 1;
+    /* transform: scale(1); */
   }
 `;
 

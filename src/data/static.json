@@ -10,9 +10,14 @@
       "JavaScript",
       "Python",
       "React",
+      "React Hooks",
+      "React Context API",
       "Redux",
+      "styled-components",
+      "Express.js",
       "Node.js",
-      "Styled Components"
+      "Netlify",
+      "Git"
     ],
     "searchStatement": "I'm currently seeking my next development opportunity. If you'd like to work together, or have any questions please reach out to me on LinkedIn."
   },
@@ -29,7 +34,28 @@
       "location": {
         "city": "",
         "state": ""
-      }
+      },
+      "featuredTopics": [
+        "JavaScript",
+        "React",
+        "React Hooks",
+        "React HOC",
+        "React Optimization Techniques",
+        "Flux Pattern",
+        "Redux",
+        "Redux-Saga",
+        "Reselect",
+        "Functional Components",
+        "Jest",
+        "styled-components",
+        "Express.js",
+        "Node.js",
+        "Webpack",
+        "Firebase",
+        "Stripe",
+        "Heroku",
+        "Gatsby"
+      ]
     },
     {
       "id": "1",
@@ -43,7 +69,25 @@
       "location": {
         "city": "Manhattan",
         "state": "KS"
-      }
+      },
+      "featuredTopics": [
+        "Java",
+        "C",
+        "C#",
+        ".NET",
+        "JavaScript",
+        "SQL",
+        "Data Structures",
+        "Algorithms",
+        "Formal Logic",
+        "Concurrent Systems",
+        "Software Architecture",
+        "Database Management System Concepts",
+        "Computer Architecture",
+        "Object-Oriented Design",
+        "SOLID Principles",
+        "MVC"
+      ]
     },
     {
       "id": "0",
@@ -57,7 +101,16 @@
       "location": {
         "city": "El Dorado",
         "state": "KS"
-      }
+      },
+      "featuredTopics": [
+        "Calculus",
+        "Differential Equations",
+        "Physics",
+        "Chemistry",
+        "Psyschology",
+        "Ethics",
+        "Liberal Arts"
+      ]
     }
   ],
   "experience": [
@@ -153,9 +206,9 @@
         "React",
         "Redux",
         "Redux-Saga",
+        "Reselect",
         "styled-components",
         "Functional Components",
-        "Reselect",
         "Express.js",
         "Node.js",
         "Firebase",
@@ -172,11 +225,11 @@
       "technologies": [
         "JavaScript",
         "React",
-        "React ContextAPI",
         "React Hooks",
+        "React Context API",
+        "Axios",
         "styled-components",
         "Functional Components",
-        "Axios",
         "Express.js",
         "Node.js",
         "OpenWeatherAPI",

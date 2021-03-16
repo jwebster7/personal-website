@@ -1,8 +1,5 @@
 import React from "react";
 
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import {
   LinkedImageHorizontalLine,
   LinkedImageLink,
@@ -16,7 +13,7 @@ const LinkedImage = ({ url, overlayText, maxWidth, children }) => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="website link"
+      aria-label={overlayText}
       maxWidth={maxWidth}
     >
       <LinkedImageOverlay>

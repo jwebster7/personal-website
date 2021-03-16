@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom";
-// import { HashLink as Link } from 'react-router-hash-link';
 import { memo } from "react";
 import styled from "styled-components";
 import Text from "../text/text.component";
@@ -7,12 +5,10 @@ import Text from "../text/text.component";
 const NavigationLink = styled(Text)`
   cursor: pointer;
   margin: 0 2.5em 0 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   text-decoration: none;
   transition: color 300ms ease-in-out;
   font-weight: 600;
@@ -53,7 +49,6 @@ const NavigationLink = styled(Text)`
     font-size: 1rem;
     line-height: 1.25;
     white-space: normal;
-    /* text-align: justify; */
   }
 `;
 
