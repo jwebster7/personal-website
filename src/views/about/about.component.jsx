@@ -12,10 +12,9 @@ import data from "../../data/static.json";
 import {
   AboutContentContainer,
   AboutSkill,
-  AboutSkillContainer,
-  ProfilePicture,
-  ProfilePictureContainer
+  AboutSkillContainer
 } from "./about.styles";
+import { CustomImage } from "../../components/custom-image/custom-image.component";
 
 const About = forwardRef((props, ref) => {
   const [state, setState] = useState({
@@ -56,8 +55,12 @@ const About = forwardRef((props, ref) => {
             })}
           </AboutSkillContainer>
         </TextContainer>
-        <LinkedImage url={state.linkedInLink} overlayText={"Contact Me"}>
-          <ProfilePicture
+        <LinkedImage
+          url={state.linkedInLink}
+          maxWidth="25em"
+          overlayText="Contact Me"
+        >
+          <CustomImage
             src={profilePic}
             height="400px"
             width="400px"

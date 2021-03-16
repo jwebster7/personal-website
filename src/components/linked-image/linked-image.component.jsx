@@ -10,13 +10,14 @@ import {
   LinkedImageOverlay
 } from "./linked-image.styles";
 
-const LinkedImage = ({ url, overlayText, children }) => {
+const LinkedImage = ({ url, overlayText, maxWidth, children }) => {
   return (
     <LinkedImageLink
       href={url}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="website link"
+      maxWidth={maxWidth}
     >
       <LinkedImageOverlay>
         <LinkedImageHorizontalLine />

@@ -10,7 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
   ProjectContainer,
-  ProjectImage,
   ProjectLink,
   ProjectCaptionContainer,
   ProjectChipContainer,
@@ -20,21 +19,7 @@ import {
 } from "./project.styles";
 
 import { ProjectImageMap } from "../../assets/index";
-
-const imageSizes = {
-  initial: {
-    height: "335px",
-    width: "600px"
-  },
-  md: {
-    height: "auto",
-    width: "100%"
-  },
-  sm: {
-    height: "auto",
-    width: "100%"
-  }
-};
+import { CustomImage } from "../custom-image/custom-image.component";
 
 const Project = ({ id, url, repo, title, summary, technologies }) => {
   const technologyChips = !!technologies
@@ -45,8 +30,8 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
 
   return (
     <ProjectContainer>
-      <LinkedImage url={url} overlayText={title}>
-        <ProjectImage
+      <LinkedImage url={url} maxWidth="35em" overlayText={title}>
+        <CustomImage
           src={ProjectImageMap[id]}
           alt={title}
           height="280px"
@@ -72,7 +57,7 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
             rel="noopener noreferrer"
             aria-label="code repository"
           >
-            <FontAwesomeIcon icon={faGithub}  />
+            <FontAwesomeIcon icon={faGithub} />
           </ProjectLink>
         </ProjectTitleContainer>
         <Text>{summary}</Text>

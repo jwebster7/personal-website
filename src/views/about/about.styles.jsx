@@ -13,7 +13,7 @@ export const AboutContentContainer = styled(ContentContainer)`
 
   @media only screen and (max-width: 1280px) {
     flex-direction: column-reverse;
-    /* this is garbage it looks horrible */
+    /* i should change this is. it's garbage and it looks horrible */
     justify-content: space-evenly;
     height: 100%;
     margin-top: 0;
@@ -49,7 +49,7 @@ export const AboutSkill = styled.li`
 `;
 
 export const ProfilePicture = styled.img`
-  display: block;
+  /* display: block;
   margin: 0;
   padding: 0;
   border-radius: 0.5em;
@@ -64,7 +64,7 @@ export const ProfilePicture = styled.img`
   @media only screen and (max-width: 768px) {
     height: 275px;
     max-width: 275px;
-  }
+  } */
 `;
 
 export const AboutLinkedInLink = styled.a`

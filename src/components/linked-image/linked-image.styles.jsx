@@ -4,15 +4,24 @@ import Heading from "../../components/heading/heading.component";
 import HorizontalLine from "../horizontal-line/horizontal-line.component";
 
 export const LinkedImageLink = styled.a`
+  display: block;
   position: relative;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-
   margin: 0 0 1em;
 
+  height: auto;
+  width: 100%;
+  max-width: ${({ maxWidth }) => {
+    // return !!maxWidth ? maxWidth : "25em";
+    return maxWidth ?? "25em";
+  }};
+
+  border-radius: 0.5em;
   transition: transform 600ms ease-in-out;
+  overflow: hidden;
 
   :hover {
     cursor: pointer;
@@ -27,18 +36,14 @@ export const LinkedImageOverlay = styled.div`
   right: 0;
   bottom: 0;
   overflow: hidden;
-
   margin: 0;
   padding: 2em;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   opacity: 0;
   background: rgba(18, 17, 19, 0.75);
   border-radius: 0.5em;
-  /* overflow: hidden; */
   transition: opacity 300ms ease-in-out;
 
   h1 {

@@ -7,10 +7,10 @@ import HorizontalLine from "../horizontal-line/horizontal-line.component";
 
 export const ProjectContainer = styled.div`
   margin: 3rem 0;
+  width: 100%;
 
   display: flex;
   align-items: center;
-  width: 100%;
 
   @media only screen and (max-width: 1280px) {
     align-items: center;
@@ -23,22 +23,28 @@ export const ProjectContainer = styled.div`
 
 export const ProjectImage = styled.img`
   display: block;
+  
+  height: auto;
+  width: 100%;
+
+  object-fit: cover;
   background-size: cover;
   background-position: center;
-  border-radius: 0.5em;
 
-  @media only screen and (max-width: 1280px) {
-    height: 225px;
-    max-width: 400px;
+  /* @media only screen and (max-width: 1280px) {
+    height: 280px;
+    max-width: 500;
   }
 
   @media only screen and (max-width: 768px) {
+    height: 225px;
+    max-width: 400px;
     width: 100%;
   }
 
   @media only screen and (max-width: 512px) {
     height: 167.5px;
-  }
+  } */
 `;
 
 export const ProjectCaptionContainer = styled.div`
