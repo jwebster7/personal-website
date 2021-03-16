@@ -19,17 +19,13 @@ import Text from "../../components/text/text.component";
 import profilePic from "../../assets/profile-pic-cropped.jpg";
 import data from "../../data/static.json";
 
-import {
-  AboutContentContainer,
-  AboutSkill,
-  AboutSkillContainer
-} from "./about.styles";
+import { ProfileContentContainer } from "./profile.styles";
 
 const LazyCustomImage = lazy(() =>
   import("../../components/custom-image/custom-image.component")
 );
 
-const About = forwardRef((props, ref) => {
+const Profile = forwardRef((props, ref) => {
   const [state, setState] = useState({
     title: "",
     body: "",
@@ -41,9 +37,9 @@ const About = forwardRef((props, ref) => {
   /* Read in static content here instead of API call. */
   useEffect(() => {
     setState({
-      title: data.about.title,
-      body: data.about.body,
-      skills: data.about.skills,
+      title: data.profile.title,
+      body: data.profile.body,
+      skills: data.profile.skills,
       linkedInLink: data.social.iconlinks.linkedin,
       loading: false
     });
@@ -53,14 +49,14 @@ const About = forwardRef((props, ref) => {
     };
   }, []);
 
-  const aboutText = !!state.body
+  const profileText = !!state.body
     ? Object.keys(state.body).map((key, index) => {
         const sectionContent = String(state.body[key]);
         return <Text key={index}>{sectionContent}</Text>;
       })
     : null;
 
-  const aboutSkills = !!state.skills
+  const ProfileSkills = !!state.skills
     ? state.skills.map((skill, index) => {
         return <CustomChip key={index}>{skill}</CustomChip>;
       })
@@ -68,11 +64,11 @@ const About = forwardRef((props, ref) => {
 
   return !state.loading ? (
     <SectionContainer ref={ref} backgroundColor="#336666">
-      <SectionHeading heading={"Profile"} />
-      <AboutContentContainer>
+      <SectionHeading heading="Profile" />
+      <ProfileContentContainer>
         <TextContainer>
-          {aboutText}
-          <ChipContainer>{aboutSkills}</ChipContainer>
+          {profileText}
+          <ChipContainer>{ProfileSkills}</ChipContainer>
         </TextContainer>
         <LinkedImage
           url={state.linkedInLink}
@@ -89,9 +85,9 @@ const About = forwardRef((props, ref) => {
             />
           </Suspense>
         </LinkedImage>
-      </AboutContentContainer>
+      </ProfileContentContainer>
     </SectionContainer>
   ) : null;
 });
 
-export default memo(About);
+export default memo(Profile);

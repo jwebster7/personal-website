@@ -8,11 +8,11 @@ import NavigationLink from "../navigation-link/navigation-link.component";
 // TODO: add in a brand icon to the left of the nav container
 const Navigation = ({
   scrollTo,
-  aboutEntry,
+  profileEntry,
   experienceEntry,
   educationEntry,
   projectsEntry,
-  aboutInView,
+  profileInView,
   experienceInView,
   educationInView,
   projectsInView
@@ -24,8 +24,8 @@ const Navigation = ({
       menu={
         <>
           <NavigationLink
-            onClick={() => scrollTo(aboutEntry)}
-            active={aboutInView}
+            onClick={() => scrollTo(profileEntry)}
+            active={profileInView}
             changeMenuOn={changeMenuOn}
             to="profile"
           >

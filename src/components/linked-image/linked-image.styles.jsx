@@ -19,8 +19,9 @@ export const LinkedImageLink = styled.a`
 
   border-radius: 0.5em;
   box-shadow: 10px 10px 10px #121113;
-  transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
   overflow: hidden;
+
+  transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
 
   :hover {
     cursor: pointer;
@@ -42,10 +43,13 @@ export const LinkedImageOverlay = styled.div`
   justify-content: center;
   align-items: center;
   opacity: 0;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
   background: rgba(18, 17, 19, 0.75);
   backdrop-filter: blur(5px);
-  border: 3px solid #fff5ee;
   border-radius: 0.5em;
+  border: 3px solid #fff5ee;
   transition: opacity 300ms ease-in-out;
 
   h1 {

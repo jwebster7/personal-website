@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 import delayedFadeInAnimation from "../../animations/delayed-fade-in.animation";
 import fadeInAnimation from "../../animations/fade-in.animation";
-import topSlideDownAnimation from "../../animations/top-slide-in.animation";
 
 import Heading from "../../components/heading/heading.component";
 import HorizontalLine from "../../components/horizontal-line/horizontal-line.component";

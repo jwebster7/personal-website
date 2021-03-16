@@ -1,7 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
-import About from "../../views/about/about.component";
+import Profile from "../../views/profile/profile.component";
 import Education from "../../views/education/education.component";
 import Experience from "../../views/experience/experience.component";
 import Footer from "../footer/footer.component";
@@ -12,11 +12,11 @@ import Projects from "../../views/projects/projects.component";
 import { Layout } from "./app-container.styles";
 
 const inViewConfig = {
-  threshold: 0.4
+  threshold: 0.6
 };
 
 const AppContainer = () => {
-  const [aboutRef, aboutInView, aboutEntry] = useInView(inViewConfig);
+  const [profileRef, profileInView, profileEntry] = useInView(inViewConfig);
   const [experienceRef, experienceInView, experienceEntry] = useInView(
     inViewConfig
   );
@@ -26,14 +26,14 @@ const AppContainer = () => {
   const [projectsRef, projectsInView, projectsEntry] = useInView(inViewConfig);
 
   const entries = {
-    aboutEntry,
+    profileEntry,
     experienceEntry,
     educationEntry,
     projectsEntry
   };
 
   const inViewTrackers = {
-    aboutInView,
+    profileInView,
     experienceInView,
     educationInView,
     projectsInView
@@ -47,7 +47,7 @@ const AppContainer = () => {
     <Layout>
       <Navigation scrollTo={scrollToRef} {...entries} {...inViewTrackers} />
       <Landing />
-      <About ref={aboutRef} />
+      <Profile ref={profileRef} />
       <Experience ref={experienceRef} />
       <Projects ref={projectsRef} />
       <Education ref={educationRef} />

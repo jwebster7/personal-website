@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import ContentContainer from "../../components/content-container/content-container.component";
 
-export const AboutContentContainer = styled(ContentContainer)`
+export const ProfileContentContainer = styled(ContentContainer)`
   flex-direction: row;
   flex-grow: 1;
   justify-content: center;
@@ -23,7 +23,7 @@ export const AboutContentContainer = styled(ContentContainer)`
   }
 `;
 
-export const AboutSkill = styled.li`
+export const ProfileSkill = styled.li`
   font-family: "Ubuntu", sans-serif;
   font-size: 1.25rem;
   letter-spacing: 0.1em;
@@ -58,7 +58,7 @@ export const ProfilePicture = styled.img`
   } */
 `;
 
-export const AboutLinkedInLink = styled.a`
+export const ProfileLinkedInLink = styled.a`
   text-decoration: none;
   color: #fff5ee;
   transition: color 300ms ease-in-out;

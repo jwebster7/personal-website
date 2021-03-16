@@ -54,7 +54,7 @@ const Education = forwardRef((props, ref) => {
 
   return (
     <SectionContainer ref={ref} backgroundColor="#121113">
-      <SectionHeading heading={"Education"} />
+      <SectionHeading heading="Education" />
       <ContentContainer>
         <Suspense fallback={<Spinner />}>
           <LazyTimeline idMap={instituteIdMap} eventMap={eventIdMap} />

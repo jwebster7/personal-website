@@ -36,7 +36,7 @@ const Projects = forwardRef((props, ref) => {
 
   return (
     <SectionContainer ref={ref} backgroundColor="#336666">
-      <SectionHeading heading={"Projects"} />
+      <SectionHeading heading="Projects" />
       <ProjectsContent>{projectComponents}</ProjectsContent>
     </SectionContainer>
   );

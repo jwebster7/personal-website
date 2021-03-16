@@ -54,7 +54,7 @@ const Experience = forwardRef((props, ref) => {
 
   return (
     <SectionContainer ref={ref} backgroundColor="#121113">
-      <SectionHeading heading={"Experience"} />
+      <SectionHeading heading="Experience" />
       <ContentContainer>
         <Suspense fallback={<Spinner />}>
           <LazyTimeline idMap={positionIdMap} eventMap={eventIdMap} />
