@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
   ProjectContainer,
+  ProjectImage,
   ProjectLink,
   ProjectCaptionContainer,
   ProjectChipContainer,
@@ -44,13 +45,15 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
 
   return (
     <ProjectContainer>
-      <LinkedImage
-        url={url}
-        src={ProjectImageMap[id]}
-        alt={title}
-        sizes={imageSizes}
-        overlayText={title}
-      />
+      <LinkedImage url={url} overlayText={title}>
+        <ProjectImage
+          src={ProjectImageMap[id]}
+          alt={title}
+          height="280px"
+          width="500px"
+          loading="lazy"
+        />
+      </LinkedImage>
       <ProjectCaptionContainer>
         <ProjectTitleContainer>
           <ProjectTitle>{title}</ProjectTitle>
@@ -61,7 +64,7 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
             rel="noopener noreferrer"
             aria-label="website link"
           >
-            <FontAwesomeIcon icon={faExternalLinkAlt} size="lg" />
+            <FontAwesomeIcon icon={faExternalLinkAlt} />
           </ProjectLink>
           <ProjectLink
             href={repo}
@@ -69,7 +72,7 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
             rel="noopener noreferrer"
             aria-label="code repository"
           >
-            <FontAwesomeIcon icon={faGithub} size="lg" />
+            <FontAwesomeIcon icon={faGithub}  />
           </ProjectLink>
         </ProjectTitleContainer>
         <Text>{summary}</Text>

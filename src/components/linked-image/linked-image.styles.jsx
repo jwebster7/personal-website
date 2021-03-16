@@ -10,31 +10,13 @@ export const LinkedImageLink = styled.a`
   right: 0;
   bottom: 0;
 
-  transition: transform 600ms ease-in-out;
+  margin: 0 0 1em;
 
-  * {
-    border-radius: 0.5em;
-  }
+  transition: transform 600ms ease-in-out;
 
   :hover {
     cursor: pointer;
     transform: scale(1.05);
-  }
-`;
-
-export const LinkedImageTag = styled.img`
-  display: block;
-  background-size: cover;
-  background-position: center;
-
-  @media only screen and (max-width: 1200px) {
-    height: ${(props) => (!!props.sizes ? props.sizes.md.height : "unset")};
-    width: ${(props) => (!!props.sizes ? props.sizes.md.width : "unset")};
-  }
-
-  @media only screen and (max-width: 768px) {
-    height: ${(props) => (!!props.sizes ? props.sizes.sm.height : "unset")};
-    width: ${(props) => (!!props.sizes ? props.sizes.sm.width : "unset")};
   }
 `;
 
@@ -55,6 +37,8 @@ export const LinkedImageOverlay = styled.div`
 
   opacity: 0;
   background: rgba(18, 17, 19, 0.75);
+  border-radius: 0.5em;
+  /* overflow: hidden; */
   transition: opacity 300ms ease-in-out;
 
   h1 {

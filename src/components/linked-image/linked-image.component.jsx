@@ -1,14 +1,16 @@
 import React from "react";
+
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
   LinkedImageHorizontalLine,
   LinkedImageLink,
-  LinkedImageTag,
   LinkedImageTitle,
   LinkedImageOverlay
 } from "./linked-image.styles";
 
-const LinkedImage = ({ url, src, alt, sizes, overlayText }) => {
-  console.log(sizes);
+const LinkedImage = ({ url, overlayText, children }) => {
   return (
     <LinkedImageLink
       href={url}
@@ -21,14 +23,7 @@ const LinkedImage = ({ url, src, alt, sizes, overlayText }) => {
         <LinkedImageTitle>{overlayText}</LinkedImageTitle>
         <LinkedImageHorizontalLine />
       </LinkedImageOverlay>
-      <LinkedImageTag
-        src={src}
-        alt={alt}
-        height={sizes.initial.height}
-        width={sizes.initial.width}
-        sizes={sizes}
-        loading="lazy"
-      />
+      {children}
     </LinkedImageLink>
   );
 };

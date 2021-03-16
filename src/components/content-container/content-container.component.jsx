@@ -10,11 +10,11 @@ const ContentContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
 
-  @media only screen and (max-width: 1200px) {
-    width: 95%;
+  @media only screen and (max-width: 1280px) {
+    width: 92.5%;
   }
 
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1024px) {
     width: 100%;
   }
 `;

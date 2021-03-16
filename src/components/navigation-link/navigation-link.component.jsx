@@ -38,7 +38,7 @@ const NavigationLink = styled(Text)`
           width: 95%;
         }
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 1024px) {
           :after {
             width: 0%;
           }

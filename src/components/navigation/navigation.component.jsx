@@ -17,7 +17,8 @@ const Navigation = ({
   educationInView,
   projectsInView
 }) => {
-  const changeMenuOn = "768px";
+  // const changeMenuOn = "768px";
+  const changeMenuOn = "1024px";
 
   return (
     <NavBar

@@ -5,7 +5,7 @@ import ContentContainer from "../../components/content-container/content-contain
 export const ProjectsContent = styled(ContentContainer)`
   flex-flow: column wrap;
   justify-content: space-around;
-  /* width: 80%; */
+  width: 90%;
 
   > div:nth-child(odd) {
     flex-direction: row;
@@ -23,7 +23,8 @@ export const ProjectsContent = styled(ContentContainer)`
     }
   }
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1280px) {
+    
     > div:nth-child(odd) {
       flex-direction: column;
       > div {
@@ -39,7 +40,7 @@ export const ProjectsContent = styled(ContentContainer)`
     }
   }
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1280px) {
     width: 100%;
   }
 

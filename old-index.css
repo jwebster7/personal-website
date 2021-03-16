@@ -365,7 +365,7 @@ body {
 }
 
 /* Desktop */
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1280px) {
   .page,
   .footer {
     width: 90%;
@@ -377,7 +377,7 @@ body {
 }
 
 /* Tablets */
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1024px) {
   .page,
   .footer {
     width: 100%;

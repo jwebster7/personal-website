@@ -70,15 +70,15 @@ export const LargeMenuLinkContainer = styled.div`
     margin-right: 0;
   }
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1280px) {
     min-height: 5em;
     align-items: center;
   }
-
-  @media only screen and (max-width: 1100px) {
+/* 
+  @media only screen and (max-width: 1024px) {
     width: 100%;
     border-radius: 0;
-  }
+  } */
 
   @media (max-width: ${(props) => props.changeMenuOn}) {
     display: none;

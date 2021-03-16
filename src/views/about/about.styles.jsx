@@ -4,40 +4,35 @@ import ContentContainer from "../../components/content-container/content-contain
 
 export const AboutContentContainer = styled(ContentContainer)`
   flex-direction: row;
-  flex-grow: 0.6;
-  margin-top: 30px;
+  flex-grow: 1;
+  justify-content: center;
 
-  @media only screen and (max-width: 1300px) {
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    margin-top: 0;
+  > div:first-child {
+    margin-right: 2em;
   }
-`;
 
-export const AboutTextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+  @media only screen and (max-width: 1280px) {
+    flex-direction: column-reverse;
+    /* this is garbage it looks horrible */
+    justify-content: space-evenly;
+    height: 100%;
+    margin-top: 0;
 
-  @media only screen and (max-width: 1300px) {
-    width: 100%;
+    > div:first-child {
+      margin-right: 0;
+    }
   }
 `;
 
 export const AboutSkillContainer = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 12.5px 25px;
+  grid-gap: 1em;
   justify-items: left;
-  margin: 25px 0 0 25px;
-
-  @media only screen and (max-width: 750px) {
-    grid-gap: 0;
-    margin: 0 0 0 12.5px;
-  }
+  margin: 1em 0 0;
 `;
 
 export const AboutSkill = styled.li`
-  margin-top: 1em;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.25rem;
   letter-spacing: 0.1em;
@@ -45,22 +40,11 @@ export const AboutSkill = styled.li`
   color: #fff5ee;
   text-align: left;
   white-space: nowrap;
-  margin: 0;
-  @media only screen and (max-width: 750px) {
+
+  @media only screen and (max-width: 768px) {
     font-size: 1rem;
     line-height: 1.25;
     white-space: normal;
-    /* text-align: justify; */
-  }
-`;
-
-export const ProfilePictureContainer = styled.div`
-  margin: 0 0 0 75px;
-  padding: 0;
-  border: 0;
-  background-color: #336666;
-  @media only screen and (max-width: 1300px) {
-    margin: 0 0 25px 0;
   }
 `;
 
@@ -68,19 +52,17 @@ export const ProfilePicture = styled.img`
   display: block;
   margin: 0;
   padding: 0;
-  height: 350px;
-  width: 350px;
   border-radius: 0.5em;
   background-color: #336666;
   background-position: center;
 
-  @media only screen and (max-width: 1300px) {
-    max-height: 350px;
-    max-width: 310px;
+  @media only screen and (max-width: 1280px) {
+    height: 350px;
+    max-width: 350px;
   }
 
-  @media only screen and (max-width: 750px) {
-    max-height: 300px;
+  @media only screen and (max-width: 768px) {
+    height: 275px;
     max-width: 275px;
   }
 `;

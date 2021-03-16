@@ -17,7 +17,7 @@ export const InstituteContentGrid = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  @media (max-width: 1100px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
   }
 `;

@@ -8,7 +8,7 @@ const SubHeading = styled.h1`
   letter-spacing: 0.1em;
   margin: 0.25em 0 0.25em auto;
 
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1024px) {
     margin: 0.25em auto 0.25em 0;
   }
 

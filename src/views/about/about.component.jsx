@@ -1,8 +1,6 @@
 import React, { useEffect, useState, forwardRef } from "react";
 
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import LinkedImage from "../../components/linked-image/linked-image.component";
 import SectionContainer from "../../components/section-container/section-container.component";
 import SectionHeading from "../../components/section-heading/section-heading.component";
 import TextContainer from "../../components/text-container/text-container.component";
@@ -13,7 +11,6 @@ import data from "../../data/static.json";
 
 import {
   AboutContentContainer,
-  AboutLinkedInLink,
   AboutSkill,
   AboutSkillContainer,
   ProfilePicture,
@@ -58,32 +55,16 @@ const About = forwardRef((props, ref) => {
               return <AboutSkill key={index}>{skill}</AboutSkill>;
             })}
           </AboutSkillContainer>
-
-          <Text>
-            {
-              "If you'd like to work together or have any questions, feel free to reach out to me on "
-            }
-            <AboutLinkedInLink
-              href={state.linkedInLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="github"
-            >
-              {"LinkedIn "}
-              <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
-            </AboutLinkedInLink>
-            {"."}
-          </Text>
         </TextContainer>
-
-        <ProfilePictureContainer>
+        <LinkedImage url={state.linkedInLink} overlayText={"Contact Me"}>
           <ProfilePicture
-            className="profile-pic"
             src={profilePic}
+            height="400px"
+            width="400px"
             alt="avatar"
-            loading="eager"
+            loading="lazy"
           />
-        </ProfilePictureContainer>
+        </LinkedImage>
       </AboutContentContainer>
     </SectionContainer>
   ) : null;
