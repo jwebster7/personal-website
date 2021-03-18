@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ContentContainer = styled.div`
   min-height: 100%;
-  width: 80%;
+  width: 75%;
   /* width: 85%; */
 
   display: flex;

@@ -6,11 +6,11 @@ const Heading = styled.h1`
   font-weight: 500;
   color: #fff5ee;
   letter-spacing: 0.1em;
-  margin: 0.25em 1em .25em 0;
+  margin: 0.25em 1em 0.25em 0;
   white-space: nowrap;
 
   @media only screen and (max-width: 768px) {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     white-space: normal;
   }
 `;

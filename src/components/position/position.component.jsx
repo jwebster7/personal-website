@@ -62,3 +62,67 @@ const Position = ({
 };
 
 export default Position;
+
+// const Position = ({
+//   organization,
+//   title,
+//   startDate,
+//   endDate,
+//   responsibilities,
+//   summary,
+//   location,
+//   technologies
+// }) => {
+//   const cityState =
+//     !!location.city && !!location.state
+//       ? `${location.city}, ${location.state}`
+//       : "";
+//   const startEndDate =
+//     !!startDate && !!endDate ? `${startDate} - ${endDate}` : "";
+
+//   const technologyChips = !!technologies
+//     ? technologies.map((tech, index) => {
+//         return (
+//           <CustomChip key={index} useAlt>
+//             {tech}
+//           </CustomChip>
+//         );
+//       })
+//     : "";
+
+//   const heading =
+//     !!title && !!organization ? (
+//       <PositionContentBox>
+//         <Heading>{title}</Heading>
+//         <Heading>{organization}</Heading>
+//       </PositionContentBox>
+//     ) : null;
+
+//   const subHeading =
+//     !!startEndDate || !!cityState ? (
+//       <PositionContentBox>
+//         <SubHeading>{startEndDate}</SubHeading>
+//         <SubHeading>{cityState}</SubHeading>
+//       </PositionContentBox>
+//     ) : null;
+
+//   const jobDuties = !!responsibilities ? (
+//     <Text>{`Responsibilities: ${responsibilities}`}</Text>
+//   ) : null;
+
+//   return (
+//     <PositionContainer>
+//       <PositionContentGrid>
+//         {heading}
+//         {subHeading}
+//       </PositionContentGrid>
+//       <PositionContentBox>
+//         <Text>{summary}</Text>
+//         {jobDuties}
+//         <ChipContainer>{technologyChips}</ChipContainer>
+//       </PositionContentBox>
+//     </PositionContainer>
+//   );
+// };
+
+// export default Position;

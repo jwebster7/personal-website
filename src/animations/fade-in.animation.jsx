@@ -13,7 +13,7 @@ const frames = keyframes`
 
 const fadeInAnimation = css`
   opacity: 0;
-  animation: ${frames} 1s ease-in-out;
+  animation: ${frames} 1200ms ease-in-out;
   animation-fill-mode: forwards;
 `;
 

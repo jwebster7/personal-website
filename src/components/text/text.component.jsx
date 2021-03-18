@@ -5,13 +5,13 @@ const Text = styled.span`
   font-family: "Ubuntu", sans-serif;
   font-size: 1.25rem;
   letter-spacing: 0.1em;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #fff5ee;
   text-align: left;
 
   @media only screen and (max-width: 768px) {
     font-size: 1rem;
-    line-height: 1.25;
+    line-height: 1.4;
     white-space: normal;
   }
 `;

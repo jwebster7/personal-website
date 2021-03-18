@@ -18,8 +18,8 @@ export const StyledChip = styled(Text)`
     return `background: ${backgroundColor};`;
   }}
   text-align: center;
-  /* font-size: .75rem; */
-  font-size: .85rem;
+  font-size: .75rem;
+  /* font-size: .85rem; */
   font-weight: 500;
   white-space: nowrap;
 `;

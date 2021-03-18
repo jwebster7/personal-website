@@ -58,10 +58,12 @@ export const FooterContainer = styled.div`
 
 export const SocialIcon = styled.a`
   svg {
+    display: block;
+    object-fit: cover;
     color: #fff5ee;
     text-decoration: none;
-    transition: color 300ms ease-in-out, transform 300ms ease-in-out;
     font-weight: 600;
+    transition: color 300ms ease-in-out, transform 300ms ease-in-out;
 
     :hover {
       color: #5b9999;

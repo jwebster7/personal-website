@@ -5,8 +5,8 @@ import CustomChip from "../../components/custom-chip/custom-chip.component";
 import LinkedImage from "../../components/linked-image/linked-image.component";
 import Text from "../../components/text/text.component";
 
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+// import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLinkAlt, faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -65,7 +65,7 @@ const Project = ({ id, url, repo, title, summary, technologies }) => {
             rel="noopener noreferrer"
             aria-label="code repository"
           >
-            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faCodeBranch} />
           </ProjectLink>
         </ProjectTitleContainer>
         <Text>{summary}</Text>

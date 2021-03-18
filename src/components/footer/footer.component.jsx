@@ -9,6 +9,7 @@ import {
   faSpotify
 } from "@fortawesome/free-brands-svg-icons";
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 import data from "../../data/static.json";
 
@@ -64,13 +65,22 @@ const Footer = () => {
       >
         <FontAwesomeIcon icon={faGithub} size="lg" />
       </SocialIcon>
-      <SocialIcon
+      {/* <SocialIcon
         href={iconLinks.siterepo}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="siterepo"
+      >
+        <FontAwesomeIcon icon={faCodeBranch} size="lg" />
+      </SocialIcon> */}
+
+      <SocialIcon
+        href={iconLinks.mailto}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="facebook"
       >
-        <FontAwesomeIcon icon={faCodeBranch} size="lg" />
+        <FontAwesomeIcon icon={faEnvelope} size="lg" />
       </SocialIcon>
     </FooterContainer>
   ) : null;

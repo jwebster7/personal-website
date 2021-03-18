@@ -5,12 +5,17 @@ import NavigationLink from "../navigation-link/navigation-link.component";
 
 export const TimelineNavigatorContainer = styled.div`
   width: 100%;
-  margin: 2em 0 4em;
+  margin: 2em 0;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+
+  @media only screen and (max-width: 768px) {
+    /* width: 80%; */
+    margin: 0 0 2em;
+  }
 
   @media only screen and (max-width: 512px) {
     /* width: 80%; */

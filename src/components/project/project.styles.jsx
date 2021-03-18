@@ -44,20 +44,21 @@ export const ProjectLinkContainer = styled.div`
 `;
 
 export const ProjectLink = styled.a`
+  margin: 0 0 0 1em;
   display: flex;
   align-items: center;
   color: #fff5ee;
   text-decoration: none;
-  margin: 0 0 0 1em;
   font-weight: 500;
   font-size: 1.4rem;
   white-space: nowrap;
 
   svg {
-    transition: color 300ms ease-in-out;
+    opacity: 0.75;
+    transition: opacity 300ms ease-in-out;
     :hover {
       text-decoration: none;
-      color: #121113;
+      opacity: 1;
     }
   }
 
@@ -77,6 +78,7 @@ export const ProjectTitleContainer = styled.div`
 
 export const ProjectTitle = styled(Heading)`
   font-weight: 600;
+  /* margin-right: auto; */
 
   @media only screen and (max-width: 768px) {
     white-space: nowrap;

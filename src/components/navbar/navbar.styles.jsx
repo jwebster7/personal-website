@@ -16,8 +16,7 @@ export const SmallMenuContainer = styled.div`
     background: rgba(18, 17, 19, 0.6);
     backdrop-filter: blur(5px);
 
-    transition: width 0.1s ease;
-    /* transition: width 1s ease; */
+    transition: width 150ms ease;
     ${(props) => {
       if (props.showMenu) {
         return css`
@@ -63,7 +62,7 @@ export const LargeMenuLinkContainer = styled.div`
   min-width: 45vw;
 
   border-radius: 0 0 0 5em;
-  background: rgba(18, 17, 19, 0.6);
+  background-color: rgba(18, 17, 19, 0.6);
   backdrop-filter: blur(5px);
 
   ${fadeInAnimation}
@@ -76,11 +75,6 @@ export const LargeMenuLinkContainer = styled.div`
     min-height: 5em;
     align-items: center;
   }
-  /* 
-  @media only screen and (max-width: 1024px) {
-    width: 100%;
-    border-radius: 0;
-  } */
 
   @media (max-width: ${(props) => props.changeMenuOn}) {
     display: none;
@@ -109,7 +103,7 @@ export const NavBarContainer = styled.div`
 `;
 
 export const MenuIcon = ({ onClick, icon }) => (
-  <div role="button" onClick={onClick}>
+  <div role="button" aria-label="button" onClick={onClick}>
     {icon}
   </div>
 );

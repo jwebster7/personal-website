@@ -13,7 +13,7 @@ const SectionContainer = styled.div`
   background-color: ${(props) => props.backgroundColor};
 
   @media only screen and (max-width: 768px) {
-    padding: 3.75em 3em;
+    padding: 3em;
   }
 `;
 

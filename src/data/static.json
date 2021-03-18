@@ -3,7 +3,7 @@
     "title": "Hello!",
     "body": [
       "Hello! My name is Joe. I'm a Software Developer based in the Midwest.",
-      "I enjoy working at all levels of the software stack. My current interests lie in full-stack development, progressive web apps, and serverless architecture.",
+      "I enjoy working at any and all levels of the software stack. My current interests lie in full-stack web development, but I'm open to working with all types of technologies.",
       "Here are some technologies I've worked with recently:"
     ],
     "skills": [
@@ -11,26 +11,24 @@
       "Python",
       "React",
       "React Hooks",
-      "React Context API",
       "Redux",
       "styled-components",
       "Express.js",
       "Node.js",
       "Netlify",
       "Git"
-    ],
-    "searchStatement": "I'm currently seeking my next development opportunity. If you'd like to work together, or have any questions please reach out to me on LinkedIn."
+    ]
   },
   "education": [
     {
       "id": "2",
       "tab": "Present",
-      "organization": "Various online resources",
+      "organization": "Various resources",
       "major": "Continuing education",
       "degree": " ",
       "startDate": "May 2019",
       "endDate": "current",
-      "summary": "I've continued my education through various online resources including Udemy, Pluralsight, and more. My most recent experience was finishing a full-stack ReactJS + NodeJS developer course through Udemy.",
+      "summary": "I've continued my education through various resources resources including Udemy, books, and more. My most recent experience was finishing a full-stack ReactJS + NodeJS developer course through Udemy.",
       "location": {
         "city": "",
         "state": ""
@@ -65,7 +63,7 @@
       "degree": "BS in",
       "startDate": "January 2017",
       "endDate": "May 2019",
-      "summary": "After Butler, I took a semester off to teach myself Python to test the waters of the programming world. I found that I enjoyed programming and enrolled at Kansas State University to further my education. The instructors there were an essential part of establishing a core foundation I continue to build on today.",
+      "summary": "After Butler, I took a semester off to teach myself Python to test the waters of the programming world. After finding how much I enjoyed programming, I enrolled at Kansas State University to further my education. At KSU, my education was challenging and comprehensive, but also very rewarding. The instructors there were an essential component of establishing the core foundation I continue to build on today.",
       "location": {
         "city": "Manhattan",
         "state": "KS"
@@ -97,7 +95,7 @@
       "degree": "AS in",
       "startDate": "August 2012",
       "endDate": "May 2016",
-      "summary": "I attended Butler Community College on scholarship directly after high school. I tried my hand at a few different majors and eventually found myself gravitating towards Mathematics.",
+      "summary": "I attended Butler Community College on scholarship directly after high school. Initially studying Liberal Arts, I tried my hand at a few different majors before choosing Mathematics. Growing up, I was always curious about how stuff works. Studying Mathematics gave me the skillset and a common language needed to further my education in any engineering or science field. This was an excellent experience, as it provided a solid foundation for my education to come.",
       "location": {
         "city": "El Dorado",
         "state": "KS"
@@ -107,7 +105,7 @@
         "Differential Equations",
         "Physics",
         "Chemistry",
-        "Psyschology",
+        "Psychology",
         "Ethics",
         "Liberal Arts"
       ]
@@ -120,7 +118,7 @@
       "company": "NetApp | SolidFire",
       "organization": "NetApp | SolidFire",
       "title": "Software Engineer",
-      "summary": "After graduation, I accepted an offer for a position at NetApp. I primarily worked with Python and TypeScript, but also worked with and was exposed to many different technologies. I was always able to meet my commitments despite product requirements constantly evolving.",
+      "summary": "After graduation, I joined the engineering team at NetApp. I primarily worked with Python and TypeScript, but was exposed to many different technologies. In the face of ever-evolving product requirements in a fast-paced environment, I always managed to deliver on my commitments. NetApp was a rewarding first step in my career because it exposed me to a wide array of technologies while fostering personal and professional growth.",
       "responsibilities": "Software development, software testing, and project scoping on a HCI Deployment Engine.",
       "startDate": "June 2019",
       "endDate": "October 2020",
@@ -143,7 +141,8 @@
         "Jenkins",
         "Jira",
         "REST",
-        "Agile Development"
+        "Agile Development",
+        "Scrum"
       ]
     },
     {
@@ -177,7 +176,7 @@
       "company": "Kansas State University | Computer Science",
       "organization": "Kansas State University | Computer Science",
       "title": "Undergraduate Teaching Assistant",
-      "summary": "While attending K-State, I worked as an Undergraduate Teaching Assistant in the Department of Computer Science. This was an incredibly rewarding experience, as I was able to assist new students in establishing a fundamental understanding of Computer Science.",
+      "summary": "While attending K-State, I worked as an Undergraduate Teaching Assistant in the Department of Computer Science. Educating students in Computer Science was an incredibly rewarding experience because it allowed me to witness and be a part of their journey to become great Computer Scientists.",
       "responsibilities": "Assisted instructors with in-class activities, graded class assignments, and tutored students on the fundamentals of programming using Python.",
       "startDate": "August 2017",
       "endDate": "December 2018",
@@ -245,7 +244,8 @@
       "github": "https://github.com/jwebster7",
       "facebook": "https://www.facebook.com/jwebster7",
       "instagram": "https://instagram.com/merriam.webster.94",
-      "siterepo": "https://github.com/jwebster7/personal-website"
+      "siterepo": "https://github.com/jwebster7/personal-website",
+      "mailto": "mailto:joseph.webster.dev@gmail.com"
     }
   }
 }

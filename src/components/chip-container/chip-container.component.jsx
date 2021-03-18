@@ -5,7 +5,7 @@ const ChipContainer = styled.div`
   width: 100%;
   display: flex;
   flex: 1 1 auto;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;

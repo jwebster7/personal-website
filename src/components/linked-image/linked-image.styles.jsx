@@ -27,6 +27,7 @@ export const LinkedImageLink = styled.a`
     cursor: pointer;
     transform: scale(1.03);
     box-shadow: 15px 15px 15px #121113;
+    background-color: rgba(18, 17, 19, 0.5);
   }
 `;
 
