@@ -43,7 +43,7 @@
         "Redux",
         "Redux-Saga",
         "Reselect",
-        "Functional Components",
+        "functional components",
         "Jest",
         "styled-components",
         "Express.js",
@@ -194,7 +194,27 @@
   ],
   "projects": [
     {
-      "id": 0,
+      "id": 2,
+      "url": "https://joseph.webster.me",
+      "repo": "https://github.com/jwebster7/personal-website",
+      "title": "Personal Website",
+      "summary": "This is a personal website / portfolio I designed and built using primarily React and styled-components. To get more experience with styled-components and CSS, I didn't use frameworks like Bootstrap or Material-UI",
+      "technologies": [
+        "JavaScript",
+        "React",
+        "React Hooks",
+        "CSS",
+        "styled-components",
+        "ThemeProvider",
+        "Intersection Observer API",
+        "functional components",
+        "Express.js",
+        "Node.js",
+        "Netlify"
+      ]
+    },
+    {
+      "id": 1,
       "url": "https://jwebster7-crown-clothing.herokuapp.com/",
       "repo": "https://github.com/jwebster7/crown-clothing",
       "title": "Crown Clothing",
@@ -207,7 +227,7 @@
         "Redux-Saga",
         "Reselect",
         "styled-components",
-        "Functional Components",
+        "functional components",
         "Express.js",
         "Node.js",
         "Firebase",
@@ -216,7 +236,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 0,
       "url": "https://jwebster7-whats-the-weather.herokuapp.com/home",
       "repo": "https://github.com/jwebster7/weather-app",
       "title": "What's the Weather?",
@@ -228,7 +248,7 @@
         "React Context API",
         "Axios",
         "styled-components",
-        "Functional Components",
+        "functional components",
         "Express.js",
         "Node.js",
         "OpenWeatherAPI",

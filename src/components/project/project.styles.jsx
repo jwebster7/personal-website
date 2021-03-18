@@ -20,14 +20,15 @@ export const ProjectContainer = styled.div`
 `;
 
 export const ProjectCaptionContainer = styled.div`
+  width: 50%;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 
   @media only screen and (max-width: 1280px) {
-    padding: 3em 0;
-    max-width: 37.5em;
     width: 100%;
+    padding: 3em 0;
+    max-width: 35em;
   }
 
   @media only screen and (max-width: 768px) {

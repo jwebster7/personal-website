@@ -5,7 +5,6 @@ import ContentContainer from "../../components/content-container/content-contain
 export const ProjectsContent = styled(ContentContainer)`
   flex-flow: column wrap;
   justify-content: space-around;
-  /* width: 85%; */
 
   > div:nth-child(odd) {
     flex-direction: row;
