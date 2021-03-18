@@ -8,33 +8,43 @@ import Heading from "../../components/heading/heading.component";
 import SectionContainer from "../../components/section-container/section-container.component";
 
 export const LandingContainer = styled(SectionContainer)`
+  align-items: center;
   justify-content: center;
   background-color: #121113;
-  padding: 5em;
   min-height: 100vh;
   width: 100%;
-
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
 `;
 
 export const LandingNameHeading = styled(Heading)`
-  display: block;
   margin: 0 -0.15em 0.25em 0;
   font-family: "Open Sans", sans-serif;
   font-size: 5rem;
   font-weight: 400;
   ${fadeInAnimation}
+
+  @media only screen and (max-width: 768px) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: 512px) {
+    font-size: 2rem;
+  }
 `;
 
 export const LandingTitleHeading = styled(Heading)`
-  display: block;
   margin: 0 0 0.25em 0;
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
   font-weight: 400;
   ${controlledFadeInAnimation}
+
+  @media only screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 512px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const LandingButton = styled(CustomButton)`
