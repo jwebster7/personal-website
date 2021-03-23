@@ -35,7 +35,7 @@ export const StyledButton = styled.a`
     const useAlt = !!props.useAlt;
     const altColor = useAlt ? `#5b9999` : `rgba(255, 245, 238, 1)`;
     const backgroundColor = useAlt
-      ? `rgba(51, 102, 102, .15)`
+      ? `rgba(51, 102, 102, .2)`
       : `rgba(18, 17, 19, 0)`;
 
     return css`

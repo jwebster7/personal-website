@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import ContentContainer from "../../components/content-container/content-container.component";
 
-export const ProjectsContent = styled(ContentContainer)`
+export const PortfolioContent = styled(ContentContainer)`
   flex-flow: column wrap;
   justify-content: space-around;
 
@@ -22,8 +22,12 @@ export const ProjectsContent = styled(ContentContainer)`
     }
   }
 
-  @media only screen and (max-width: 1280px) {
-    
+  @media only screen and (min-width: 1538px) {
+    width: 80%;
+  } 
+
+  @media only screen and (max-width: 1410px) {
+
     > div:nth-child(odd) {
       flex-direction: column;
       > div {
@@ -37,10 +41,6 @@ export const ProjectsContent = styled(ContentContainer)`
         margin-right: unset;
       }
     }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    width: 100%;
   }
 
   @media only screen and (max-width: 768px) {

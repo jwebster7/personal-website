@@ -62,7 +62,6 @@ export const SocialIcon = styled.a`
     object-fit: cover;
     color: #fff5ee;
     text-decoration: none;
-    font-weight: 600;
     transition: color 300ms ease-in-out, transform 300ms ease-in-out;
 
     :hover {

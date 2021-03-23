@@ -19,7 +19,7 @@ export const LandingNameHeading = styled(Heading)`
   margin: 0 -0.15em 0.25em 0;
   font-family: "Open Sans", sans-serif;
   font-size: 5rem;
-  font-weight: 400;
+  font-weight: 500;
   ${fadeInAnimation}
 
   @media only screen and (max-width: 768px) {
@@ -35,7 +35,7 @@ export const LandingTitleHeading = styled(Heading)`
   margin: 0 0 0.25em 0;
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
-  font-weight: 400;
+  font-weight: 500;
   ${controlledFadeInAnimation}
 
   @media only screen and (max-width: 768px) {

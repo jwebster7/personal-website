@@ -4,11 +4,11 @@ import Project from "../../components/project/project.component";
 import SectionContainer from "../../components/section-container/section-container.component";
 import SectionHeading from "../../components/section-heading/section-heading.component";
 
-import { ProjectsContent } from "./projects.styles";
+import { PortfolioContent } from "./portfolio.styles";
 
 import data from "../../data/static.json";
 
-const Projects = forwardRef((props, ref) => {
+const Portfolio = forwardRef((props, ref) => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -36,10 +36,10 @@ const Projects = forwardRef((props, ref) => {
 
   return (
     <SectionContainer ref={ref} backgroundColor="#336666">
-      <SectionHeading heading="Projects" />
-      <ProjectsContent>{projectComponents}</ProjectsContent>
+      <SectionHeading heading="Portfolio" />
+      <PortfolioContent>{projectComponents}</PortfolioContent>
     </SectionContainer>
   );
 });
 
-export default memo(Projects);
+export default memo(Portfolio);

@@ -15,13 +15,14 @@ export const SectionHeadingContainer = styled.div`
 `;
 
 export const SectionHeadingText = styled.h1`
+  margin: 0 calc(2em - 0.75rem) 0 2em;
   font-family: "Ubuntu", sans-serif;
   font-size: 2rem;
-  margin: 0 calc(2em - 0.75rem) 0 2em;
-  letter-spacing: 0.75rem;
+  letter-spacing: 0.5rem;
+
   @media only screen and (max-width: 768px) {
-    margin: 0 .75em;
-    margin: 0 calc(.75em - 0.5rem) 0 .75em;
+    margin: 0 0.75em;
+    margin: 0 calc(0.75em - 0.5rem) 0 0.75em;
     font-size: 1.5rem;
     letter-spacing: 0.5rem;
     text-align: center;

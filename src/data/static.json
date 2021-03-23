@@ -198,7 +198,7 @@
       "url": "https://joseph.webster.me",
       "repo": "https://github.com/jwebster7/personal-website",
       "title": "Personal Website",
-      "summary": "This is a personal website / portfolio I designed and built using primarily React and styled-components. To get more experience with styled-components and CSS, I didn't use frameworks like Bootstrap or Material-UI",
+      "summary": "This is a personal website / portfolio I designed and built using primarily React and styled-components. I didn't use frameworks like Bootstrap or Material-UI to get more experience with styled-components and CSS.",
       "technologies": [
         "JavaScript",
         "React",

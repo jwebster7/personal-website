@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const SectionContainer = styled.div`
+const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   flex-grow: 1;

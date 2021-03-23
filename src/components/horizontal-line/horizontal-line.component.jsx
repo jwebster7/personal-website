@@ -5,7 +5,7 @@ const HorizontalLine = styled.div`
   margin: 0;
   padding: 0;
   border-radius: 1em;
-  border-top: 4px solid #fff5ee;
+  border-top: 2px solid #fff5ee;
   opacity: 0.75;
 `;
 

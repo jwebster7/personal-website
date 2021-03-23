@@ -10,7 +10,7 @@ export const ProjectContainer = styled.div`
   display: flex;
   align-items: center;
 
-  @media only screen and (max-width: 1280px) {
+  @media only screen and (max-width: 1410px) {
     align-items: center;
   }
 
@@ -25,7 +25,7 @@ export const ProjectCaptionContainer = styled.div`
   flex-direction: column;
   flex-grow: 1;
 
-  @media only screen and (max-width: 1280px) {
+  @media only screen and (max-width: 1410px) {
     width: 100%;
     padding: 3em 0;
     max-width: 35em;

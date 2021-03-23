@@ -1,23 +1,30 @@
 import { memo } from "react";
 import styled from "styled-components";
-import Text from "../text/text.component";
 
-const NavigationLink = styled(Text)`
+const NavigationLink = styled.a`
   cursor: pointer;
   margin: 0 2.5em 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
   transition: color 300ms ease-in-out;
+
+  color: #fff5ee;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.25rem;
   font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none;
   white-space: nowrap;
 
   :after {
     content: "";
     width: 0%;
-    border-top: 3px solid #5b9999;
+    border-radius: 1em;
+    border-top: 2.5px solid #5b9999;
     transition: width 300ms ease-in-out;
   }
 

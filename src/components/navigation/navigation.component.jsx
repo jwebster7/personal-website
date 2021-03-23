@@ -5,7 +5,6 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import NavBar from "../navbar/navbar.component";
 import NavigationLink from "../navigation-link/navigation-link.component";
 
-// TODO: add in a brand icon to the left of the nav container
 const Navigation = ({
   scrollTo,
   profileEntry,
@@ -27,33 +26,33 @@ const Navigation = ({
             onClick={() => scrollTo(profileEntry)}
             active={profileInView}
             changeMenuOn={changeMenuOn}
-            to="profile"
+            href="#profile"
           >
-            Profile
+            profile
           </NavigationLink>
           <NavigationLink
             onClick={() => scrollTo(experienceEntry)}
             active={experienceInView}
             changeMenuOn={changeMenuOn}
-            to="experience"
+            href="#experience"
           >
-            Experience
+            experience
           </NavigationLink>
           <NavigationLink
             onClick={() => scrollTo(projectsEntry)}
             active={projectsInView}
             changeMenuOn={changeMenuOn}
-            to="projects"
+            href="#projects"
           >
-            Projects
+            portfolio
           </NavigationLink>
           <NavigationLink
             onClick={() => scrollTo(educationEntry)}
             active={educationInView}
             changeMenuOn={changeMenuOn}
-            to="education"
+            href="#education"
           >
-            Education
+            education
           </NavigationLink>
         </>
       }

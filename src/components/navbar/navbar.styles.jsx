@@ -67,7 +67,7 @@ export const LargeMenuLinkContainer = styled.div`
 
   ${fadeInAnimation}
 
-  span:last-child {
+  a:last-child {
     margin-right: 0;
   }
 
