@@ -54,6 +54,14 @@ const Navigation = ({
           >
             education
           </NavigationLink>
+          {/* <NavigationLink
+            onClick={() => scrollTo(profileEntry)}
+            active={profileInView}
+            changeMenuOn={changeMenuOn}
+            href="#profile"
+          >
+            contact
+          </NavigationLink> */}
         </>
       }
       changeMenuOn={changeMenuOn}

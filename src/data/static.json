@@ -27,8 +27,8 @@
       "major": "Continuing education",
       "degree": " ",
       "startDate": "May 2019",
-      "endDate": "current",
-      "summary": "I've continued my education through various resources resources including Udemy, books, and more. My most recent experience was finishing a full-stack ReactJS + NodeJS developer course through Udemy.",
+      "endDate": "continuous",
+      "summary": "I've continued my education through various resources including Udemy, books, and more. My most recent experience was finishing a full-stack React + Node.js developer course through Udemy. This course helped solidify my understanding of concepts I had previously only generally understood and furthered my curiosity for the world of Web Development.",
       "location": {
         "city": "",
         "state": ""
@@ -49,6 +49,7 @@
         "Express.js",
         "Node.js",
         "Webpack",
+        "Progressive Web Apps",
         "Firebase",
         "Stripe",
         "Heroku",
@@ -63,7 +64,7 @@
       "degree": "BS in",
       "startDate": "January 2017",
       "endDate": "May 2019",
-      "summary": "After Butler, I took a semester off to teach myself Python to test the waters of the programming world. After finding how much I enjoyed programming, I enrolled at Kansas State University to further my education. At KSU, my education was challenging and comprehensive, but also very rewarding. The instructors there were an essential component of establishing the core foundation I continue to build on today.",
+      "summary": "After Butler, I took a semester off to teach myself Python to try my hand in the programming world. After finding how much I enjoyed programming, I enrolled at Kansas State University to further my education. At KSU, my education was challenging and comprehensive, but incredibly rewarding. The instructors and people there were an essential component of establishing the core foundation I continue to build on today.",
       "location": {
         "city": "Manhattan",
         "state": "KS"
@@ -95,7 +96,7 @@
       "degree": "AS in",
       "startDate": "August 2012",
       "endDate": "May 2016",
-      "summary": "I attended Butler Community College on scholarship directly after high school. Initially studying Liberal Arts, I tried my hand at a few different majors before choosing Mathematics. Growing up, I was always curious about how stuff works. Studying Mathematics gave me the skillset and a common language needed to further my education in any engineering or science field. This was an excellent experience, as it provided a solid foundation for my education to come.",
+      "summary": "I attended Butler Community College on scholarship directly after high school. Initially studying Liberal Arts, I tried my hand at a few different majors before choosing Mathematics. Growing up, I was always curious about how things work. Studying Mathematics provided a common language and toolset needed to further my education in any applied or theoretical science. This was an excellent experience, as it provided a solid foundation for my education to come.",
       "location": {
         "city": "El Dorado",
         "state": "KS"
@@ -177,7 +178,7 @@
       "organization": "Kansas State University | Computer Science",
       "title": "Undergraduate Teaching Assistant",
       "summary": "While attending K-State, I worked as an Undergraduate Teaching Assistant in the Department of Computer Science. Educating students in Computer Science was an incredibly rewarding experience because it allowed me to witness and be a part of their journey to become great Computer Scientists.",
-      "responsibilities": "Assisted instructors with in-class activities, graded class assignments, and tutored students on the fundamentals of programming using Python.",
+      "responsibilities": "Assisting instructors with in-class activities, grading course assignments, and tutoring students on the fundamentals of programming using Python.",
       "startDate": "August 2017",
       "endDate": "December 2018",
       "location": {
@@ -210,7 +211,8 @@
         "functional components",
         "Express.js",
         "Node.js",
-        "Netlify"
+        "Netlify",
+        "Git"
       ]
     },
     {
@@ -232,7 +234,8 @@
         "Node.js",
         "Firebase",
         "Stripe",
-        "Heroku"
+        "Heroku",
+        "Git"
       ]
     },
     {
@@ -240,7 +243,7 @@
       "url": "https://jwebster7-whats-the-weather.herokuapp.com/home",
       "repo": "https://github.com/jwebster7/weather-app",
       "title": "What's the Weather?",
-      "summary": "This is one of the first apps I made with React. I built it primarily with React, Express.js and the OpenWeather API.",
+      "summary": "This is one of the first apps I made with React. I built it primarily with React, Express.js and the Open Weather API.",
       "technologies": [
         "JavaScript",
         "React",
@@ -251,9 +254,10 @@
         "functional components",
         "Express.js",
         "Node.js",
-        "OpenWeatherAPI",
-        "NominatimAPI",
-        "Heroku"
+        "Open Weather API",
+        "Nominatim API",
+        "Heroku",
+        "Git"
       ]
     }
   ],
@@ -267,5 +271,6 @@
       "siterepo": "https://github.com/jwebster7/personal-website",
       "mailto": "mailto:joseph.webster.dev@gmail.com"
     }
-  }
+  },
+  "contact": "I'm currently seeking my next development opportunity. If you'd like to work together please reach out on LinkedIn or shoot me an email."
 }

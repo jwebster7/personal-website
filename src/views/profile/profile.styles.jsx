@@ -4,7 +4,6 @@ import ContentContainer from "../../components/content-container/content-contain
 
 export const ProfileContentContainer = styled(ContentContainer)`
   flex-direction: row;
-  flex-grow: 1;
   justify-content: center;
 
   > div:first-child {
