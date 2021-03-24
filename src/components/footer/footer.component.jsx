@@ -30,7 +30,7 @@ const Footer = () => {
         rel="noopener noreferrer"
         aria-label="facebook"
       >
-        <FontAwesomeIcon icon={faFacebookSquare} size="sm" />
+        <FontAwesomeIcon icon={faFacebookSquare} size="lg" />
       </SocialIcon>
       <SocialIcon
         href={iconLinks.instagram}
@@ -38,7 +38,7 @@ const Footer = () => {
         rel="noopener noreferrer"
         aria-label="instagram"
       >
-        <FontAwesomeIcon icon={faInstagram} size="sm" />
+        <FontAwesomeIcon icon={faInstagram} size="lg" />
       </SocialIcon>
       <SocialIcon
         href={iconLinks.spotify}
@@ -46,7 +46,7 @@ const Footer = () => {
         rel="noopener noreferrer"
         aria-label="spotify"
       >
-        <FontAwesomeIcon icon={faSpotify} size="sm" />
+        <FontAwesomeIcon icon={faSpotify} size="lg" />
       </SocialIcon>
       <SocialIcon
         href={iconLinks.linkedin}
@@ -54,7 +54,7 @@ const Footer = () => {
         rel="noopener noreferrer"
         aria-label="linkedin"
       >
-        <FontAwesomeIcon icon={faLinkedin} size="sm" />
+        <FontAwesomeIcon icon={faLinkedin} size="lg" />
       </SocialIcon>
       <SocialIcon
         href={iconLinks.github}
@@ -62,7 +62,7 @@ const Footer = () => {
         rel="noopener noreferrer"
         aria-label="github"
       >
-        <FontAwesomeIcon icon={faGithub} size="sm" />
+        <FontAwesomeIcon icon={faGithub} size="lg" />
       </SocialIcon>
       <SocialIcon
         href={iconLinks.mailto}
@@ -70,7 +70,7 @@ const Footer = () => {
         rel="noopener noreferrer"
         aria-label="facebook"
       >
-        <FontAwesomeIcon icon={faEnvelope} size="sm" />
+        <FontAwesomeIcon icon={faEnvelope} size="lg" />
       </SocialIcon>
     </FooterContainer>
   ) : null;

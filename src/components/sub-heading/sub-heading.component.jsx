@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const SubHeading = styled.h1`
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 300;
   color: #fff5ee;
   letter-spacing: 0.1em;

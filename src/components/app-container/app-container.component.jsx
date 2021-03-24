@@ -15,12 +15,12 @@ import { Layout } from "./app-container.styles";
 const inViewConfig = {
   root: null,
   rootMargin: "0px",
-  threshold: .6
+  threshold: .4
 };
 
 const AppContainer = () => {
   const [profileRef, profileInView, profileEntry] = useInView(inViewConfig);
-  console.log(profileEntry?.isIntersecting);
+  // console.log(profileEntry?.isIntersecting);
   const [experienceRef, experienceInView, experienceEntry] = useInView(
     inViewConfig
   );

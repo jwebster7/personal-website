@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import Text from "../text/text.component";
 
 export const StyledChip = styled(Text)`

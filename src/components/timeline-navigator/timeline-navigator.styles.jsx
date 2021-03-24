@@ -36,6 +36,37 @@ export const TimelineLinkContainer = styled.div`
 `;
 
 export const TimelineNavigationLink = styled(NavigationLink)`
+  margin: 0 2.5em 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  :after {
+    content: "";
+    width: 0%;
+    border-radius: 5em;
+    border-top: 3px solid #5b9999;
+    transition: width 300ms ease-in-out;
+  }
+
+  ${({ active }) => {
+    if (!!active) {
+      return ` 
+        :after {
+          content: "";
+          width: 95%;
+        }
+
+        @media only screen and (max-width: 1024px) {
+          :after {
+            width: 0%;
+          }
+        }
+    `;
+    }
+  }};
+
   @media screen and (max-width: 512px) {
     margin-right: 0;
   }
