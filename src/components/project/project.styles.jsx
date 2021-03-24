@@ -56,9 +56,10 @@ export const ProjectLink = styled.a`
 
   svg {
     opacity: 0.75;
-    transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
     :hover {
       text-decoration: none;
+      transform: scale(1.1);
       opacity: 1;
     }
   }
@@ -78,7 +79,7 @@ export const ProjectTitleContainer = styled.div`
 `;
 
 export const ProjectTitle = styled(Heading)`
-  font-weight: 600;
+  /* font-weight: 600; */
   /* margin-right: auto; */
 
   @media only screen and (max-width: 768px) {

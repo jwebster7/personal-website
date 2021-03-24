@@ -5,7 +5,7 @@ export const SectionHeadingContainer = styled.div`
   flex-direction: row;
   width: 100%;
   align-items: center;
-  margin-bottom: 2.5em;
+  margin-bottom: 5em;
 
   @media only screen and (max-width: 768px) {
     margin-bottom: 1em;
@@ -18,6 +18,7 @@ export const SectionHeadingText = styled.h1`
   margin: 0 calc(2em - 0.75rem) 0 2em;
   font-family: "Ubuntu", sans-serif;
   font-size: 2rem;
+  font-weight: 400;
   letter-spacing: 0.5rem;
 
   @media only screen and (max-width: 768px) {

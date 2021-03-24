@@ -18,7 +18,7 @@ export const LinkedImageLink = styled.a`
   }};
 
   border-radius: 0.5em;
-  box-shadow: 10px 10px 10px #121113;
+  /* box-shadow: 10px 10px 10px #121113; */
   overflow: hidden;
 
   transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
@@ -26,8 +26,8 @@ export const LinkedImageLink = styled.a`
   :hover {
     cursor: pointer;
     transform: scale(1.03);
-    box-shadow: 15px 15px 15px #121113;
-    background-color: rgba(18, 17, 19, 0.5);
+    box-shadow: 10px 10px 10px #121113;
+    /* background-color: rgba(18, 17, 19, 0.5); */
   }
 `;
 
@@ -50,7 +50,7 @@ export const LinkedImageOverlay = styled.div`
   background: rgba(18, 17, 19, 0.75);
   backdrop-filter: blur(5px);
   border-radius: 0.5em;
-  border: 3px solid #fff5ee;
+  /* border: 1px solid #fff5ee; */
   transition: opacity 300ms ease-in-out;
 
   h1 {

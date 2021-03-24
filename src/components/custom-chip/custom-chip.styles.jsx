@@ -16,11 +16,7 @@ export const StyledChip = styled(Text)`
     const backgroundColor = useAlt
       ? `rgb(51, 102, 102)`
       : `rgba(18, 17, 19, 0.6)`;
-    const boxShadowColor = `2px 2px 2px rgba(18, 17, 19, 1)`;
-    return css`
-      background: ${backgroundColor};
-      box-shadow: ${boxShadowColor};
-    `;
+    return `background: ${backgroundColor};`;
   }}
   text-align: center;
   font-size: 0.75rem;
@@ -28,12 +24,11 @@ export const StyledChip = styled(Text)`
   white-space: nowrap;
 
   border-radius: 0.5em;
-  /* box-shadow: 5px 5px 5px #121113; */
   transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
 
   :hover {
     cursor: pointer;
-    transform: scale(1.03);
-    box-shadow: 4px 4px 4px #121113;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 4px #121113;
   }
 `;

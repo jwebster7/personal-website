@@ -13,7 +13,7 @@ const NavigationLink = styled.a`
   color: #fff5ee;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.1em;
   line-height: 1.5;
   text-align: left;
@@ -24,7 +24,7 @@ const NavigationLink = styled.a`
     content: "";
     width: 0%;
     border-radius: 1em;
-    border-top: 2.5px solid #5b9999;
+    border-top: 2px solid #5b9999;
     transition: width 300ms ease-in-out;
   }
 
@@ -39,6 +39,7 @@ const NavigationLink = styled.a`
         :after {
           content: "";
           width: 95%;
+          border-radius: 10em;
         }
 
         @media only screen and (max-width: 1024px) {
