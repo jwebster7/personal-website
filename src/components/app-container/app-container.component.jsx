@@ -15,7 +15,7 @@ import { Layout } from "./app-container.styles";
 const inViewConfig = {
   root: null,
   rootMargin: "0px",
-  threshold: .4
+  threshold: 0.4
 };
 
 const AppContainer = () => {
@@ -77,6 +77,12 @@ const AppContainer = () => {
       <Experience id="experience" ref={experienceRef} />
       <Portfolio id="projects" ref={projectsRef} />
       <Education id="education" ref={educationRef} />
+
+      {/* <Landing />
+      <Profile id="profile" ref={profileRef} />
+      <Experience id="experience" ref={experienceRef} />
+      <Portfolio id="projects" ref={projectsRef} />
+      <Education id="education" ref={educationRef} /> */}
       <Footer />
     </Layout>
   );
