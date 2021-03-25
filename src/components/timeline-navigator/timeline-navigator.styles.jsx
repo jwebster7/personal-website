@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import HorizontalLine from "../horizontal-line/horizontal-line.component";
-import NavigationLink from "../navigation-link/navigation-link.component";
+import CustomLink from "../custom-link/custom-link.component";
 
 export const TimelineNavigatorContainer = styled.div`
   width: 100%;
@@ -35,7 +35,7 @@ export const TimelineLinkContainer = styled.div`
   }
 `;
 
-export const TimelineNavigationLink = styled(NavigationLink)`
+export const TimelineCustomLink = styled(CustomLink)`
   margin: 0 2.5em 0 0;
   display: flex;
   flex-direction: column;
