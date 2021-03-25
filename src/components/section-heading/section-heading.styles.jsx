@@ -7,6 +7,10 @@ export const SectionHeadingContainer = styled.div`
   align-items: center;
   margin-bottom: 5em;
 
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 2.5em;
+  }
+
   @media only screen and (max-width: 768px) {
     margin-bottom: 1em;
     font-size: 1.75rem;

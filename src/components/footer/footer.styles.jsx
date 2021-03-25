@@ -23,7 +23,7 @@ export const FooterContainer = styled.div`
   ${fadeInAnimation}
 
   @media only screen and (max-width: 1024px) {
-    height: 5em;
+    height: 4em;
     width: 100%;
     border-radius: 0;
     flex-direction: row;
