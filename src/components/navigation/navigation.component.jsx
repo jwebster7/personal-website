@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 import NavBar from "../navbar/navbar.component";
-import NavigationLink from "../navigation-link/navigation-link.component";
+import { NavBarLink } from "../navbar/navbar.styles";
 
 const Navigation = ({
   scrollTo,
@@ -22,38 +22,38 @@ const Navigation = ({
     <NavBar
       menu={
         <>
-          <NavigationLink
+          <NavBarLink
             onClick={() => scrollTo(profileEntry)}
             active={profileInView}
             changeMenuOn={changeMenuOn}
             href="#profile"
           >
             profile
-          </NavigationLink>
-          <NavigationLink
+          </NavBarLink>
+          <NavBarLink
             onClick={() => scrollTo(experienceEntry)}
             active={experienceInView}
             changeMenuOn={changeMenuOn}
             href="#experience"
           >
             experience
-          </NavigationLink>
-          <NavigationLink
+          </NavBarLink>
+          <NavBarLink
             onClick={() => scrollTo(projectsEntry)}
             active={projectsInView}
             changeMenuOn={changeMenuOn}
             href="#projects"
           >
             portfolio
-          </NavigationLink>
-          <NavigationLink
+          </NavBarLink>
+          <NavBarLink
             onClick={() => scrollTo(educationEntry)}
             active={educationInView}
             changeMenuOn={changeMenuOn}
             href="#education"
           >
             education
-          </NavigationLink>
+          </NavBarLink>
           {/* <NavigationLink
             onClick={() => scrollTo(profileEntry)}
             active={profileInView}

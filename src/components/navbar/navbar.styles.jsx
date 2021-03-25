@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
 
+import NavigationLink from "../navigation-link/navigation-link.component";
+
 import fadeInAnimation from "../../animations/fade-in.animation";
 
 export const SmallMenuContainer = styled.div`
@@ -47,29 +49,24 @@ export const SmallMenu = styled.div`
   }
 `;
 
-export const LargeMenuLinkContainer = styled.div`
+export const LargeMenuLinkContainer = styled.nav`
   position: absolute;
   top: 0;
   right: 0;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
-  padding: 1em 5em;
-  min-height: 90px;
-  min-width: 45vw;
+  width: 5em;
+  padding: 2em 1em;
 
-  border-radius: 0 0 0 5em;
+  border-radius: 0 0 0 4em;
   background-color: rgba(18, 17, 19, 0.6);
   backdrop-filter: blur(5px);
 
   ${fadeInAnimation}
-
-  a:last-child {
-    margin-right: 0;
-  }
 
   @media only screen and (max-width: 1280px) {
     min-height: 5em;
@@ -86,20 +83,13 @@ export const NavBarContainer = styled.div`
   top: 0;
   right: 0;
   z-index: 1000;
+`;
 
-  width: 100%;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  @media only screen and (max-width: ${(props) => props.changeMenuOn}) {
-    flex-direction: column;
-    align-items: flex-end;
-    min-height: 3em;
-    width: 5em;
-  }
+export const NavBarLink = styled(NavigationLink)`
+  font-size: 1.15rem;
+  margin: 1em 0.5em;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
 `;
 
 export const MenuIcon = ({ onClick, icon }) => (
