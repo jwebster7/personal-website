@@ -1,7 +1,7 @@
 import { memo } from "react";
 import styled from "styled-components";
 
-const NavigationLink = styled.a`
+const CustomLink = styled.a`
   cursor: pointer;
   color: #fff5ee;
   font-family: "Ubuntu", sans-serif;
@@ -37,4 +37,4 @@ const NavigationLink = styled.a`
   }
 `;
 
-export default memo(NavigationLink);
+export default memo(CustomLink);

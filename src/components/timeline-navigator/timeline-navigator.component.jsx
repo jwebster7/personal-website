@@ -3,26 +3,26 @@ import React, { memo } from "react";
 import {
   TimelineHorizontalLine,
   TimelineLinkContainer,
-  TimelineNavigationLink,
+  TimelineCustomLink,
   TimelineNavigatorContainer
 } from "./timeline-navigator.styles";
 
 const TimelineNavigator = ({ navigationList, handleSelectTab }) => {
-  const navigationLinks = !!navigationList
+  const CustomLinks = !!navigationList
     ? navigationList.map(({ id, tab, active }) => (
-        <TimelineNavigationLink
+        <TimelineCustomLink
           key={id}
           onClick={() => handleSelectTab(id)}
           active={!!active}
         >
           {tab}
-        </TimelineNavigationLink>
+        </TimelineCustomLink>
       ))
     : null;
 
   return (
     <TimelineNavigatorContainer>
-      <TimelineLinkContainer>{navigationLinks}</TimelineLinkContainer>
+      <TimelineLinkContainer>{CustomLinks}</TimelineLinkContainer>
       <TimelineHorizontalLine />
     </TimelineNavigatorContainer>
   );
