@@ -12,57 +12,11 @@ export const ProfileContentContainer = styled(ContentContainer)`
 
   @media only screen and (max-width: 1280px) {
     flex-direction: column-reverse;
-    /* i should change this is. it's garbage and it looks horrible */
     justify-content: space-evenly;
     height: 100%;
 
     > div:first-child {
       margin-right: 0;
     }
-  }
-`;
-
-export const ProfileSkill = styled.li`
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.25rem;
-  letter-spacing: 0.1em;
-  line-height: 1.5;
-  color: #fff5ee;
-  text-align: left;
-  white-space: nowrap;
-
-  @media only screen and (max-width: 768px) {
-    font-size: 1rem;
-    line-height: 1.25;
-    white-space: normal;
-  }
-`;
-
-export const ProfilePicture = styled.img`
-  /* display: block;
-  margin: 0;
-  padding: 0;
-  border-radius: 0.5em;
-  background-color: #336666;
-  background-position: center;
-
-  @media only screen and (max-width: 1280px) {
-    height: 350px;
-    max-width: 350px;
-  }
-
-  @media only screen and (max-width: 768px) {
-    height: 275px;
-    max-width: 275px;
-  } */
-`;
-
-export const ProfileLinkedInLink = styled.a`
-  text-decoration: none;
-  color: #fff5ee;
-  transition: color 300ms ease-in-out;
-
-  :hover {
-    color: #121113;
   }
 `;
