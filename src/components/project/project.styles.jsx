@@ -78,9 +78,6 @@ export const ProjectTitleContainer = styled.div`
 `;
 
 export const ProjectTitle = styled(Heading)`
-  /* font-weight: 600; */
-  /* margin-right: auto; */
-
   @media only screen and (max-width: 768px) {
     white-space: nowrap;
     align-content: center;

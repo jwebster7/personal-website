@@ -7,7 +7,7 @@ import theme from "./theme";
 
 function App() {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter>
       <ThemeProvider theme={theme}>
         <Switch>
           <Route exact path="/">
