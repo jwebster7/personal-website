@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo, useEffect, useState } from "react";
 
 import {
   LandingButton,
@@ -7,18 +7,25 @@ import {
   LandingTitleHeading
 } from "./landing.styles";
 
+import data from "../../data/static.json";
+
 const Landing = () => {
+  const [mailTo, setMailTo] = useState("");
+
+  useEffect(() => {
+    const mailTo = !!data.social.iconlinks.mailto
+      ? data.social.iconlinks.mailto
+      : "";
+    setMailTo(mailTo);
+  }, [setMailTo]);
+
   return (
     <LandingContainer backgroundColor="primary">
       <LandingNameHeading>Joseph Webster</LandingNameHeading>
       <LandingTitleHeading duration="1200ms" delay="600ms">
         Software Developer
       </LandingTitleHeading>
-      <LandingButton
-        href="mailto:joseph.webster.dev@gmail.com"
-        duration="1200ms"
-        delay="1200ms"
-      >
+      <LandingButton href={mailTo} duration="1200ms" delay="1200ms">
         Let's Connect
       </LandingButton>
     </LandingContainer>

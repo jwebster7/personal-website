@@ -18,7 +18,10 @@ import Text from "../../components/text/text.component";
 import profilePic from "../../assets/profile-pic-cropped.jpg";
 import data from "../../data/static.json";
 
-import { ProfileContentContainer , ProfileTextContainer} from "./profile.styles";
+import {
+  ProfileContentContainer,
+  ProfileTextContainer
+} from "./profile.styles";
 
 const LazyCustomImage = lazy(() =>
   import("../../components/custom-image/custom-image.component")
@@ -29,6 +32,7 @@ const Profile = forwardRef((props, ref) => {
     title: "",
     body: "",
     skills: [],
+    contact: "",
     loading: true
   });
 
@@ -38,6 +42,7 @@ const Profile = forwardRef((props, ref) => {
       title: data.profile.title,
       body: data.profile.body,
       skills: data.profile.skills,
+      contact: data.social.iconlinks.mailto,
       loading: false
     });
 
@@ -68,7 +73,7 @@ const Profile = forwardRef((props, ref) => {
           <ChipContainer>{ProfileSkills}</ChipContainer>
         </ProfileTextContainer>
         <LinkedImage
-          url="mailto:joseph.webster.dev@gmail.com"
+          url={state.contact}
           maxWidth="25em"
           overlayText="Contact Me"
         >
