@@ -21,18 +21,6 @@ const ContentContainer = styled.div`
   @media only screen and (max-width: 1024px) {
     width: 100%;
   }
-/* 
-  @media only screen and (min-width: 1280px) {
-    width: 100%;
-  }
-
-  @media only screen and (min-width: 1440px) {
-    width: 90%;
-  }
-
-  @media only screen and (min-width: 1538px) {
-    width: 80%;
-  } */
 `;
 
 export default ContentContainer;

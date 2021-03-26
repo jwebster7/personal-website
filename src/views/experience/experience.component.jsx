@@ -53,7 +53,7 @@ const Experience = forwardRef((props, ref) => {
   }, [positionIdMap]);
 
   return (
-    <SectionContainer ref={ref} backgroundColor="#121113">
+    <SectionContainer ref={ref} backgroundColor="primary">
       <SectionHeading heading="Experience" />
       <ContentContainer>
         <Suspense fallback={<Spinner />}>

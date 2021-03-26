@@ -10,7 +10,8 @@ const SectionContainer = styled.section`
   min-height: 100vh;
   width: 100%;
 
-  background-color: ${(props) => props.backgroundColor};
+  background-color: ${({ backgroundColor, theme: { palette } }) =>
+    palette.background[backgroundColor]};
 
   @media only screen and (max-width: 768px) {
     padding: 3em;

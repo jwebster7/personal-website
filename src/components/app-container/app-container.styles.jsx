@@ -6,6 +6,6 @@ export const Layout = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #121113;
-  color: #fff5ee;
+  background-color: ${({ theme: { palette } }) => palette?.background.primary};
+  color: ${({ theme: { palette } }) => palette?.font.primary};
 `;

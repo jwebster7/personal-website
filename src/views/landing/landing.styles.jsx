@@ -10,7 +10,7 @@ import SectionContainer from "../../components/section-container/section-contain
 export const LandingContainer = styled(SectionContainer)`
   align-items: center;
   justify-content: center;
-  background-color: #121113;
+  background-color: ${({ backgroundColor, theme: { palette }}) => palette.background[backgroundColor]};
   min-height: 100vh;
   width: 100%;
 `;
@@ -19,7 +19,6 @@ export const LandingNameHeading = styled(Heading)`
   margin: 0 -0.15em 0.25em 0;
   font-family: "Open Sans", sans-serif;
   font-size: 5rem;
-  font-weight: 500;
   ${fadeInAnimation}
 
   @media only screen and (max-width: 768px) {
@@ -35,7 +34,6 @@ export const LandingTitleHeading = styled(Heading)`
   margin: 0 0 0.25em 0;
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
-  font-weight: 500;
   ${controlledFadeInAnimation}
 
   @media only screen and (max-width: 768px) {

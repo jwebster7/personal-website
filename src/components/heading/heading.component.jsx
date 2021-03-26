@@ -3,15 +3,16 @@ import styled from "styled-components";
 const Heading = styled.h1`
   margin: 0.25em 1em 0.25em 0;
 
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #fff5ee;
-  letter-spacing: 0.1em;
+  color: ${({ theme: { palette } }) => palette?.font.primary};
+  font-family: ${({ theme: { typography } }) => typography?.heading.fontFamily};
+  font-size: ${({ theme: { typography } }) => typography?.heading.fontSize.primary};
+  font-weight: ${({ theme: { typography } }) => typography?.heading.fontWeight};
+  letter-spacing: ${({ theme: { typography } }) =>
+    typography?.heading.letterSpacing};
   white-space: nowrap;
 
   @media only screen and (max-width: 768px) {
-    font-size: 1.25rem;
+    font-size: ${({ theme: { typography } }) => typography?.heading.fontSize.secondary};
     white-space: normal;
   }
 `;

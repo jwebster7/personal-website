@@ -9,13 +9,10 @@ export const StyledChip = styled(Text)`
   margin: 1em 1em 0 0;
   padding: 0.5em 1em;
 
-  ${(props) => {
-    // this is fine for now, but I should redo this to use a themeprovider
-    // cadet-blue - rgba(51, 102, 102, 0.6)
-    const useAlt = !!props.useAlt;
-    const backgroundColor = useAlt
-      ? `rgb(51, 102, 102)`
-      : `rgba(18, 17, 19, 0.6)`;
+  ${({ useAlt, theme: { palette } }) => {    
+    const backgroundColor = !!useAlt
+      ? `${palette.element.secondary}`
+      : `${palette.element.primary}`;
     return `background: ${backgroundColor};`;
   }}
   text-align: center;

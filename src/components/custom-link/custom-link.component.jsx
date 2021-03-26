@@ -3,11 +3,12 @@ import styled from "styled-components";
 
 const CustomLink = styled.a`
   cursor: pointer;
-  color: #fff5ee;
-  font-family: "Ubuntu", sans-serif;
+  color: ${({ theme: { palette} }) => palette?.font.primary};
+  font-family: ${({ theme: { typography } }) => typography.primary.fontFamily};
   font-size: 1rem;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: ${({ theme: { typography } }) =>
+    typography.primary.letterSpacing};
   line-height: 1.5;
   text-align: left;
   text-decoration: none;
@@ -16,17 +17,19 @@ const CustomLink = styled.a`
   transition: color 300ms ease-in-out, transform 300ms ease-in-out;
 
   :hover {
-    color: #5b9999;
+    color: ${({ theme }) => theme.palette.font.hover};
     transform: scale(1.1);
   }
 
-  ${({ active }) => {
+  ${({ active, theme: { palette } }) => {
     return active
       ? `
-        color: #5B9999; 
+        color: ${palette.font.active};
         transform: scale(1.1);
       `
-      : `color: #FFF5EE;`;
+      : `
+        color: ${palette.font.primary};
+      `;
   }};
 
   @media only screen and (max-width: ${(props) => props.changeMenuOn}) {

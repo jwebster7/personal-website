@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 import Heading from "../../components/heading/heading.component";
-import Text from "../../components/text/text.component";
 import HorizontalLine from "../horizontal-line/horizontal-line.component";
 
 export const ProjectContainer = styled.div`
@@ -96,24 +95,5 @@ export const ProjectHorizontalLine = styled(HorizontalLine)`
   @media only screen and (max-width: 500px) {
     display: none;
     margin: 0;
-  }
-`;
-
-export const ProjectTech = styled(Text)`
-  margin: 1em 1em 0 0;
-  padding: 0.5em 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.5em;
-  background: rgba(18, 17, 19, 0.6);
-  text-align: center;
-  font-size: 0.75rem;
-  font-style: italic;
-  white-space: nowrap;
-
-  @media screen and (max-width: 768px) {
-    font-size: 0.5rem;
-    margin: 1em 1em 0 0;
   }
 `;
