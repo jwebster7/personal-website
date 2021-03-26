@@ -30,7 +30,6 @@ const Profile = forwardRef((props, ref) => {
     title: "",
     body: "",
     skills: [],
-    linkedInLink: "",
     loading: true
   });
 
@@ -40,7 +39,6 @@ const Profile = forwardRef((props, ref) => {
       title: data.profile.title,
       body: data.profile.body,
       skills: data.profile.skills,
-      linkedInLink: data.social.iconlinks.linkedin,
       loading: false
     });
 
@@ -71,7 +69,7 @@ const Profile = forwardRef((props, ref) => {
           <ChipContainer>{ProfileSkills}</ChipContainer>
         </TextContainer>
         <LinkedImage
-          url={state.linkedInLink}
+          url="mailto:joseph.webster.dev@gmail.com"
           maxWidth="25em"
           overlayText="Contact Me"
         >

@@ -196,7 +196,7 @@
   "projects": [
     {
       "id": 2,
-      "url": "https://joseph.webster.me",
+      "url": "https://josephwebster.me",
       "repo": "https://github.com/jwebster7/personal-website",
       "title": "Personal Website",
       "summary": "This is a personal website / portfolio I designed and built using primarily React and styled-components. I didn't use frameworks like Bootstrap or Material-UI to get more experience with styled-components and CSS.",
@@ -209,7 +209,6 @@
         "ThemeProvider",
         "Intersection Observer API",
         "functional components",
-        "Express.js",
         "Node.js",
         "Netlify",
         "Git"
