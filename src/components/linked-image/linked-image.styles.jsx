@@ -18,7 +18,6 @@ export const LinkedImageLink = styled.a`
   }};
 
   border-radius: 0.5em;
-  /* box-shadow: 10px 10px 10px #121113; */
   overflow: hidden;
 
   transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
@@ -27,7 +26,6 @@ export const LinkedImageLink = styled.a`
     cursor: pointer;
     transform: scale(1.03);
     box-shadow: 10px 10px 10px #121113;
-    /* background-color: rgba(18, 17, 19, 0.5); */
   }
 `;
 
@@ -47,10 +45,9 @@ export const LinkedImageOverlay = styled.div`
   object-fit: cover;
   background-size: cover;
   background-position: center;
-  background: rgba(18, 17, 19, 0.75);
+  background-color: ${({ theme: { palette } }) => palette?.element.primary};
   backdrop-filter: blur(5px);
   border-radius: 0.5em;
-  /* border: 1px solid #fff5ee; */
   transition: opacity 300ms ease-in-out;
 
   h1 {
@@ -70,8 +67,6 @@ export const LinkedImageHorizontalLine = styled(HorizontalLine)`
 `;
 
 export const LinkedImageTitle = styled(Heading)`
-  font-weight: 600;
-
   @media only screen and (max-width: 768px) {
     white-space: nowrap;
     align-content: center;

@@ -20,3 +20,9 @@ export const ProfileContentContainer = styled(ContentContainer)`
     }
   }
 `;
+
+export const ProfileTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+`;

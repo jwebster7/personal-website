@@ -13,12 +13,10 @@ export const TimelineNavigatorContainer = styled.div`
   justify-content: flex-start;
 
   @media only screen and (max-width: 768px) {
-    /* width: 80%; */
     margin: 0 0 2em;
   }
 
   @media only screen and (max-width: 512px) {
-    /* width: 80%; */
     margin: 0 0 1em;
   }
 `;

@@ -6,69 +6,73 @@
  *  #5B9999 - cadet blue
  */
 
-const primaryFontColor = "#fff5ee";
-const primaryFontFamily = `"Ubuntu", sans-serif`;
+const cadetBlue = "#5b9999";
+const myrtleGreen = "#336666";
+const richBlack = "#121113";
+const seashell = "#fff5ee";
+const primaryFontFamily = `"Ubuntu", "Helvetica", "Arial", sans-serif`;
 
 const theme = {
-  background: {
-    primaryColor: "#121113",
-    secondaryColor: "#336666"
+  palette: {
+    background: {
+      primary: richBlack,
+      secondary: myrtleGreen
+    },
+    font: {
+      primary: seashell,
+      secondary: richBlack,
+      active: cadetBlue,
+      hover: cadetBlue
+    },
+    element: {
+      primary: "rgba(18, 17, 19, 0.6)",
+      secondary: "rgb(51,102,102)",
+      hover: {
+        primary: cadetBlue,
+        secondary: "rgba(51, 102, 102, .2)"
+      }
+    }
   },
   typography: {
     primary: {
-      body: {
-        fontColor: primaryFontColor,
-        fontFamily: primaryFontFamily,
-        fontHeight: "1.5",
-        fontSpacing: "0.1em",
-        fontSize: "1.25rem"
-      },
-      heading: {
-        fontColor: primaryFontColor,
-        fontFamily: primaryFontFamily,
-        fontSize: "1.5rem",
-        fontSpacing: "0.1em",
-        fontWeight: "500"
-      },
-      sectionHeading: {
-        fontColor: primaryFontColor,
-        fontFamily: primaryFontFamily,
-        fontSize: "2rem",
-        fontSpacing: "0.75rem"
-      },
-      subHeading: {
-        fontColor: primaryFontColor,
-        fontFamily: primaryFontFamily,
-        fontSize: "1.25rem",
-        fontSpacing: "0.1em",
-        fontWeight: "300"
-      }
+      letterSpacing: "0.1em",
+      fontFamily: primaryFontFamily
     },
-    secondary: {
-      body: {
-        fontColor: primaryFontColor,
-        fontFamily: primaryFontFamily,
-        fontHeight: "1.25",
-        fontSize: "1rem"
+    sectionHeading: {
+      fontFamily: primaryFontFamily,
+      fontSize: {
+        primary: "2rem",
+        secondary: "1.5rem"
       },
-      heading: {
-        fontColor: primaryFontColor,
-        fontFamily: primaryFontFamily,
-        fontSize: "1.15rem",
-        fontSpacing: "0.1em"
+      fontWeight: 400,
+      letterSpacing: "0.5em"
+    },
+    subHeading: {
+      fontFamily: primaryFontFamily,
+      fontSize: {
+        primary: "1.2rem",
+        secondary: "1rem"
       },
-      sectionHeading: {
-        fontColor: primaryFontColor,
-        fontFamily: primaryFontFamily,
-        fontSize: "1.5rem",
-        fontSpacing: "0.5rem"
+      fontWeight: 300,
+      letterSpacing: "0.1em"
+    },
+    heading: {
+      fontFamily: primaryFontFamily,
+      fontSize: {
+        primary: "1.4rem",
+        secondary: "1.2rem"
       },
-      subHeading: {
-        fontColor: primaryFontColor,
-        fontFamily: primaryFontFamily,
-        fontSize: "1rem",
-        fontSpacing: "0.1em"
-      }
+      fontWeight: 500,
+      letterSpacing: "0.1em"
+    },
+    body: {
+      fontFamily: primaryFontFamily,
+      fontSize: {
+        primary: "1.2rem",
+        secondary: "1rem"
+      },
+      fontWeight: 300,
+      letterSpacing: "0.1em"
     }
   }
 };

@@ -35,7 +35,7 @@ const Portfolio = forwardRef((props, ref) => {
   }, [projects]);
 
   return (
-    <SectionContainer ref={ref} backgroundColor="#336666">
+    <SectionContainer ref={ref} backgroundColor="secondary">
       <SectionHeading heading="Portfolio" />
       <PortfolioContent>{projectComponents}</PortfolioContent>
     </SectionContainer>

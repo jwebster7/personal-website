@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 import StyledLink from "./navigation-link.styles";
 
@@ -19,4 +19,4 @@ const NavigationLink = ({ entry, active, href, changeMenuOn, children }) => {
   );
 };
 
-export default NavigationLink;
+export default memo(NavigationLink);

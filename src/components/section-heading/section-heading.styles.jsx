@@ -20,16 +20,16 @@ export const SectionHeadingContainer = styled.div`
 
 export const SectionHeadingText = styled.h1`
   margin: 0 calc(2em - 0.75rem) 0 2em;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 0.5rem;
+
+  color: ${({ theme: { palette} }) => palette?.font.primary};
+  font-family: ${({ theme: {typography} }) => typography?.sectionHeading.fontFamily};
+  font-size: ${({ theme: {typography} }) => typography?.sectionHeading.fontSize.primary};
+  font-weight: ${({ theme: {typography} }) => typography?.sectionHeading.fontWeight};
+  letter-spacing: ${({ theme: {typography} }) => typography?.sectionHeading.letterSpacing};
 
   @media only screen and (max-width: 768px) {
-    margin: 0 0.75em;
     margin: 0 calc(0.75em - 0.5rem) 0 0.75em;
-    font-size: 1.5rem;
-    letter-spacing: 0.5rem;
+    font-size: ${({ theme: {typography} }) => typography?.sectionHeading.fontSize.secondary};
     text-align: center;
   }
 `;

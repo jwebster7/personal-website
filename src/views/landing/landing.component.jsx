@@ -9,14 +9,13 @@ import {
 
 const Landing = () => {
   return (
-    <LandingContainer>
+    <LandingContainer backgroundColor="primary">
       <LandingNameHeading>Joseph Webster</LandingNameHeading>
       <LandingTitleHeading duration="1200ms" delay="600ms">
         Software Developer
       </LandingTitleHeading>
       <LandingButton
         href="mailto:joseph.webster.dev@gmail.com"
-        useAlt
         duration="1200ms"
         delay="1200ms"
       >

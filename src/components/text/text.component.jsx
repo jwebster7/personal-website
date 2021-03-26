@@ -2,16 +2,18 @@ import styled from "styled-components";
 
 const Text = styled.span`
   margin-top: 1em;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 300;
-  letter-spacing: 0.1em;
+
+  color: ${({ theme: { palette } }) => palette?.font.primary};
+  font-family: ${({ theme: { typography } }) => typography?.body.fontFamily};
+  font-size: ${({ theme: { typography } }) => typography?.body.fontSize.primary};
+  font-weight: ${({ theme: { typography } }) => typography?.body.fontWeight};
+  letter-spacing: ${({ theme: { typography } }) =>
+    typography?.body.letterSpacing};
   line-height: 1.5;
-  color: #fff5ee;
   text-align: left;
 
   @media only screen and (max-width: 768px) {
-    font-size: 1rem;
+    font-size: ${({ theme: { typography } }) => typography?.body.fontSize.secondary};
     line-height: 1.4;
     white-space: normal;
   }

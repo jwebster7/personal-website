@@ -13,13 +13,12 @@ import LinkedImage from "../../components/linked-image/linked-image.component";
 import SectionContainer from "../../components/section-container/section-container.component";
 import SectionHeading from "../../components/section-heading/section-heading.component";
 import Spinner from "../../components/spinner/spinner.component";
-import TextContainer from "../../components/text-container/text-container.component";
 import Text from "../../components/text/text.component";
 
 import profilePic from "../../assets/profile-pic-cropped.jpg";
 import data from "../../data/static.json";
 
-import { ProfileContentContainer } from "./profile.styles";
+import { ProfileContentContainer , ProfileTextContainer} from "./profile.styles";
 
 const LazyCustomImage = lazy(() =>
   import("../../components/custom-image/custom-image.component")
@@ -61,13 +60,13 @@ const Profile = forwardRef((props, ref) => {
     : null;
 
   return !state.loading ? (
-    <SectionContainer ref={ref} backgroundColor="#336666">
+    <SectionContainer ref={ref} backgroundColor="secondary">
       <SectionHeading heading="Profile" />
       <ProfileContentContainer>
-        <TextContainer>
+        <ProfileTextContainer>
           {profileText}
           <ChipContainer>{ProfileSkills}</ChipContainer>
-        </TextContainer>
+        </ProfileTextContainer>
         <LinkedImage
           url="mailto:joseph.webster.dev@gmail.com"
           maxWidth="25em"

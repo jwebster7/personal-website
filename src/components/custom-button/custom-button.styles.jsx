@@ -18,7 +18,7 @@ export const StyledButton = styled.a`
 
   border-radius: 0.5em;
   border: 2px solid #fff5ee;
-  background-color: rgba(18, 17, 19, 0.6);
+  background-color: ${({ theme: { palette } }) => palette?.element.primary};
 
   transition: color 300ms ease-in-out, border 300ms ease-in-out,
     background-color 300ms ease-in-out;
@@ -29,21 +29,9 @@ export const StyledButton = styled.a`
     white-space: normal;
   }
 
-  ${(props) => {
-    // this is fine for now, but I should redo this to use a themeprovider
-    // #336666 - rgba(51, 102, 102, 0.6)
-    const useAlt = !!props.useAlt;
-    const altColor = useAlt ? `#5b9999` : `rgba(255, 245, 238, 1)`;
-    const backgroundColor = useAlt
-      ? `rgba(51, 102, 102, .2)`
-      : `rgba(18, 17, 19, 0)`;
-
-    return css`
-      :hover {
-        color: ${altColor};
-        border: 2px solid ${altColor};
-        background-color: ${backgroundColor};
-      }
-    `;
-  }}
+  :hover {
+    color: ${({ theme: { palette } }) => palette.element.hover.primary};
+    border: 2px solid ${({ theme: { palette } }) => palette.element.hover.primary};
+    background-color: ${({ theme: { palette } }) => palette.element.hover.secondary}
+  }
 `;
