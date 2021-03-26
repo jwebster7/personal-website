@@ -21,7 +21,7 @@ export const StyledButton = styled.a`
   background-color: ${({ theme: { palette } }) => palette?.element.primary};
 
   transition: color 300ms ease-in-out, border 300ms ease-in-out,
-    background-color 300ms ease-in-out;
+    background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
 
   @media only screen and (max-width: 768px) {
     font-size: 1rem;
@@ -30,8 +30,16 @@ export const StyledButton = styled.a`
   }
 
   :hover {
-    color: ${({ theme: { palette } }) => palette.element.hover.primary};
-    border: 2px solid ${({ theme: { palette } }) => palette.element.hover.primary};
-    background-color: ${({ theme: { palette } }) => palette.element.hover.secondary}
+    color: ${({ useAlt, theme: { palette } }) => {
+      return !!useAlt ? palette.font.hover : palette.element.hover.primary;
+    }};
+    border: 2px solid
+      ${({ theme: { palette } }) => palette.element.hover.primary};
+    background-color: ${({ useAlt, theme: { palette } }) => {
+      return !!useAlt
+        ? palette.element.hover.secondary
+        : palette.element.hover.tertiary;
+    }};
+    box-shadow: 0px 0px 4px #121113;
   }
 `;

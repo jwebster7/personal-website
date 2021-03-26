@@ -8,6 +8,7 @@ import React, {
 } from "react";
 
 import ChipContainer from "../../components/chip-container/chip-container.component";
+import Connect from "../../components/connect/connect.component";
 import CustomChip from "../../components/custom-chip/custom-chip.component";
 import LinkedImage from "../../components/linked-image/linked-image.component";
 import SectionContainer from "../../components/section-container/section-container.component";
@@ -88,6 +89,7 @@ const Profile = forwardRef((props, ref) => {
           </Suspense>
         </LinkedImage>
       </ProfileContentContainer>
+      <Connect />
     </SectionContainer>
   ) : null;
 });

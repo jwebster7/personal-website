@@ -7,8 +7,9 @@ import Experience from "../../views/experience/experience.component";
 import Landing from "../../views/landing/landing.component";
 import Portfolio from "../../views/portfolio/portfolio.component";
 import Footer from "../footer/footer.component";
-import { Layout } from "./app-container.styles";
 import Navigation from "../navigation/navigation.component";
+
+import { Layout } from "./app-container.styles";
 
 const inViewConfig = {
   root: null,

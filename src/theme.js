@@ -16,7 +16,8 @@ const theme = {
   palette: {
     background: {
       primary: richBlack,
-      secondary: myrtleGreen
+      secondary: myrtleGreen,
+      tertiary: "rgba(18, 17, 19, 0.6)"
     },
     font: {
       primary: seashell,
@@ -26,10 +27,11 @@ const theme = {
     },
     element: {
       primary: "rgba(18, 17, 19, 0.6)",
-      secondary: "rgb(51,102,102)",
+      secondary: "rgb(51, 102, 102)",
       hover: {
         primary: cadetBlue,
-        secondary: "rgba(51, 102, 102, .2)"
+        secondary: richBlack,
+        tertiary: "rgb(51, 102, 102, .15)"
       }
     }
   },
@@ -45,7 +47,7 @@ const theme = {
         secondary: "1.5rem"
       },
       fontWeight: 400,
-      letterSpacing: "0.5em"
+      letterSpacing: "0.3em"
     },
     subHeading: {
       fontFamily: primaryFontFamily,

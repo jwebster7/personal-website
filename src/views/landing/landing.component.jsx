@@ -13,9 +13,7 @@ const Landing = () => {
   const [mailTo, setMailTo] = useState("");
 
   useEffect(() => {
-    const mailTo = !!data.social.iconlinks.mailto
-      ? data.social.iconlinks.mailto
-      : "";
+    const mailTo = !!data.contact.mailto ? data.contact.mailto : "";
     setMailTo(mailTo);
   }, [setMailTo]);
 

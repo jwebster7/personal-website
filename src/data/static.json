@@ -271,5 +271,8 @@
       "mailto": "mailto:joseph.webster.dev@gmail.com"
     }
   },
-  "contact": "I'm currently seeking my next development opportunity. If you'd like to work together please reach out on LinkedIn or shoot me an email."
+  "contact": {
+    "mailto": "mailto:joseph.webster.dev@gmail.com",
+    "body": "I'm currently searching for my next development opportunity. If you'd like to work together or have questions about this site, please reach out on LinkedIn or shoot me an email."
+  }
 }
