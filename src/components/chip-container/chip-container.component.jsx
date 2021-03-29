@@ -9,7 +9,7 @@ const ChipContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
 
-  > span:last-child {
+  > :last-child {
     margin-right: auto;
   }
 `;

@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import Text from "../text/text.component";
 
+export const ChipLink = styled.a`
+  text-decoration: none;
+`;
+
 export const StyledChip = styled(Text)`
   display: flex;
   justify-content: center;
@@ -9,7 +13,7 @@ export const StyledChip = styled(Text)`
   margin: 1em 1em 0 0;
   padding: 0.5em 1em;
 
-  ${({ useAlt, theme: { palette } }) => {    
+  ${({ useAlt, theme: { palette } }) => {
     const backgroundColor = !!useAlt
       ? `${palette.element.secondary}`
       : `${palette.element.primary}`;
@@ -18,7 +22,6 @@ export const StyledChip = styled(Text)`
   text-align: center;
   font-size: 0.75rem;
   font-weight: 500;
-  white-space: nowrap;
 
   border-radius: 0.5em;
   transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
