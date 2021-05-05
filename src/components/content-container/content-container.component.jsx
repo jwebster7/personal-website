@@ -3,6 +3,7 @@ import styled from "styled-components";
 const ContentContainer = styled.div`
   min-height: 100%;
   width: 75%;
+  max-width: 1400px;
 
   display: flex;
   flex: 1 1 auto;
