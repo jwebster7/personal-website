@@ -2,13 +2,16 @@
   "profile": {
     "title": "Hello!",
     "body": [
-      "Hello! My name is Joe. I'm a Software Developer based in the Midwest.",
-      "I enjoy working at any and all levels of the software stack. My current interests lie in full-stack application development, but I'm open to working with all types of technologies.",
+      "Hello! My name is Joe. I'm a software engineer based in the midwest.",
+      "I enjoy working at any and all levels of the software stack. My current interests lie in full-stack application development, containerization, and Kubernetes.",
       "Here are some technologies I've worked with recently:"
     ],
     "skills": [
-      "JavaScript",
+      "Golang",
       "Python",
+      "Containers",
+      "Docker",
+      "Kubernetes",
       "React",
       "React Hooks",
       "Redux",
@@ -23,17 +26,22 @@
     {
       "id": "2",
       "tab": "Present",
-      "organization": "Various resources",
+      "organization": "",
       "major": "Continuing education",
       "degree": " ",
-      "startDate": "May 2019",
+      "startDate": "",
       "endDate": "continuous",
-      "summary": "I've continued my education through various resources including Udemy, books, and more. My most recent experience was finishing a full-stack React + Node.js developer course through Udemy. This course helped solidify my understanding of concepts I had previously only generally understood and furthered my curiosity for the world of Web Development.",
+      "summary": "I've continued my education through various mediums including Udemy, Pluralsight, and more.",
       "location": {
         "city": "",
         "state": ""
       },
       "featuredTopics": [
+        "Golang",
+        "Python",
+        "Containers",
+        "Docker",
+        "Kubernetes",
         "JavaScript",
         "React",
         "React Hooks",
@@ -114,11 +122,39 @@
   ],
   "experience": [
     {
+      "id": "3",
+      "tab": "Present",
+      "company": "NetApp",
+      "organization": "NetApp | Trident",
+      "title": "Cloud Native Software Engineer",
+      "summary": "I currently work on an open-source, dynamic storage orchestrator for containers called Trident. This application provisions storage for containers and Kubernetes workloads.",
+      "responsibilities": "Software design, development, and testing for Trident.",
+      "startDate": "July 2021",
+      "endDate": "Present",
+      "location": {
+        "remote": "Remote"
+      },
+      "technologies": [
+        "Golang",
+        "Python",
+        "Containers",
+        "Docker",
+        "Kubernetes",
+        "Git",
+        "Groovy",
+        "Jenkins",
+        "Jira",
+        "REST",
+        "gRPC",
+        "Agile Development"
+      ]
+    },
+    {
       "id": "2",
       "tab": "NetApp",
       "company": "NetApp | SolidFire",
       "organization": "NetApp | SolidFire",
-      "title": "Software Engineer",
+      "title": "Full-Stack Software Engineer",
       "summary": "After graduation, I joined the engineering team at NetApp. I primarily worked with Python and TypeScript, but was exposed to many different technologies. In the face of ever-evolving product requirements in a fast-paced environment, I always managed to deliver on my commitments. NetApp was a rewarding first step in my career because it exposed me to a wide array of technologies while fostering personal and professional growth.",
       "responsibilities": "Software development, software testing, and project scoping on a HCI Deployment Engine.",
       "startDate": "June 2019",
@@ -130,7 +166,7 @@
       "technologies": [
         "Python",
         "TypeScript",
-        "Go",
+        "Golang",
         "Flask",
         "Pytest",
         "Angular",
@@ -273,6 +309,6 @@
   },
   "contact": {
     "mailto": "mailto:joseph.webster.dev@gmail.com",
-    "body": "I'm currently searching for my next development opportunity. If you'd like to work together or have questions about this site, feel free to reach out and I'll do my best to get back to you."
+    "body": "I'm always interested in new and exciting development opportunities. If you'd like to work together or have questions about this site, feel free to reach out and I'll do my best to get back to you."
   }
 }

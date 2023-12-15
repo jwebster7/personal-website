@@ -53,7 +53,7 @@ const Education = forwardRef((props, ref) => {
   }, [instituteIdMap]);
 
   return (
-    <SectionContainer ref={ref} backgroundColor="primary">
+    <SectionContainer ref={ref} backgroundColor="secondary">
       <SectionHeading heading="Education" />
       <ContentContainer>
         <Suspense fallback={<Spinner />}>

@@ -34,7 +34,7 @@ const Institute = ({
   const topics = !!featuredTopics
     ? featuredTopics.map((topic, index) => {
         return (
-          <CustomChip key={index} useAlt>
+          <CustomChip key={index}>
             {topic}
           </CustomChip>
         );

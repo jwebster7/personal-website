@@ -23,7 +23,7 @@ const Position = ({
   technologies
 }) => {
   const cityState =
-    !!location.city && !!location.state
+    location.remote ? `Remote` : !!location.city && !!location.state
       ? `${location.city}, ${location.state}`
       : "";
   const startEndDate =

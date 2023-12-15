@@ -15,7 +15,7 @@ import NavigationLink from "./navigation-link/navigation-link.component";
 
 const changeMenuOn = "1024px";
 
-const Navigation = ({ profile, experience, portfolio, education }) => {
+const Navigation = ({ profile, experience, /*portfolio,*/ education }) => {
   const [showMenu, setShowMenu] = useState(false);
   const handleClick = () => {
     setShowMenu(!showMenu);
@@ -39,15 +39,6 @@ const Navigation = ({ profile, experience, portfolio, education }) => {
       key="experience"
     >
       experience
-    </NavigationLink>,
-    <NavigationLink
-      entry={portfolio?.entry}
-      active={portfolio?.inView}
-      changeMenuOn={changeMenuOn}
-      href="#portfolio"
-      key="portfolio"
-    >
-      portfolio
     </NavigationLink>,
     <NavigationLink
       entry={education?.entry}
